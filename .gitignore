@@ -10,6 +10,8 @@ node_modules
 *.tar.gz
 *.zip
 
+public/
+.tmp/
 __pycache__/
 *.py[cod]
 *$py.class
