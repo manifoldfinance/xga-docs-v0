@@ -1,0 +1,6 @@
+mkdocs
+pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+mkdocs-material-extensions
+pygments
+pymdown-extensions
+markdown

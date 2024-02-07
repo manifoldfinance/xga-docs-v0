@@ -1,0 +1,13 @@
+# -*- mode: gitattributes; -*-
+
+*.yml    text
+.gitattributes text
+LICENSE* text
+
+# avoid merge conflicts in CHANGELOG
+/CHANGELOG.md		merge=union
+
+/.github            export-ignore
+/.editorconfig      export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore

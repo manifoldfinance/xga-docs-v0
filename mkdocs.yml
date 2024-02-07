@@ -1,9 +1,12 @@
-site_name: Trident
-site_url: https://sambacha.github.io/mkdocs-trident
-site_description: Trident documentation.
-site_author: SushiSwap community
-copyright: SushiSwap Trident and its documentation are licensed under GPL-3.0 license /
+site_name: MEV Futures
+site_url: https://mevauction.com
+site_description: >-
+  MEV Auction documentation.
+site_author: MEV.io
+copyright: Manifold Finance, Inc and its contributors. 
 
+repo _name: MEV-Protocol/platform-docs
+repo_url: https://github.com/MEV-Protocol/platform-docs
 
 theme:
   name: material
@@ -22,7 +25,6 @@ theme:
   font:
     text: 'Source Sans 3'
     code: 'Source Code Pro'
-
 
 extra:
   support:
@@ -43,13 +45,13 @@ extra:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  - admonition
-  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
   - admonition
   - pymdownx.details
   - footnotes
@@ -70,23 +72,21 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - table-reader
   - tags
-  # CI=1 mkdocs build
-  - group:
-      enabled: !ENV CI
-      plugins:
-        - git-revision-date-localized
-        - git-committers
+  # - group:
+  #     enabled: !ENV CI
+  #     plugins:
+  #       - git-revision-date-localized
+  #       - git-committers
 
-  # INSIDERS=1 mkdocs build
-  - group:
-      enabled: !ENV INSIDERS
-      plugins:
-        - optimize
-        - privacy
-
+  # - group:
+  #     enabled: !ENV INSIDERS
+  #     plugins:
+  #       - optimize
+  #       - privacy
 
 extra_javascript:
   - javascripts/mathjax.js
