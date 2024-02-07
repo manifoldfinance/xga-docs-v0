@@ -3,9 +3,9 @@ site_url: https://mevauction.com
 site_description: >-
   MEV Auction documentation.
 site_author: MEV.io
-copyright: Manifold Finance, Inc and its contributors. 
+copyright: Manifold Finance, Inc and its contributors.
 
-repo _name: MEV-Protocol/platform-docs
+repo_name: MEV-Protocol/platform-docs
 repo_url: https://github.com/MEV-Protocol/platform-docs
 
 theme:

@@ -1,6 +1,7 @@
 mkdocs
-pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+# GH_TOKEN is only exposed in production on Vercel
 mkdocs-material-extensions
 pygments
+mkdocs-material
+mkdocs-table-reader-plugin
 pymdown-extensions
-markdown
