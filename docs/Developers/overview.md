@@ -5,6 +5,17 @@ tags:
   - Getting Started
 ---
 
+## **MEV Searchers**
+
+MEV searchers can also use SecureRPC for bundle / transaction submission. The endpoint above
+supports the following MEV methods:
+
+- `eth_sendRawTransaction`
+- `manifold_sendBundle`
+- `eth_sendBundle`
+- `manifold_sendPrivateRawTransaction`
+
+
 ## Block Structure
 
 we divide a block in two parts:

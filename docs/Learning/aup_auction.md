@@ -1,8 +1,10 @@
 ---
 title: Augmented Uniform Price Auction
+description: Specification for the Augmented Uniform Price Auction
+tags: ['primary market', 'price auction', 'auction format', 'gas auction', 'mechanism design']
 ---
 
-# Augmented Uniform Price Auction
+## Specification for Primary Market
 
 We are augmenting the standard uniform price auction format with two features:
 
