@@ -6,31 +6,37 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="MEV Auction documentation.">
+        <meta name="description" content="Testing information for node operators, validators, builders, and searchers.">
       
       
         <meta name="author" content="MEV.io">
       
       
+        <link rel="canonical" href="https://mevauction.com/Developers/testnet.html">
       
+      
+        <link rel="prev" href="sdk.html">
+      
+      
+        <link rel="next" href="../Learning/aup_auction.html">
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8+insiders-4.52.2">
     
     
       
-        <title>MEV Futures</title>
+        <title>MEV L2 Testnet - MEV Futures</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.ede334a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ede334a4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="/overrides/stylesheets/custom_theme.css">
+      <link rel="stylesheet" href="../overrides/stylesheets/custom_theme.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#testing-information" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,7 +98,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/index.html" title="MEV Futures" class="md-header__button md-logo" aria-label="MEV Futures" data-md-component="logo">
+    <a href="../index.html" title="MEV Futures" class="md-header__button md-logo" aria-label="MEV Futures" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -107,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              MEV L2 Testnet
             
           </span>
         </div>
@@ -190,7 +201,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/index.html" class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link">
         
   
     
@@ -207,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/test.html" class="md-tabs__link">
+      <a href="../test.html" class="md-tabs__link">
         
   
     
@@ -222,11 +233,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/Developers/auctioneer.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="auctioneer.html" class="md-tabs__link">
           
   
     
@@ -246,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Learning/aup_auction.html" class="md-tabs__link">
+        <a href="../Learning/aup_auction.html" class="md-tabs__link">
           
   
     
@@ -266,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Reference/contract_design.html" class="md-tabs__link">
+        <a href="../Reference/contract_design.html" class="md-tabs__link">
           
   
     
@@ -286,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Validators/accounting%2C.html" class="md-tabs__link">
+        <a href="../Validators/accounting%2C.html" class="md-tabs__link">
           
   
     
@@ -321,7 +334,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/index.html" title="MEV Futures" class="md-nav__button md-logo" aria-label="MEV Futures" data-md-component="logo">
+    <a href="../index.html" title="MEV Futures" class="md-nav__button md-logo" aria-label="MEV Futures" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -351,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -377,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/test.html" class="md-nav__link">
+      <a href="../test.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,8 +413,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -420,12 +435,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -445,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -463,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Developers/auctioneer.html" class="md-nav__link">
+      <a href="auctioneer.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Developers/overview.html" class="md-nav__link">
+      <a href="overview.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -517,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Developers/sdk.html" class="md-nav__link">
+      <a href="sdk.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,10 +556,34 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Developers/testnet.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    MEV L2 Testnet
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="testnet.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -559,6 +598,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testing-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holesky-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holesky Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#builders-and-searchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builders and searchers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Builders and searchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contracts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -642,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/aup_auction.html" class="md-nav__link">
+      <a href="../Learning/aup_auction.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/preface.html" class="md-nav__link">
+      <a href="../Learning/preface.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/primary-market.html" class="md-nav__link">
+      <a href="../Learning/primary-market.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/rulebook.html" class="md-nav__link">
+      <a href="../Learning/rulebook.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/secondary-market.html" class="md-nav__link">
+      <a href="../Learning/secondary-market.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Learning/types_of_auctions.html" class="md-nav__link">
+      <a href="../Learning/types_of_auctions.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -869,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Reference/contract_design.html" class="md-nav__link">
+      <a href="../Reference/contract_design.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Reference/contract_summary.html" class="md-nav__link">
+      <a href="../Reference/contract_summary.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Reference/glossary.html" class="md-nav__link">
+      <a href="../Reference/glossary.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1015,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Validators/accounting%2C.html" class="md-nav__link">
+      <a href="../Validators/accounting%2C.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1042,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Validators/overview.html" class="md-nav__link">
+      <a href="../Validators/overview.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Validators/relay.html" class="md-nav__link">
+      <a href="../Validators/relay.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1114,6 +1254,97 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testing-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Node Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#holesky-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Holesky Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#builders-and-searchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builders and searchers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Builders and searchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contracts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contracts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1125,8 +1356,70 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+  <h1>MEV L2 Testnet</h1>
+
+<h2 id="testing-information">Testing Information<a class="headerlink" href="#testing-information" title="Permanent link">&para;</a></h2>
+<h2 id="node-operators">Node Operators<a class="headerlink" href="#node-operators" title="Permanent link">&para;</a></h2>
+<p>Please coordinate with us to register your validator set with our registry service. We will provide
+you with the necessary information to get started.</p>
+<h2 id="validators">Validators<a class="headerlink" href="#validators" title="Permanent link">&para;</a></h2>
+<p>Connecting to the relay without being registered will result in your validator operating correctly
+so long as MEV Boost is also running.</p>
+<h2 id="holesky-information">Holesky Information<a class="headerlink" href="#holesky-information" title="Permanent link">&para;</a></h2>
+<h2 id="builders-and-searchers">Builders and searchers<a class="headerlink" href="#builders-and-searchers" title="Permanent link">&para;</a></h2>
+<p>Aquire some Holesky Testnet ETH through a faucet in the resources listed below. If you are unable to
+secure enough, please reach out to us.</p>
+<h3 id="contracts">Contracts<a class="headerlink" href="#contracts" title="Permanent link">&para;</a></h3>
+<p>L2 <em>Auctioneer</em>: <code>0x277058D78307F11e590D91eDfF3D4b1C0fAA240c</code> L2 <em>SettlementHouse</em>:
+<code>0xD26004b2DB8e2e17e074EedE115bF200cb5D10d9</code> <em>L1StandardBridgeProxy</em>:
+<code>0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C</code>,</p>
+<p>To monetize yourself on L2, send some ETH on L1 (Holesky) to
+<code>0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C</code></p>
+<ul>
+<li>Holesky Network ID: <code>17000</code></li>
+<li>Holesky Chain ID: <code>17000</code></li>
+<li>L2 Chain ID: <code>42169</code></li>
+<li>L2 RPC Endpoint: <a href="https://holesky-l2.v2-stag.manifoldx.com/">@holesky-l2.v2-stag.manifoldx.com</a></li>
+</ul>
+<p>:::warning</p>
+<p>The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period</p>
+<p>:::</p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Block Explorers</li>
+<li><a href="https://holesky.etherscan.io/">holesky.etherscan.io</a></li>
+<li><a href="https://holesky.beaconcha.in/">holesky.beaconcha.in</a></li>
+<li><a href="https://dora-holesky.pk910.de/">dora-holesky.pk910.de</a></li>
+<li>Ethstats: <a href="https://ethstats.holesky.ethpandaops.io">ethstats.holesky.ethpandaops.io</a></li>
+<li>Faucets:</li>
+<li><a href="https://holesky-faucet.pk910.de/">holesky-faucet.pk910.de</a></li>
+<li><a href="https://faucet.quicknode.com/ethereum/holesky">QuickNode Faucet</a></li>
+<li><a href="https://faucet.chainstack.com/holesky-faucet">Chainstack Faucet</a></li>
+<li><a href="https://holeskyfaucet.io">Automata Holesky Faucet</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1140,6 +1433,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="sdk.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auction SDK">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Auction SDK
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Learning/aup_auction.html" class="md-footer__link md-footer__link--next" aria-label="Next: Augmented Uniform Price Auction">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Augmented Uniform Price Auction
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1168,12 +1499,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.footer", "navigation.tabs", "search.suggest", "search.highlight"], "search": "/assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["stable", "development"]}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.footer", "navigation.tabs", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["stable", "development"]}}</script>
     
     
-      <script src="/assets/javascripts/bundle.0e2aa882.min.js"></script>
+      <script src="../assets/javascripts/bundle.0e2aa882.min.js"></script>
       
-        <script src="/javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
