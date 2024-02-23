@@ -1,0 +1,16 @@
+{
+  "name": "mevauction-docs",
+  "version": "0.0.1",
+  "private": true,
+  "description": "MEV Auction Documentation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["docs", "ethereum", "mev", "auction"],
+  "author": "SEE CONTRIBUTORS",
+  "license": "SEE LICENSE IN LICENSE"
+}

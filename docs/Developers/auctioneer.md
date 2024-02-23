@@ -1,5 +1,6 @@
 ---
 title: Auctioneer Contract
+description: Primary Auction Contract
 ---
 
 The **Auctioneer Contract** is a Solidity smart contract that implements an auction mechanism for
@@ -12,6 +13,46 @@ and settle the auctions. It supports multiple bidders, each with a unique ID.
 - **Auctions:** Open and run auctions for selling block space.
 - **Manual Bids:** Bidders can submit manual bids with specific quantities and prices.
 - **Settlement:** After the auction, settle with successful bidders, transferring owed amounts.
+
+It allows adding and removing bidders and operators. Bidders can place bids on auction slots. Operators can run the auctions.
+
+The Auctioneer contract keeps track of:
+
+A mapping of addresses to operator status
+A mapping of addresses to bidder IDs
+A mapping of bidder IDs to addresses
+A mapping of auction slots to Auction structs
+Internal mappings to store bid counts and actual bid values per auction
+
+The Auction struct stores:
+
+The number of items for sale
+If the auction is open and settled
+Mappings of bidders to their BidderInfo
+
+
+The BidderInfo struct stores:
+
+The number of items a bidder bought
+The amount a bidder owes
+
+It has functions like:
+
+newBidder - Registers a new bidder address and assigns them an ID
+removeBidder - Deletes a bidder by ID
+addOperator - Grants operator status to an address
+removeOperator - Revokes operator status from an address
+
+The contract uses modifiers like onlyOwner and onlyOperator to restrict access.
+
+The key data transformations are:
+
+Mapping addresses to bidder IDs
+Tracking auction state per slot
+Storing bids received per auction
+Tracking items bought and owed per bidder
+This allows running decentralized auctions where bidders can securely place bids, operators can manage the auctions, and auction state is persisted on-chain.
+
 
 ## Contract Structure
 
