@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "build": "mkdocs build -d public",
     "make": "bash build.sh",
     "fmt": "npx prettier --config .prettierrc.js --write ."
   },

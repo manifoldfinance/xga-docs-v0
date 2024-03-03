@@ -92,8 +92,6 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - optimize:
-      enabled: !ENV [CI, false]
   - search:
       lang: en
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

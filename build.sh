@@ -21,9 +21,6 @@ echo "Build Artifact is available at: public/build_id.txt"
 
 
 date "+%Y-%m-%dT%H:%M:%S%z" > public/build_id.txt
-#printf  "\033[1A ${check_mark} "
-printf "..%s.." "\033[1A ${check_mark} "
-
 
 TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" >public/.well-known/nightly-release.txt
 sleep 1
