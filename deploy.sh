@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 generate() {
 	cat >platform-docs.xml <<EOF
 <entry>
