@@ -3,7 +3,19 @@ title: Welcome to MEV Auction
 description: The Gang Designs the Ultimate MEV Auction
 ---
 
-# Enhanced Auction Dynamics
+# MEV Auction
+
+Multi-unit auctions, unlike their single-unit counterparts, present complex allocation mechanisms. The MEV Auction platform implements several innovative strategies: 1) An enhanced uniform price auction, 2) A Bifurcated Block Structure (splitting the block into halves), 3) Elastic Supply Scheduling, 4) Contract based bidding. 
+
+### The Challenge with Standard Uniform Price Auctions
+Rooted in Wilson's 1979 findings, the standard uniform price auction, with its perfectly inelastic supply, risks leading to significantly low prices due to bid shading. This not only affects revenue but also introduces inefficiencies, although our primary focus here is revenue generation. Secondary markets might offer some correction for these inefficiencies.
+
+Bid shading impacts both uniform and discriminatory price auctions, potentially more severely in the former. The dilemma in uniform price auctions is evident: shading your bid for the marginal unit reduces not just its price but the overall price if you win.
+
+The extent of under-pricing, influenced by demand factors, is not straightforward to predict from data. The debate over whether discriminatory or uniform price auctions are more lucrative remains unresolved, both theoretically (Ausubel et al., 2014)[^1] and empirically.
+
+Ausubel et al. have pinpointed scenarios where either auction type could dominate in terms of efficiency and revenue. However, a clear advantage is only seen under specific conditions like independently distributed values and symmetric bidders, where discriminatory auctions tend to outperform.
+
 
 ## Block Structure
 
@@ -44,11 +56,11 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-!!! info inline "Reflection"
-  The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots
-  we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures
-  market for below. The following diagram shows an example of how this would work. Crucially, we want
-  users to be able to transact, that is, to be able to resell the futures on a secondary market.
+
+The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures market for below. The following diagram shows an example of how this would work. Crucially, we want users to be able to transact, that is, to be able to resell the futures on a secondary market.
+
+!!! note
+  We can extend the auction past 2 epochs
 
 
 ## Current MEV Boost Auction
@@ -58,18 +70,20 @@ gantt
 ???+ note
   A representation of transaction and block propagation with Proposer Builder Separation.
 
-(1) Searchers receive transactions from the P2P layer and generate transaction bundles using their
-specific MEV extraction knowledge. (2) These bundles are then sent to one or more builders. (3)
-Builders, who also receive transactions from the P2P layer, bundle blocks considering the
-transactions and bundles from searchers, guided by their local profit maximization algorithm. (4)
-Builders connect with relays and send new maximum profit blocks to these relays as they’re
-discovered. (5) Upon request, relays share the status of the maximum profit bid with the next block
-proposer. (6) The block proposer, who receives transactions from the P2P layer as well, decides
-which block to mine based on the relay information and their own interests. (7) If the block
-proposer chooses the block from the relay, they return the signed block header, prompting the relay
-to share the actual block
+(1) Searchers receive transactions from the P2P layer and generate transaction bundles using their specific MEV extraction knowledge. 
 
-![ethereum cluster](/ethereum_cluster.svg)
+(2) These bundles are then sent to one or more builders.
+
+(3) Builders, who also receive transactions from the P2P layer, bundle blocks considering the transactions and bundles from searchers, guided by their local profit maximization algorithm. 
+
+(4) Builders connect with relays and send new maximum profit blocks to these relays as they’re discovered. 
+
+(5) Upon request, relays share the status of the maximum profit bid with the next block proposer. 
+
+(6) The block proposer, who receives transactions from the P2P layer as well, decides which block to mine based on the relay information and their own interests. 
+
+(7) If the block proposer chooses the block from the relay, they return the signed block header, prompting the relay
+to share the actual block. 
 
 
 ### Introducing Elastic Supply Schedule and Novel Tie-Breaking
@@ -100,3 +114,6 @@ $$ S:P→Q $$
 
 varies with price, offering different quantities of options.
 The supply function is designed to be initially concave, then constant at maximum capacity. This approach, theoretically supported by Licalzi (2005), aims to mitigate dramatic underpricing.
+
+
+[^1]: Ausubel, Lawrence, and Peter Cramton. “Design of a Suitable Auction Format for Competitive Sale of Alternative Energy Leases on the OCS (AE Auction Design Study, Paper 2 of 3) Multiple Factor Auction Design for Wind Rights,” 2011. https://www.boem.gov/sites/default/files/uploadedFiles/BOEM/Renewable_Energy_Program/Regulatory_Information/AusubelCramtonPaper2.pdf.
