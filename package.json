@@ -1,0 +1,26 @@
+{
+  "name": "mevauction-docs",
+  "version": "0.0.2",
+  "private": true,
+  "description": "MEV Auction Documentation",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "make": "bash build.sh",
+    "fmt": "npx prettier --config .prettierrc.js --write ."
+  },
+  "keywords": [
+    "docs",
+    "ethereum",
+    "mev",
+    "auction"
+  ],
+  "author": "SEE CONTRIBUTORS",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5"
+  }
+}

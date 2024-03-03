@@ -12,7 +12,7 @@ realize they cannot fill a block; or they might need more space The base fee is 
 time of the primary market; so there should be updates regarding the base fee happening with
 before-strike-time blocks being minted. This also affects the initial pricing we offer.
 
-:::info[Market Side Effects]
+:!!! info inline "Reflection"
 
 It is unclear what allocation we will have from the primary market, as a winner-takes all is
 possible

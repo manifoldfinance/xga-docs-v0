@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "jloow.vscode-criticmarkup"
+        "jloow.vscode-criticmarkup",
+        "redhat.vscode-yaml"
     ]
 }

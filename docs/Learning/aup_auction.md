@@ -1,8 +1,10 @@
 ---
 title: Augmented Uniform Price Auction
+description: Specification for the Augmented Uniform Price Auction
+tags: ['primary market', 'price auction', 'auction format', 'gas auction', 'mechanism design']
 ---
 
-# Augmented Uniform Price Auction
+## Specification for Primary Market
 
 We are augmenting the standard uniform price auction format with two features:
 
@@ -146,7 +148,7 @@ Which means the larger the demand relative to overall demand at that price, the 
 that a player will get. In contrast to the rule above, only the marginal demand matters; demand
 stated at higher demand levels are irrelevant.
 
-:::info[title:What is nice about this]
+:!!! info inline "Reflection"
 
 This creates stronger incentives to bid closer to true valuations; it reduces the tendency to end up
 in a low price equilibrium.

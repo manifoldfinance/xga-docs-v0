@@ -20,7 +20,7 @@ This means that the auction is backwards compatible with MEV Boost
 
 We will go with a discriminatory auction first.
 
-:::warning[title="Changes to Auction Design"]
+!!! warning 
 
 It is understood though that we adapt the auction format depending on: (i) feedback by potential
 bidders (ii) actual behavior in the market.

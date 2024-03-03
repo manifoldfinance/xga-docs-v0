@@ -37,7 +37,7 @@ To monetize yourself on L2, send some ETH on L1 (Holesky) to
 - L2 Chain ID: `42169`
 - L2 RPC Endpoint: [@holesky-l2.v2-stag.manifoldx.com](https://holesky-l2.v2-stag.manifoldx.com/)
 
-:::warning
+!!! warning 
 
 The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period
 

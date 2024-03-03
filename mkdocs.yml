@@ -1,23 +1,37 @@
-site_name: MEV Futures
+site_name: MEV Auction
 site_url: https://mevauction.com
 site_description: >-
-  MEV Auction documentation.
+  MEV Auction documentation for builders, searchers and liquid staking protocols.
 site_author: MEV.io
 copyright: Manifold Finance, Inc and its contributors.
 
 repo_name: MEV-Protocol/platform-docs
 repo_url: https://github.com/MEV-Protocol/platform-docs
 
+# Forces links in the format /help/index.html instead of mkdocs default of /help
+# This allows us serve as totally static with no support from a web server
+use_directory_urls: false
+
 theme:
   name: material
   features:
+    - toc.follow
+
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
-    - navigation.instant.preview
+    #    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
     - navigation.footer
     - navigation.tabs
+    - navigation.top
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
     - search.suggest
     - search.highlight
   palette:
@@ -41,8 +55,10 @@ extra:
     default:
       - stable
       - development
+  generator: false
 
 markdown_extensions:
+  - mdx_math
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
@@ -50,8 +66,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - admonition
-  - pymdownx.details
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - admonition
   - pymdownx.details
   - footnotes
@@ -61,7 +79,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - tables
+  - attr_list
   - md_in_html
+  - abbr
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -72,8 +92,14 @@ markdown_extensions:
       permalink: true
 
 plugins:
+  - optimize:
+      enabled: !ENV [CI, false]
   - search:
+      lang: en
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      pipeline:
+        - stopWordFilter
+        - trimmer
   - table-reader
   - tags
   # - group:
@@ -92,7 +118,8 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
+  #  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - javascripts/shortcuts.js
 
 extra_css:
   - overrides/stylesheets/custom_theme.css

@@ -5,3 +5,4 @@ pygments
 mkdocs-material
 mkdocs-table-reader-plugin
 pymdown-extensions
+python-markdown-math

@@ -5,6 +5,17 @@ tags:
   - Getting Started
 ---
 
+**MEV Searchers**
+
+MEV searchers can also use SecureRPC for bundle / transaction submission. The endpoint above
+supports the following MEV methods:
+
+- `eth_sendRawTransaction`
+- `manifold_sendBundle`
+- `eth_sendBundle`
+- `manifold_sendPrivateRawTransaction`
+
+
 ## Block Structure
 
 we divide a block in two parts:
@@ -44,24 +55,19 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-:::info[title="Enforcing Transaction Inclusion"]
+!!! info inline "Reflection"
+  The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots
+  we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures
+  market for below. The following diagram shows an example of how this would work. Crucially, we want
+  users to be able to transact, that is, to be able to resell the futures on a secondary market.
 
-The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots
-we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures
-market for below. The following diagram shows an example of how this would work. Crucially, we want
-users to be able to transact, that is, to be able to resell the futures on a secondary market.
-
-:::
 
 ## Current MEV Boost Auction
 
 ![MEV Boost Design](/img/mev_boost_overview.png)
 
-:::note
-
-A representation of transaction and block propagation with Proposer Builder Separation.
-
-:::
+???+ note
+  A representation of transaction and block propagation with Proposer Builder Separation.
 
 (1) Searchers receive transactions from the P2P layer and generate transaction bundles using their
 specific MEV extraction knowledge. (2) These bundles are then sent to one or more builders. (3)

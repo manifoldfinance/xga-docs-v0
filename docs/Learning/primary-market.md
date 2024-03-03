@@ -18,7 +18,7 @@ alpha. The problem with this is that alpha might be more lucrative for us. In pa
 that lottery blocks come along that make up a large chunk of the overall remuneration we can achieve
 at all.
 
-:::info[Key Consideration]
+:!!! info inline "Reflection"
 
 If we fix alpha, we might be missing a significant amount of value. The tradeoff can be seen in the
 picture below.
@@ -44,7 +44,7 @@ will stop using it. So there is also a reputation component - in particular at t
 
 ### Bidder characteristics
 
-:::info[Key Assumption]
+:!!! info inline "Reflection"
 
 We operate under the assumption that position does not matter; if it does might affect the design
 significantly.
@@ -69,7 +69,7 @@ significantly.
 New bidders are active on the secondary market. The secondary market therefore is not just a
 reallocation of the primary auction but includes information updates.
 
-:::info[Important Mechanism Effects]
+:!!! info inline "Reflection"
 
 This is in contrast to most work on auctions with resale (re: secondary) markets. The secondary
 market changes the rationale for bidding in the primary auction

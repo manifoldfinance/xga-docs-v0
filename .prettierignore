@@ -3,3 +3,8 @@
 *.css
 *.scss
 *.html
+.vercel/
+public/
+site/
+docs/
+.github/
