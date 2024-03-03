@@ -148,9 +148,7 @@ Which means the larger the demand relative to overall demand at that price, the 
 that a player will get. In contrast to the rule above, only the marginal demand matters; demand
 stated at higher demand levels are irrelevant.
 
-:!!! info inline "Reflection"
+!!! info inline "Reflection"
 
-This creates stronger incentives to bid closer to true valuations; it reduces the tendency to end up
-in a low price equilibrium.
-
-:::
+  This creates stronger incentives to bid closer to true valuations; it reduces the tendency to end up
+  in a low price equilibrium.

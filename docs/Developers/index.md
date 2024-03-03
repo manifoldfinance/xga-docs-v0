@@ -64,7 +64,7 @@ gantt
 
 ## Current MEV Boost Auction
 
-![MEV Boost Design](/img/mev_boost_overview.png)
+![MEV Boost Design](/mev_boost_overview.png)
 
 ???+ note
   A representation of transaction and block propagation with Proposer Builder Separation.
@@ -80,4 +80,4 @@ which block to mine based on the relay information and their own interests. (7) 
 proposer chooses the block from the relay, they return the signed block header, prompting the relay
 to share the actual block
 
-![ethereum cluster](/img/ethereum_cluster.svg)
+![ethereum cluster](/ethereum_cluster.svg)

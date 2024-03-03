@@ -1,10 +1,8 @@
 ---
 title: MEV L2 Testnet
-slug: /testnet
 description: Testing information for node operators, validators, builders, and searchers.
 ---
 
-## Testing Information
 
 ## Node Operators
 
@@ -41,7 +39,7 @@ To monetize yourself on L2, send some ETH on L1 (Holesky) to
 
 The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period
 
-:::
+
 
 ### Resources
 
