@@ -12,13 +12,13 @@
         <meta name="author" content="MEV.io">
       
       
-        <link rel="canonical" href="https://mevauction.com/Reference/contract_summary.html">
+        <link rel="canonical" href="https://mevauction.com/Reference/compare.html">
       
       
-        <link rel="prev" href="contract_design.html">
+        <link rel="prev" href="../Learning/types_of_auctions.html">
       
       
-        <link rel="next" href="glossary.html">
+        <link rel="next" href="contract_design.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Contract Protocol Summary - MEV Auction</title>
+        <title>Compare - MEV Auction</title>
       
     
     
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contract Protocol Summary
+              Compare
             
           </span>
         </div>
@@ -827,10 +827,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="compare.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="compare.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -845,6 +852,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -881,17 +889,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="contract_summary.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="contract_summary.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -906,7 +907,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1201,17 +1201,221 @@
   
 
 
-  <h1>Contract Protocol Summary</h1>
+  <h1>Compare</h1>
 
-<p>This section outlines the specification for a block proposer call market auction contract. It's an
-alternative to the MEV Boost Flashbots Auction and is a work in progress. The document includes:</p>
-<p>Contract Properties: Outlines the essential characteristics of the contract. Contract Functions:
-Describes the functions within the contract. Contract Events: Lists events that the contract can
-emit. Contract Storage: Details how data is stored in the contract. Contract Invariants: Explains
-the unchanging aspects of the contract. Contract Tests: Discusses testing procedures for the
-contract. Contract Properties Tests: Elaborates on testing the properties of the contract. This
-section serves as a technical blueprint, detailing the framework and functionality of the proposed
-auction contract.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th>**MEV Auction Platform **</th>
+<th><strong>Paradigm Merkle.io</strong></th>
+<th><strong>Kolibrio</strong></th>
+<th><strong>BloXroute</strong></th>
+<th><strong>MEV-Blocker</strong></th>
+<th><strong>MEV-Share</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td></td>
+<td>90% of MEV,guaranteed at least$0.02 per transaction</td>
+<td>90% of MEV</td>
+<td>90% of MEV</td>
+<td>$0</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Future Inclusion</td>
+<td>✔︎</td>
+<td>✕</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MEV Boost Compatible</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>New Trust Assumptions</td>
+<td></td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+</tr>
+<tr>
+<td>Exclude Reverting Transactions</td>
+<td></td>
+<td>✔︎</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Multi Block Support</td>
+<td></td>
+<td>✔︎</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Latency based</td>
+<td>✕</td>
+<td>✔︎</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Requires RPC Connection</td>
+<td>✕</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+<td>✔︎</td>
+</tr>
+<tr>
+<td>Requires Block Builder integration</td>
+<td>✕</td>
+<td>✔︎</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td></td>
+<td>theta</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+</tr>
+<tr>
+<td>Compliant</td>
+<td></td>
+<td>theta</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+</tr>
+<tr>
+<td>Programmable privacy</td>
+<td></td>
+<td>Theta</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+<td>Theta</td>
+</tr>
+<tr>
+<td>Status API</td>
+<td></td>
+<td>theta</td>
+<td>ox</td>
+<td>ox</td>
+<td>ox</td>
+<td>theta</td>
+</tr>
+<tr>
+<td>Advanced API</td>
+<td></td>
+<td>Theta</td>
+<td>ox</td>
+<td></td>
+<td></td>
+<td>ox</td>
+</tr>
+<tr>
+<td>Dedicated RPC</td>
+<td></td>
+<td>theta</td>
+<td></td>
+<td></td>
+<td>Theta</td>
+<td>theta</td>
+</tr>
+<tr>
+<td>Fast inclusion</td>
+<td></td>
+<td>theta</td>
+<td>ox</td>
+<td>Theta</td>
+<td>Theta</td>
+<td></td>
+</tr>
+<tr>
+<td>MEV Protection</td>
+<td></td>
+<td>theta</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>theta</td>
+</tr>
+<tr>
+<td>Chains</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ethereum</td>
+<td></td>
+<td>Theta</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>Theta</td>
+</tr>
+<tr>
+<td>Polygon</td>
+<td>✕</td>
+<td>theta</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>ox</td>
+<td>ox</td>
+</tr>
+<tr>
+<td>Binance Smart Chain</td>
+<td>✕</td>
+<td>( )</td>
+<td>Theta</td>
+<td>Theta</td>
+<td>ox</td>
+<td>ox</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1252,7 +1456,7 @@ auction contract.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="contract_design.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auction and Market Designs">
+          <a href="../Learning/types_of_auctions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Types of Auctions">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1262,20 +1466,20 @@ auction contract.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Auction and Market Designs
+                Types of Auctions
               </div>
             </div>
           </a>
         
         
           
-          <a href="glossary.html" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+          <a href="contract_design.html" class="md-footer__link md-footer__link--next" aria-label="Next: Auction and Market Designs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Glossary
+                Auction and Market Designs
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="MEV Auction documentation.">
+        <meta name="description" content="MEV Auction documentation for builders, searchers and liquid staking protocols.">
       
       
         <meta name="author" content="MEV.io">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://mevauction.com/Reference/contract_design.html">
       
       
-        <link rel="prev" href="../Learning/types_of_auctions.html">
+        <link rel="prev" href="compare.html">
       
       
         <link rel="next" href="contract_summary.html">
@@ -25,15 +25,15 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8+insiders-4.52.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12+insiders-4.53.0">
     
     
       
-        <title>Auction and Market Designs - MEV Futures</title>
+        <title>Auction and Market Designs - MEV Auction</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ede334a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.458d28d0.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -96,9 +96,11 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="MEV Futures" class="md-header__button md-logo" aria-label="MEV Futures" data-md-component="logo">
+    <a href="../index.html" title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +114,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            MEV Futures
+            MEV Auction
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -184,14 +186,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -206,24 +202,7 @@
   
     
   
-  Welcome to MkDocs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../test.html" class="md-tabs__link">
-        
-  
-    
-  
-  Test
+  Welcome to MEV Auction
 
       </a>
     </li>
@@ -237,7 +216,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Developers/auctioneer.html" class="md-tabs__link">
+        <a href="../Developers/index.html" class="md-tabs__link">
           
   
     
@@ -279,7 +258,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="contract_design.html" class="md-tabs__link">
+        <a href="compare.html" class="md-tabs__link">
           
   
     
@@ -315,7 +294,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -334,13 +319,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="MEV Futures" class="md-nav__button md-logo" aria-label="MEV Futures" data-md-component="logo">
+    <a href="../index.html" title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    MEV Futures
+    MEV Auction
   </label>
   
     <div class="md-nav__source">
@@ -370,33 +355,7 @@
   <span class="md-ellipsis">
     
   
-    Welcome to MkDocs
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Test
+    Welcome to MEV Auction
   
 
     
@@ -418,31 +377,37 @@
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Developers/index.html" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     
@@ -455,11 +420,17 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -468,6 +439,8 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -603,24 +576,22 @@
       
         
       
-        
-      
-    
-    
     
     
       
       
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -637,8 +608,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -662,33 +633,6 @@
     
   
     Augmented Uniform Price Auction
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Learning/preface.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    
-  
-    Preface
   
 
     
@@ -834,22 +778,29 @@
       
         
       
-    
-    
+        
+      
+        
+      
     
     
       
+        
+        
       
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -866,8 +817,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -876,6 +827,33 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="compare.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Compare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -969,7 +947,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Beta">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#contingencies" class="md-nav__link">
@@ -979,6 +958,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1061,6 +1045,33 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rpc-payload.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    RPC Payload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1085,20 +1096,20 @@
       
     
     
-    
-    
       
       
+        
+      
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1115,8 +1126,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1270,7 +1281,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Beta">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#contingencies" class="md-nav__link">
@@ -1280,6 +1292,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1310,6 +1327,52 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+    <li class="md-path__item">
+      <a href="../index.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Welcome to MEV Auction
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="compare.html" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Reference
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -1322,21 +1385,22 @@
   <h1>Auction and Market Designs</h1>
 
 <h2 id="market-and-auction-design-and-structure">Market and Auction Design and Structure<a class="headerlink" href="#market-and-auction-design-and-structure" title="Permanent link">&para;</a></h2>
-<h4 id="alpha">Alpha<a class="headerlink" href="#alpha" title="Permanent link">&para;</a></h4>
+<h3 id="alpha">Alpha<a class="headerlink" href="#alpha" title="Permanent link">&para;</a></h3>
 <p>We will keep the alpha part as is for now. We do not want to impose a new format on bidders as given
 our small size might mean being ignored. The only change is the restriction of gas to 25MM. (The
 rest goes to the beta market).</p>
-<p>:::tip</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
 <p>This means that the auction is backwards compatible with MEV Boost</p>
-<p>:::</p>
-<h4 id="beta">Beta<a class="headerlink" href="#beta" title="Permanent link">&para;</a></h4>
+<h3 id="beta">Beta<a class="headerlink" href="#beta" title="Permanent link">&para;</a></h3>
 <p>We will go with a discriminatory auction first.</p>
-<p>:::warning[title="Changes to Auction Design"]</p>
-<p>It is understood though that we adapt the auction format depending on: (i) feedback by potential
-bidders (ii) actual behavior in the market.</p>
-<p>:::</p>
-<p>We will restrict the residual claim only to full bids for now. This is to avoid too small of token
-allocations that are then practically of no use.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>It is understood though that we adapt the auction format depending on: (i) feedback by potential bidders (ii) actual behavior in the market.</p>
+<p>We will restrict the residual claim only to full bids for now. </p>
+<p>This is to avoid too small of token allocations that are then practically of no use.</p>
 <p>The main reasons are:</p>
 <ul>
 <li>Simple and familiar format</li>
@@ -1353,15 +1417,19 @@ allocations that are then practically of no use.</p>
 <h3 id="secondary-market">Secondary market<a class="headerlink" href="#secondary-market" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Market running after primary allocation took place</li>
-<li>Need to think whether we should provide the marketplace ourselves</li>
-<li>In principle could be handled by external parties</li>
-<li>But the interlocking of different markets (that the timing of spot market and secondary market
-    is making sense** is probably relevant and easier to orchestrate by us</li>
-<li>The main purpose of this market is to account for information differences over time - builders
-  might realize they cannot fill a block; or they might need more space</li>
-<li>The base fee is not known at the time of the primary market; so there should be updates regarding
-  the base fee happening with before-strike-time blocks being minted. This also affects the initial
-  pricing we offer.</li>
+<li>
+<p>Need to think whether we should provide the marketplace ourselves</p>
+</li>
+<li>
+<p>In principle could be handled by external parties</p>
+</li>
+<li>But the interlocking of different markets (that the timing of spot market and secondary market is making sense) is probably relevant and easier to orchestrate by us.</li>
+<li>
+<p>The main purpose of this market is to account for information differences over time - e.g. builders might realize they cannot fill a block; or they might need more space.</p>
+</li>
+<li>
+<p>The base fee is not known at the time of the primary market;so there should be updates regarding the base fee happening with before-strike-time blocks being minted. This also affects the initial pricing we offer.</p>
+</li>
 </ul>
 
 
@@ -1388,6 +1456,12 @@ allocations that are then practically of no use.</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -1397,7 +1471,7 @@ allocations that are then practically of no use.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Learning/types_of_auctions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Types of Auctions">
+          <a href="compare.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Compare">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1407,7 +1481,7 @@ allocations that are then practically of no use.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Types of Auctions
+                Compare
               </div>
             </div>
           </a>
@@ -1441,11 +1515,6 @@ allocations that are then practically of no use.</p>
     </div>
   
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
-    </a>
-  
 </div>
       
     </div>
@@ -1457,17 +1526,21 @@ allocations that are then practically of no use.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.footer", "navigation.tabs", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["stable", "development"]}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.follow", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.tabs", "navigation.top", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": ["stable", "development"]}}</script>
     
     
-      <script src="../assets/javascripts/bundle.0e2aa882.min.js"></script>
+      <script src="../assets/javascripts/bundle.cd25cebc.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/shortcuts.js"></script>
       
     
   </body>
