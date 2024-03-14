@@ -33,13 +33,14 @@ theme:
     - navigation.sections
     - navigation.path
     - search.suggest
+    - search.share
     - search.highlight
     - content.action.edit
   palette:
     scheme: black
   font:
-    text: 'Source Sans 3'
-    code: 'Source Code Pro'
+    text: 'Inter'
+    code: 'IBM Plex Sans'
 
 extra:
   support:
@@ -119,15 +120,13 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  # yamllint disable-line rule:line-length
-  #  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   - javascripts/shortcuts.js
 
 extra_css:
   - overrides/stylesheets/custom_theme.css
 
 nav:
-  - Home: ' ./'
+  - Home: './'
   - Developers:
       - ' Getting Started': 'Developers/index.md'
       - ' Auctioneer': 'Developers/auctioneer.md'
