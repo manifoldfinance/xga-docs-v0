@@ -18,11 +18,12 @@ alpha. The problem with this is that alpha might be more lucrative for us. In pa
 that lottery blocks come along that make up a large chunk of the overall remuneration we can achieve
 at all.
 
+
 !!! info inline "Reflection"
+
     If we fix alpha, we might be missing a significant amount of value. The tradeoff can be seen in the picture below.
 
-
-![tradeoff-alpha-beta](/illustration-tradeoff-alpha-beta.png)
+![tradeoff-alpha-beta](/assets/images/illustration-tradeoff-alpha-beta.png)
 
 We make the assumption that top of the block gas space is more valuable. The main assumption is that
 at some point, the marginal value for a builder owning the whole block (green) goes below the
