@@ -69,15 +69,17 @@ gantt
 ???+ note
   A representation of transaction and block propagation with Proposer Builder Separation.
 
-(1) Searchers receive transactions from the P2P layer and generate transaction bundles using their
-specific MEV extraction knowledge. (2) These bundles are then sent to one or more builders. (3)
-Builders, who also receive transactions from the P2P layer, bundle blocks considering the
-transactions and bundles from searchers, guided by their local profit maximization algorithm. (4)
-Builders connect with relays and send new maximum profit blocks to these relays as they’re
-discovered. (5) Upon request, relays share the status of the maximum profit bid with the next block
-proposer. (6) The block proposer, who receives transactions from the P2P layer as well, decides
-which block to mine based on the relay information and their own interests. (7) If the block
-proposer chooses the block from the relay, they return the signed block header, prompting the relay
-to share the actual block
+(1) Searchers receive transactions from the P2P layer and generate transaction bundles using their specific MEV extraction knowledge. 
 
-![ethereum cluster](/ethereum_cluster.svg)
+(2) These bundles are then sent to one or more builders.
+
+(3) Builders, who also receive transactions from the P2P layer, bundle blocks considering the transactions and bundles from searchers, guided by their local profit maximization algorithm. 
+
+(4) Builders connect with relays and send new maximum profit blocks to these relays as they’re discovered. 
+
+(5) Upon request, relays share the status of the maximum profit bid with the next block proposer. 
+
+(6) The block proposer, who receives transactions from the P2P layer as well, decides which block to mine based on the relay information and their own interests. 
+
+(7) If the block proposer chooses the block from the relay, they return the signed block header, prompting the relay
+to share the actual block. 

@@ -7,3 +7,4 @@ mkdocs-table-reader-plugin
 pymdown-extensions
 python-markdown-math
 mkdocs-literate-nav
+mkdocs-git-revision-date-localized-plugin

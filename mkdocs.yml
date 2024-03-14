@@ -16,13 +16,13 @@ theme:
   name: material
   features:
     - toc.follow
-
+    - toc.integrate
     - content.code.copy
     - content.tabs.link
     - content.tooltips
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.prefetchn
+    - navigation.instant.preview
     #    - navigation.instant.preview
     - navigation.instant.progress
     - navigation.tracking
@@ -34,6 +34,7 @@ theme:
     - navigation.path
     - search.suggest
     - search.highlight
+    - content.action.edit
   palette:
     scheme: black
   font:
@@ -92,12 +93,6 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - gen-files:
-      scripts:
-      - scripts/gen_ref_pages.py
-#  - mkdocstrings
-  - literate-nav:
-      nav_file: SUMMARY.md
   - search:
       lang: en
       # yamllint disable-line rule:line-length
@@ -118,7 +113,8 @@ plugins:
   #     plugins:
   #       - optimize
   #       - privacy
-
+  - git-revision-date-localized:
+      enable_creation_date: true
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -129,3 +125,26 @@ extra_javascript:
 
 extra_css:
   - overrides/stylesheets/custom_theme.css
+
+nav:
+  - Home: ' ./'
+  - Developers:
+      - ' Getting Started': 'Developers/index.md'
+      - ' Auctioneer': 'Developers/auctioneer.md'
+      - ' SDK': 'Developers/sdk.md'
+      - ' Testnet': 'Developers/testnet.md'
+  - Learning:
+      - ' Auction Design': 'Learning/aup_auction.md'
+      - ' Primary Market': 'Learning/primary-market.md'
+      - ' Rulebook': 'Learning/rulebook.md'
+      - ' Secondary Market': 'Learning/secondary-market.md'
+      - ' Types of Auctions': 'Learning/types_of_auctions.md'
+  - Validators:
+      - ' Accounting,': 'Validators/accounting,.md'
+      - ' Overview': 'Validators/overview.md'
+      - ' Relay': 'Validators/relay.md'
+  - Reference:
+      - ' Contract Design': 'Reference/contract_design.md'
+      - ' Contract Summary': 'Reference/contract_summary.md'
+      - ' Glossary': 'Reference/glossary.md'
+      - ' RPC Payload': 'Reference/rpc-payload.md'
