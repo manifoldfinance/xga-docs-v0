@@ -8,3 +8,4 @@ pymdown-extensions
 python-markdown-math
 mkdocs-literate-nav
 mkdocs-git-revision-date-localized-plugin
+mkdocs-render-swagger-plugin
