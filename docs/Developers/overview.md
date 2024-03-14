@@ -54,7 +54,7 @@ The idea is this: Since we run our own validators, we will know 2 epochs in adva
 
 ## Current MEV Boost Auction
 
-![MEV Boost Design](/docs/assets/images/mev_boost_overview.png)
+![MEV Boost Design](/assets/images/mev_boost_overview.png)
 
 ???+ note
   A representation of transaction and block propagation with Proposer Builder Separation.

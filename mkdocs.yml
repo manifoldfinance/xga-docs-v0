@@ -22,7 +22,7 @@ theme:
     - content.tooltips
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.prefetch
+    - navigation.instant.prefetchn
     #    - navigation.instant.preview
     - navigation.instant.progress
     - navigation.tracking
@@ -92,8 +92,11 @@ markdown_extensions:
       permalink: true
 
 plugins:
+  - literate-nav:
+      nav_file: SUMMARY.md
   - search:
       lang: en
+      # yamllint disable-line rule:line-length
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       pipeline:
         - stopWordFilter
@@ -116,6 +119,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # yamllint disable-line rule:line-length
   #  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   - javascripts/shortcuts.js
 

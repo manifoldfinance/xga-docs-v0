@@ -49,16 +49,15 @@ gantt
 
 The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures market for below. The following diagram shows an example of how this would work. Crucially, we want users to be able to transact, that is, to be able to resell the futures on a secondary market.
 
-!!! note
-  We can extend the auction past 2 epochs
 
 
 ## Current MEV Boost Auction
 
-![MEV Boost Design](/docs/assets/images/mev_boost_overview.png)
+![MEV Boost Design](/assets/images/mev_boost_overview.png)
 
-???+ note
-  A representation of transaction and block propagation with Proposer Builder Separation.
+!!! note
+
+    A representation of transaction and block propagation with Proposer Builder Separation.
 
 (1) Searchers receive transactions from the P2P layer and generate transaction bundles using their specific MEV extraction knowledge. 
 

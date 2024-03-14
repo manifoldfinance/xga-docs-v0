@@ -11,14 +11,17 @@ our small size might mean being ignored. The only change is the restriction of g
 rest goes to the beta market).
 
 !!! tip
-  This means that the auction is backwards compatible with MEV Boost
+
+    This means that the auction is backwards compatible with MEV Boost
 
 ### Beta
 
 We will go with a discriminatory auction first.
 
-!!! warning 
-  It is understood though that we adapt the auction format depending on: (i) feedback by potential bidders (ii) actual behavior in the market.
+!!! warning
+
+    It is understood though that we adapt the auction format depending on: (i) feedback by potential bidders (ii) actual behavior in the market.
+  
 
 We will restrict the residual claim only to full bids for now. 
 

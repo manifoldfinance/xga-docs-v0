@@ -64,7 +64,7 @@ gantt
 
 ## Current MEV Boost Auction
 
-![MEV Boost Design](/docs/assets/images/mev_boost_overview.png)
+![MEV Boost Design](/assets/images/mev_boost_overview.png)
 
 ???+ note
   A representation of transaction and block propagation with Proposer Builder Separation.
