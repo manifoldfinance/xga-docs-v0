@@ -1,6 +1,6 @@
 {
   "name": "mevauction-docs",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "private": true,
   "description": "MEV Auction Documentation",
   "directories": {
@@ -22,6 +22,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
+    "markdownlint": "^0.33.0",
     "prettier": "^3.2.5"
   }
 }

@@ -1,3 +1,0 @@
-# API
-
-!!swagger openapi.yml!!
