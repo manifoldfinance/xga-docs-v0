@@ -37,7 +37,7 @@ To monetize yourself on L2, send some ETH on L1 (Holesky) to
 
 !!! warning 
 
-The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period
+    The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period
 
 
 

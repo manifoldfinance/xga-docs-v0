@@ -151,3 +151,4 @@ nav:
       - ' RPC Payload': 'Reference/rpc-payload.md'
   - API:
       - ' RPC': 'api/README.md'
+      - 'Relay': 'api/relay.md'
