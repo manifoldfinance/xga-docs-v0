@@ -91,12 +91,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Validators/accounting%2C.html</loc>
+         <loc>https://mevauction.com/Validators/index.html</loc>
          <lastmod>2024-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Validators/overview.html</loc>
+         <loc>https://mevauction.com/Validators/accounting%2C.html</loc>
          <lastmod>2024-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -112,6 +112,11 @@
     </url>
     <url>
          <loc>https://mevauction.com/api/relay.html</loc>
+         <lastmod>2024-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mevauction.com/api/signature-scheme.html</loc>
          <lastmod>2024-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
