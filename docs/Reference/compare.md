@@ -3,16 +3,16 @@ title: Compare
 ---
 
 | **Name**                           | **MEV Auction Platform ** | **Paradigm Merkle.io**                              | **Kolibrio** | **BloXroute** | **MEV-Blocker** | **MEV-Share** |
-|------------------------------------|---------------------------|-----------------------------------------------------|--------------|---------------|-----------------|---------------|
+| ---------------------------------- | ------------------------- | --------------------------------------------------- | ------------ | ------------- | --------------- | ------------- |
 | Revenue                            |                           | 90% of MEV,guaranteed at least$0.02 per transaction | 90% of MEV   | 90% of MEV    | $0              | $0            |
-| Future Inclusion                   | ✔︎                         | ✕                                                   |              |               |                 |               |
-| MEV Boost Compatible               | ✔︎                         | ✔︎                                                   |              |               |                 |               |
-| New Trust Assumptions              |                           | ✔︎                                                   | ✔︎            | ✔︎             | ✔︎               | ✔︎             |
-| Exclude Reverting Transactions     |                           | ✔︎                                                   |              |               |                 |               |
-| Multi Block Support                |                           | ✔︎                                                   |              |               |                 |               |
-| Latency based                      | ✕                         | ✔︎                                                   |              |               |                 |               |
-| Requires RPC Connection            | ✕                         | ✔︎                                                   | ✔︎            | ✔︎             | ✔︎               | ✔︎             |
-| Requires Block Builder integration | ✕                         | ✔︎                                                   |              |               |                 |               |
+| Future Inclusion                   | ✔︎                       | ✕                                                   |              |               |                 |               |
+| MEV Boost Compatible               | ✔︎                       | ✔︎                                                 |              |               |                 |               |
+| New Trust Assumptions              |                           | ✔︎                                                 | ✔︎          | ✔︎           | ✔︎             | ✔︎           |
+| Exclude Reverting Transactions     |                           | ✔︎                                                 |              |               |                 |               |
+| Multi Block Support                |                           | ✔︎                                                 |              |               |                 |               |
+| Latency based                      | ✕                         | ✔︎                                                 |              |               |                 |               |
+| Requires RPC Connection            | ✕                         | ✔︎                                                 | ✔︎          | ✔︎           | ✔︎             | ✔︎           |
+| Requires Block Builder integration | ✕                         | ✔︎                                                 |              |               |                 |               |
 | Dashboard                          |                           | theta                                               | ox           | ox            | ox              | ox            |
 | Compliant                          |                           | theta                                               | ox           | ox            | ox              | ox            |
 | Programmable privacy               |                           | Theta                                               | ox           | ox            | ox              | Theta         |

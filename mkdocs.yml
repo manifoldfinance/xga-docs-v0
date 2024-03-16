@@ -132,7 +132,7 @@ extra_css:
   - overrides/stylesheets/custom_theme.css
 
 nav:
-  - Home: './'
+  - Home: './index.md'
   - Developers:
       - 'Getting Started': 'Developers/index.md'
       - 'Auctioneer': 'Developers/auctioneer.md'
@@ -145,8 +145,8 @@ nav:
       - 'Secondary Market': 'Learning/secondary-market.md'
       - 'Types of Auctions': 'Learning/types_of_auctions.md'
   - Validators:
+      - 'Overview': 'Validators/index.md'
       - 'Accounting,': 'Validators/accounting,.md'
-      - 'Overview': 'Validators/overview.md'
       - 'Relay': 'Validators/relay.md'
   - Reference:
       - 'Contract Design': 'Reference/contract_design.md'

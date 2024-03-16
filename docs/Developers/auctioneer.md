@@ -30,7 +30,6 @@ The number of items for sale
 If the auction is open and settled
 Mappings of bidders to their BidderInfo
 
-
 The BidderInfo struct stores:
 
 The number of items a bidder bought
@@ -52,7 +51,6 @@ Tracking auction state per slot
 Storing bids received per auction
 Tracking items bought and owed per bidder
 This allows running decentralized auctions where bidders can securely place bids, operators can manage the auctions, and auction state is persisted on-chain.
-
 
 ## Contract Structure
 

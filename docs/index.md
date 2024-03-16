@@ -7,10 +7,10 @@ description: The Gang Designs the Ultimate MEV Auction
 
 Multi-unit auctions, unlike their single-unit counterparts, present complex allocation mechanisms. The MEV Auction platform implements several innovative strategies:
 
-1. An enhanced uniform price auction, 
+1. An enhanced uniform price auction,
 2. A Bifurcated Block Structure (splitting the block into halves),
-3. Elastic Supply Scheduling, 
-4. Contract based bidding. 
+3. Elastic Supply Scheduling,
+4. Contract based bidding.
 
 ## Block Structure
 
@@ -50,9 +50,7 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-
 The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures market for below. The following diagram shows an example of how this would work. Crucially, we want users to be able to transact, that is, to be able to resell the futures on a secondary market.
-
 
 ### Introducing Elastic Supply Schedule and Novel Tie-Breaking
 
@@ -68,7 +66,7 @@ In the realm of auctions, the traditional uniform price format has been a mainst
 
 Traditionally, with a fixed supply, there's a looming risk of plummeting prices. This phenomenon, identified by Wilson in 1979, highlights a bidder's tendency to underbid. In multi-unit auctions, this is a critical challenge. In a uniform price auction, underbidding on the marginal unit doesn't just lower the price for that unit; it slashes the overall price you pay.
 
-The real danger of severe under-pricing hinges on demand factors, which are often unpredictable and not easily deduced from existing data. The debate over whether discriminatory or uniform price auctions yield higher revenue remains unresolved, both theoretically (as discussed by *Ausubel* et al.  2011) and empirically.
+The real danger of severe under-pricing hinges on demand factors, which are often unpredictable and not easily deduced from existing data. The debate over whether discriminatory or uniform price auctions yield higher revenue remains unresolved, both theoretically (as discussed by _Ausubel_ et al. 2011) and empirically.
 
 ### Tie Breaking Rule
 
@@ -76,7 +74,7 @@ The traditional tie-breaking rule, which prioritizes higher marginal bids, is in
 
 #### Elastic Supply Curve Details
 
-Maximum capacity is fixed, but the supply curve 
+Maximum capacity is fixed, but the supply curve
 
 $$ S:P→Q $$
 

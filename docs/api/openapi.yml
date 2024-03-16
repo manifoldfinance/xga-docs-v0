@@ -49,11 +49,11 @@ components:
         jsonrpc:
           type: string
           description: JSON-RPC protocol version, should always be "2.0".
-          example: "2.0"
+          example: '2.0'
         method:
           type: string
           description: The JSON-RPC method name, for this operation it should be "mev_sendBetaBundle".
-          example: "mev_sendBetaBundle"
+          example: 'mev_sendBetaBundle'
         params:
           type: array
           description: An array containing a single object with the transaction bundle details.
@@ -67,11 +67,11 @@ components:
                 items:
                   type: string
                   description: A single raw transaction as a hex string. Regular expression for hex string validation
-                  pattern: "^0x[a-fA-F0-9]+$"
+                  pattern: '^0x[a-fA-F0-9]+$'
               slot:
                 type: string
                 description: The target block number as a string for the bundle to be included. Ensures slot is numeric.
-                pattern: "^[0-9]+$"
+                pattern: '^[0-9]+$'
         id:
           type: integer
           description: A unique identifier for the JSON-RPC request.
@@ -82,11 +82,11 @@ components:
         jsonrpc:
           type: string
           description: JSON-RPC protocol version, echoed back from the request.
-          example: "2.0"
+          example: '2.0'
         method:
           type: string
           description: The JSON-RPC method name, echoed back from the request.
-          example: "mev_sendBetaBundle"
+          example: 'mev_sendBetaBundle'
         params:
           type: array
           description: An array containing a single object with the transaction bundle details, echoed back from the request.
@@ -103,7 +103,7 @@ components:
               slot:
                 type: string
                 description: The target block number as a string for the bundle to be included, echoed back.  Ensures slot is numeric.
-                pattern: "^[0-9]+$"
+                pattern: '^[0-9]+$'
         id:
           type: integer
           description: A unique identifier for the JSON-RPC request, echoed back.

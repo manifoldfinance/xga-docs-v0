@@ -1,6 +1,13 @@
 ---
 title: Types of Auctions
-tags: ['primary market', 'secondary market', 'auction format', 'gas auction', 'mechanism design']
+tags:
+  [
+    'primary market',
+    'secondary market',
+    'auction format',
+    'gas auction',
+    'mechanism design',
+  ]
 ---
 
 ## Auction Platform

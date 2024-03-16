@@ -13,4 +13,4 @@ time of the primary market; so there should be updates regarding the base fee ha
 before-strike-time blocks being minted. This also affects the initial pricing we offer.
 
 !!! info inline "Allocation subject to change"
-    It is unclear what allocation we will have from the primary market, as a winner-takes all is possible
+It is unclear what allocation we will have from the primary market, as a winner-takes all is possible

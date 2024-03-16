@@ -21,9 +21,8 @@ We will go with a discriminatory auction first.
 !!! warning
 
     It is understood though that we adapt the auction format depending on: (i) feedback by potential bidders (ii) actual behavior in the market.
-  
 
-We will restrict the residual claim only to full bids for now. 
+We will restrict the residual claim only to full bids for now.
 
 This is to avoid too small of token allocations that are then practically of no use.
 
@@ -47,6 +46,7 @@ The main reasons are:
 
   - In principle could be handled by external parties
   - But the interlocking of different markets (that the timing of spot market and secondary market is making sense) is probably relevant and easier to orchestrate by us.
+
 - The main purpose of this market is to account for information differences over time - e.g. builders might realize they cannot fill a block; or they might need more space.
 
 - The base fee is not known at the time of the primary market;so there should be updates regarding the base fee happening with before-strike-time blocks being minted. This also affects the initial pricing we offer.

@@ -1,7 +1,14 @@
 ---
 title: Augmented Uniform Price Auction
 description: Specification for the Augmented Uniform Price Auction
-tags: ['primary market', 'price auction', 'auction format', 'gas auction', 'mechanism design']
+tags:
+  [
+    'primary market',
+    'price auction',
+    'auction format',
+    'gas auction',
+    'mechanism design',
+  ]
 ---
 
 ## Specification for Primary Market
@@ -151,5 +158,5 @@ stated at higher demand levels are irrelevant.
 !!! info inline "Reflection"
 
     This creates stronger incentives to bid closer to true valuations; it reduces the tendency to end up
-  in a low price equilibrium. 
 
+in a low price equilibrium.

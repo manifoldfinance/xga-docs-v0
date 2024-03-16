@@ -49,13 +49,13 @@ An analytical discussion on different auction formats, particularly focusing on 
 discriminatory price auctions. It proposes an augmented uniform price auction to mitigate
 underpricing and details the discriminatory price auction format.
 
-
 ## Terms
-*         | **value**        | **description**                                                                                                                 | **** |
-|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|------|
-| blockhash        | uint blockNumber |  returns (bytes32): **hash** of the given block when `blocknumber` is one of the 256 most recent blocks; otherwise returns zero |      |
-| `block.basefee ` | uint             | current block’s base fee (EIP-3198 and EIP-1559)                                                                                |      |
-| `block.chainid ` | uint             | current chain id                                                                                                                |      |
-| `block.coinbase` | address payable  | current block miner’s address                                                                                                   |      |
-| block.difficulty | uint             | current block difficulty                                                                                                        |      |
-| block.`gaslimit` | uint             | current block `gaslimit`                                                                                                        |      |
+
+-         | **value**        | **description**                                                                                                                 | **** |
+  |------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|------|
+  | blockhash | uint blockNumber | returns (bytes32): **hash** of the given block when `blocknumber` is one of the 256 most recent blocks; otherwise returns zero | |
+  | `block.basefee ` | uint | current block’s base fee (EIP-3198 and EIP-1559) | |
+  | `block.chainid ` | uint | current chain id | |
+  | `block.coinbase` | address payable | current block miner’s address | |
+  | block.difficulty | uint | current block difficulty | |
+  | block.`gaslimit` | uint | current block `gaslimit` | |

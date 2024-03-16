@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Rated Network Ethereum API
-  version: "1.0"
+  version: '1.0'
 servers:
   - url: https://api-docs.rated.network/rated-api
 paths:
@@ -26,7 +26,7 @@ paths:
                   items:
                     type: string
                   description: Array of validator public keys to report.
-                  example: ["validatorPublicKey1", "validatorPublicKey2"]
+                  example: ['validatorPublicKey1', 'validatorPublicKey2']
               required:
                 - validatorPublicKeys
       responses:
@@ -39,7 +39,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: "Validators reported successfully."
+                    example: 'Validators reported successfully.'
         '400':
           description: Bad request, possibly due to exceeding the limit of 1,000 validator public keys.
         '500':

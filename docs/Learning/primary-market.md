@@ -18,12 +18,11 @@ alpha. The problem with this is that alpha might be more lucrative for us. In pa
 that lottery blocks come along that make up a large chunk of the overall remuneration we can achieve
 at all.
 
-
 !!! info inline "Reflection"
 
     If we fix alpha, we might be missing a significant amount of value. The tradeoff can be seen in the picture below.
 
-![tradeoff-alpha-beta](/assets/images/illustration-tradeoff-alpha-beta.png)
+![tradeoff-alpha-beta](../assets/images/illustration-tradeoff-alpha-beta.png)
 
 We make the assumption that top of the block gas space is more valuable. The main assumption is that
 at some point, the marginal value for a builder owning the whole block (green) goes below the
@@ -47,7 +46,6 @@ will stop using it. So there is also a reputation component - in particular at t
     We operate under the assumption that position does not matter; if it does might affect the design
     significantly.
 
-
 Bidders are possibly risk-averse. Standard revenue equivalence might go out of the window. Bidders
 are asymmetric; in particular if there is private orderflow.
 
@@ -69,5 +67,3 @@ reallocation of the primary auction but includes information updates.
 !!! info inline "Reflection"
 
     This is in contrast to most work on auctions with resale (re: secondary) markets. The secondary market changes the rationale for bidding in the primary auction
-
-
