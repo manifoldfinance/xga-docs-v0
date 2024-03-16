@@ -14,6 +14,7 @@ use_directory_urls: false
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - toc.follow
     - toc.integrate
@@ -54,6 +55,7 @@ extra:
       - ''
     tag_manager: ''
   version:
+    provider: mike
     default:
       - stable
       - development
@@ -92,6 +94,7 @@ markdown_extensions:
   - pymdownx.snippets
   - toc:
       permalink: true
+      toc_depth: 3
 
 plugins:
   - search:
@@ -115,8 +118,9 @@ plugins:
   #       - optimize
   #       - privacy
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_creation_date: false
   - render_swagger
+  - mike
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -130,25 +134,25 @@ extra_css:
 nav:
   - Home: './'
   - Developers:
-      - ' Getting Started': 'Developers/index.md'
-      - ' Auctioneer': 'Developers/auctioneer.md'
-      - ' SDK': 'Developers/sdk.md'
-      - ' Testnet': 'Developers/testnet.md'
+      - 'Getting Started': 'Developers/index.md'
+      - 'Auctioneer': 'Developers/auctioneer.md'
+      - 'SDK': 'Developers/sdk.md'
+      - 'Testnet': 'Developers/testnet.md'
   - Learning:
-      - ' Auction Design': 'Learning/aup_auction.md'
-      - ' Primary Market': 'Learning/primary-market.md'
-      - ' Rulebook': 'Learning/rulebook.md'
-      - ' Secondary Market': 'Learning/secondary-market.md'
-      - ' Types of Auctions': 'Learning/types_of_auctions.md'
+      - 'Auction Design': 'Learning/aup_auction.md'
+      - 'Primary Market': 'Learning/primary-market.md'
+      - 'Rulebook': 'Learning/rulebook.md'
+      - 'Secondary Market': 'Learning/secondary-market.md'
+      - 'Types of Auctions': 'Learning/types_of_auctions.md'
   - Validators:
-      - ' Accounting,': 'Validators/accounting,.md'
-      - ' Overview': 'Validators/overview.md'
-      - ' Relay': 'Validators/relay.md'
+      - 'Accounting,': 'Validators/accounting,.md'
+      - 'Overview': 'Validators/overview.md'
+      - 'Relay': 'Validators/relay.md'
   - Reference:
-      - ' Contract Design': 'Reference/contract_design.md'
-      - ' Contract Summary': 'Reference/contract_summary.md'
-      - ' Glossary': 'Reference/glossary.md'
-      - ' RPC Payload': 'Reference/rpc-payload.md'
+      - 'Contract Design': 'Reference/contract_design.md'
+      - 'Contract Summary': 'Reference/contract_summary.md'
+      - 'Glossary': 'Reference/glossary.md'
+      - 'RPC Payload': 'Reference/rpc-payload.md'
   - API:
-      - ' RPC': 'api/README.md'
+      - 'RPC': 'api/index.md'
       - 'Relay': 'api/relay.md'
