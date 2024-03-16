@@ -156,3 +156,5 @@ nav:
   - API:
       - 'RPC': 'api/index.md'
       - 'Relay': 'api/relay.md'
+      - 'Signature Scheme': 'api/signature-scheme.md'
+      - 'Swagger Explorer': 'api/swagger.html'
