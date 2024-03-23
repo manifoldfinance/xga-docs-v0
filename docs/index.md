@@ -1,5 +1,5 @@
 ---
-title: Welcome to MEV Auction
+title: MEV Auction Platform
 description: The Gang Designs the Ultimate MEV Auction
 ---
 
@@ -11,25 +11,31 @@ Multi-unit auctions, unlike their single-unit counterparts, present complex allo
 2. A Bifurcated Block Structure (splitting the block into halves),
 3. Elastic Supply Scheduling,
 4. Contract based bidding.
+5. Backwards compatible with MEV-Boost
+6. Exclusive Relay endpoint for Validator usage
 
 ## Block Structure
 
-We divide a block in two parts:
+We divide a block in two parts: ⍺-blockspace and β-blockspace
 
-One part, called
+`⍺-blockspace` is a very time sensitive kind of priority transactions. These transactions often come in last second.
 
-- Referred to as `above` - represents the top part of the blockspace. Economically, this is
-  where competitive searchers want to place their transactions (e.g. for arbitrages etc.).
+`β-blockspace` however can be considered non-priority sensitive, meaning it is not very time sensitive, hence can be priced differently.
 
-- Referred to as `below` - represents the rest of the blockspace. Economically, this is where
+### ⍺-blockspace
+
+- `⍺-blockspace` - represents the top part of the blockspace. Economically, this is
+  where competitive searchers want to place their transactions (e.g. for arbitrages etc.).[^1]
+
+###  β-blockspace
+
+- ` β-blockspace` - represents the rest of the blockspace. Economically, this is where
   low-priority transactions - direct transfers, low volume swaps, some kind of intents, etc. - would
   go. The rationale for this is simple: `above` and below represent two very different markets: The
   first serves strategic actors, whereas the second serves 'everyone else' - people not interested
-  in speculation that just want to transact, e.g., to pay for stuff.
+  in speculation that just want to transact, e.g., to pay for stuff.[^2]
 
-`above` is a very time sensitive kind of blockspace, as mev-rich txs often come in last minute.
 
-On the other hand, below is not very time sensitive, and designing a futures market for it is easier.
 
 ```mermaid
 gantt
@@ -50,7 +56,8 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures market for below. The following diagram shows an example of how this would work. Crucially, we want users to be able to transact, that is, to be able to resell the futures on a secondary market.
+
+The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace. The following diagram shows an example of how this would work. 
 
 ### Introducing Elastic Supply Schedule and Novel Tie-Breaking
 
@@ -80,3 +87,8 @@ $$ S:P→Q $$
 
 varies with price, offering different quantities of options.
 The supply function is designed to be initially concave, then constant at maximum capacity. This approach, theoretically supported by Licalzi (2005), aims to mitigate dramatic underpricing.
+
+### Footnotes
+
+[^1]: Previously this was called 'above'
+[^2]: Previously this was called 'below'
