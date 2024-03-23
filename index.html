@@ -27,7 +27,7 @@
     
     
       
-        <title>Welcome to MEV Auction - MEV Auction</title>
+        <title>MEV Auction Platform - MEV Auction</title>
       
     
     
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MEV Auction
+              MEV Auction Platform
             
           </span>
         </div>
@@ -467,6 +467,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#-blockspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⍺-blockspace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-blockspace_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        β-blockspace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#introducing-elastic-supply-schedule-and-novel-tie-breaking" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -510,6 +532,17 @@
     <span class="md-ellipsis">
       
         Tie Breaking Rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footnotes
       
     </span>
   </a>
@@ -1399,25 +1432,26 @@
 <li>A Bifurcated Block Structure (splitting the block into halves),</li>
 <li>Elastic Supply Scheduling,</li>
 <li>Contract based bidding.</li>
+<li>Backwards compatible with MEV-Boost</li>
+<li>Exclusive Relay endpoint for Validator usage</li>
 </ol>
 <h2 id="block-structure">Block Structure<a class="headerlink" href="#block-structure" title="Permanent link">&para;</a></h2>
-<p>We divide a block in two parts:</p>
-<p>One part, called</p>
+<p>We divide a block in two parts: ⍺-blockspace and β-blockspace</p>
+<p><code>⍺-blockspace</code> is a very time sensitive kind of priority transactions. These transactions often come in last second.</p>
+<p><code>β-blockspace</code> however can be considered non-priority sensitive, meaning it is not very time sensitive, hence can be priced differently.</p>
+<h3 id="-blockspace">⍺-blockspace<a class="headerlink" href="#-blockspace" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>Referred to as <code>above</code> - represents the top part of the blockspace. Economically, this is
-  where competitive searchers want to place their transactions (e.g. for arbitrages etc.).</p>
-</li>
-<li>
-<p>Referred to as <code>below</code> - represents the rest of the blockspace. Economically, this is where
+<li><code>⍺-blockspace</code> - represents the top part of the blockspace. Economically, this is
+  where competitive searchers want to place their transactions (e.g. for arbitrages etc.).<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<h3 id="-blockspace_1">β-blockspace<a class="headerlink" href="#-blockspace_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>β-blockspace</code> - represents the rest of the blockspace. Economically, this is where
   low-priority transactions - direct transfers, low volume swaps, some kind of intents, etc. - would
   go. The rationale for this is simple: <code>above</code> and below represent two very different markets: The
   first serves strategic actors, whereas the second serves 'everyone else' - people not interested
-  in speculation that just want to transact, e.g., to pay for stuff.</p>
-</li>
+  in speculation that just want to transact, e.g., to pay for stuff.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
 </ul>
-<p><code>above</code> is a very time sensitive kind of blockspace, as mev-rich txs often come in last minute.</p>
-<p>On the other hand, below is not very time sensitive, and designing a futures market for it is easier.</p>
 <pre class="mermaid"><code>gantt
     title Future auction for `below`
     dateFormat YY-MM
@@ -1434,7 +1468,7 @@
         Slot 03, future can be used : crit, active, milestone, 02-03, 1
         Slot 08, future can be used : crit, active, milestone, 02-08, 1
         Slot 11, future can be used : crit, active, milestone, 02-11, 1</code></pre>
-<p>The idea is this: Since we run our own validators, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a futures market for below. The following diagram shows an example of how this would work. Crucially, we want users to be able to transact, that is, to be able to resell the futures on a secondary market.</p>
+<p>The Auction platform uses the <a href="https://securerpc.com">SecureRPC.com</a> relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace. The following diagram shows an example of how this would work. </p>
 <h3 id="introducing-elastic-supply-schedule-and-novel-tie-breaking">Introducing Elastic Supply Schedule and Novel Tie-Breaking<a class="headerlink" href="#introducing-elastic-supply-schedule-and-novel-tie-breaking" title="Permanent link">&para;</a></h3>
 <p>In the realm of auctions, the traditional uniform price format has been a mainstay. However, we're on the cusp of an exciting evolution, introducing two groundbreaking features that promise to transform the auction landscape:</p>
 <p><strong>Elastic Supply Schedule</strong>: Breaking away from the rigidness of a fixed supply, we're introducing elasticity. When prices dip low, we'll strategically limit the availability of options. This dynamic approach ensures a balance between supply and demand, maintaining value and interest.</p>
@@ -1450,6 +1484,18 @@
 <div class="arithmatex">\[ S:P→Q \]</div>
 <p>varies with price, offering different quantities of options.
 The supply function is designed to be initially concave, then constant at maximum capacity. This approach, theoretically supported by Licalzi (2005), aims to mitigate dramatic underpricing.</p>
+<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h3>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Previously this was called 'above'&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Previously this was called 'below'&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1470,7 +1516,7 @@ The supply function is designed to be initially concave, then constant at maximu
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 23, 2024</span>
   </span>
 
     
