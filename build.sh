@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 echo " ✔︎ Staring Build process.."
 echo ""
 #check_mark="\033[1;32m✔\033[0m"
@@ -19,8 +21,11 @@ pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-inside
 mkdir -p public/.well-known
 mkdocs build --clean --strict --site-dir public/
 touch public/.nojekyll
-cp platform-docs.xml public/.well-known/platform-docs.xml
+
+
 cp commit-ts.txt public/.well-known/commit-ts.txt
+cp sitemap.xml public/sitemap.xml
+cp nightly-release.txt public/.well-known/nightly-release.txt
 
 header "Next Steps\n"
 echo "Build Artifact is available at: site/build_id.txt"
@@ -28,7 +33,6 @@ echo "Build Artifact is available at: site/build_id.txt"
 
 date "+%Y-%m-%dT%H:%M:%S%z" > public/build_id.txt
 
-TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > public/.well-known/nightly-release.txt
+# TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > public/.well-known/nightly-release.txt
 sleep 1
-exit 0
 

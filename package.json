@@ -1,6 +1,6 @@
 {
   "name": "mevauction-docs",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
   "description": "MEV Auction Documentation",
   "directories": {
@@ -9,7 +9,9 @@
   "scripts": {
     "build": "mkdocs build -d public",
     "make": "bash build.sh",
-    "fmt": "npx prettier --config .prettierrc.js --write ."
+    "fmt": "npx prettier --config .prettierrc.js --write .",
+    "local-sitemap": "static-sitemap-cli --base http://localhost:3000 --no-clean --root public",
+    "sitemap": "static-sitemap-cli --base https://mevauction.com --no-clean --root public"
   },
   "keywords": [
     "docs",
@@ -23,6 +25,7 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "markdownlint": "^0.33.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "static-sitemap-cli": "^2.2.3"
   }
 }
