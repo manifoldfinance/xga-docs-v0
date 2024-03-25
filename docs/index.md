@@ -27,15 +27,13 @@ We divide a block in two parts: ⍺-blockspace and β-blockspace
 - `⍺-blockspace` - represents the top part of the blockspace. Economically, this is
   where competitive searchers want to place their transactions (e.g. for arbitrages etc.).[^1]
 
-###  β-blockspace
+### β-blockspace
 
 - ` β-blockspace` - represents the rest of the blockspace. Economically, this is where
   low-priority transactions - direct transfers, low volume swaps, some kind of intents, etc. - would
   go. The rationale for this is simple: `above` and below represent two very different markets: The
   first serves strategic actors, whereas the second serves 'everyone else' - people not interested
   in speculation that just want to transact, e.g., to pay for stuff.[^2]
-
-
 
 ```mermaid
 gantt
@@ -56,8 +54,7 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-
-The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace. The following diagram shows an example of how this would work. 
+The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace. The following diagram shows an example of how this would work.
 
 ### Introducing Elastic Supply Schedule and Novel Tie-Breaking
 

@@ -15,6 +15,22 @@ so long as MEV Boost is also running.
 
 ## Holesky Information
 
+- **L2 RPC (TESTNET):**
+
+  - Description: L2 Node RPC (Testnet)
+  - URL: [https://holesky-api.securerpc.com/l2](https://holesky-api.securerpc.com/l2/)
+  - Methods: eth\_\*
+  - ChainId: 42169
+
+- **Beta bundle RPC (Testnet):**
+  - Description: Beta bundle submission RPC
+  - URL: [https://holesky-api.securerpc.com/v2](https://holesky-api.securerpc.com/v2)
+  - Method: mev_sendBetaBundle
+  - Parameters:
+    - `txs`: List of txs as bundle e.g. [0x2323...,]
+    - `slot`: slot number e.g. "11282389"
+  - ChainId: 17000
+
 ## Builders and searchers
 
 Aquire some Holesky Testnet ETH through a faucet in the resources listed below. If you are unable to

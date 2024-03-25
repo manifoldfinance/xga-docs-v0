@@ -137,24 +137,29 @@ nav:
       - 'Getting Started': 'Developers/index.md'
       - 'Auctioneer': 'Developers/auctioneer.md'
       - 'SDK': 'Developers/sdk.md'
+      - 'Interface': 'Developers/interface.md'
       - 'Testnet': 'Developers/testnet.md'
   - Learning:
       - 'Auction Design': 'Learning/aup_auction.md'
       - 'Primary Market': 'Learning/primary-market.md'
-      - 'Rulebook': 'Learning/rulebook.md'
       - 'Secondary Market': 'Learning/secondary-market.md'
+      - 'Payment Methods': 'Learning/payment-methods.md'
       - 'Types of Auctions': 'Learning/types_of_auctions.md'
+      - 'Rulebook': 'Learning/rulebook.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
       - 'Accounting,': 'Validators/accounting,.md'
       - 'Relay': 'Validators/relay.md'
-  - Reference:
-      - 'Contract Design': 'Reference/contract_design.md'
-      - 'Contract Summary': 'Reference/contract_summary.md'
-      - 'Glossary': 'Reference/glossary.md'
-      - 'RPC Payload': 'Reference/rpc-payload.md'
+  - Relay:
+      - 'Captive Insurance': 'Relay/captive-insurance.md'
   - API:
       - 'RPC': 'api/index.md'
       - 'Relay': 'api/relay.md'
       - 'Signature Scheme': 'api/signature-scheme.md'
       - 'Swagger Explorer': 'api/swagger.html'
+  - Reference:
+      - 'Contract Design': 'Reference/contract_design.md'
+      - 'Contract Summary': 'Reference/contract_summary.md'
+      - 'Glossary': 'Reference/glossary.md'
+      - 'RPC Payload': 'Reference/rpc-payload.md'
+      - 'ERC 6909': 'Reference/erc6909.md'
