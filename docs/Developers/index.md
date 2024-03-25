@@ -11,4 +11,4 @@ description: Developer related information for builders, searchers and intergrat
 
 ### Builder and Searcher specific
 
-[Payment Methods](./Learning/payment-methods.md)
+[Payment Methods](../Learning/payment-methods.md)

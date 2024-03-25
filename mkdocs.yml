@@ -148,7 +148,7 @@ nav:
       - 'Rulebook': 'Learning/rulebook.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
-      - 'Accounting,': 'Validators/accounting,.md'
+      - 'Accounting,': 'Validators/accounting.md'
       - 'Relay': 'Validators/relay.md'
   - Relay:
       - 'Captive Insurance': 'Relay/captive-insurance.md'
