@@ -54,11 +54,11 @@ extra:
     site_verification:
       - ''
     tag_manager: ''
-  version:
-    provider: mike
-    default:
-      - stable
-      - development
+#  version:
+#    provider: mike
+#    default:
+#      - stable
+#      - development
   generator: false
 
 markdown_extensions:
@@ -117,10 +117,10 @@ plugins:
   #     plugins:
   #       - optimize
   #       - privacy
-  - git-revision-date-localized:
-      enable_creation_date: false
+#  - git-revision-date-localized:
+#      enable_creation_date: false
   - render_swagger
-  - mike
+#  - mike
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -148,7 +148,7 @@ nav:
       - 'Rulebook': 'Learning/rulebook.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
-      - 'Accounting,': 'Validators/accounting.md'
+      - 'Accounting': 'Validators/accounting.md'
       - 'Relay': 'Validators/relay.md'
   - Relay:
       - 'Captive Insurance': 'Relay/captive-insurance.md'
