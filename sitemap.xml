@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://mevauction.com/api/bundle.html</loc>
+         <lastmod>2024-03-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://mevauction.com/api/relay.html</loc>
          <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
