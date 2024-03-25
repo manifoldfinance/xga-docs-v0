@@ -152,11 +152,12 @@ nav:
       - 'Relay': 'Validators/relay.md'
   - Relay:
       - 'Captive Insurance': 'Relay/captive-insurance.md'
+      - 'SecureRPC Relay': 'https://securerpc.com'
   - API:
       - 'RPC': 'api/index.md'
       - 'Relay': 'api/relay.md'
+      - 'Bundle': 'api/bundle.md'
       - 'Signature Scheme': 'api/signature-scheme.md'
-      - 'Swagger Explorer': 'api/swagger.html'
   - Reference:
       - 'Contract Design': 'Reference/contract_design.md'
       - 'Contract Summary': 'Reference/contract_summary.md'
