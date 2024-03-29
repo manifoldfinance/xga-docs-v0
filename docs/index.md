@@ -54,11 +54,9 @@ gantt
         Slot 11, future can be used : crit, active, milestone, 02-11, 1
 ```
 
-The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace. The following diagram shows an example of how this would work.
+The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in which permissioned validator sets use exclusively. As such, we will know 2 epochs in advance in which slots we will mint a block. So, we can sell that blockspace about 2 epochs in advance, providing a forward contract market for β-blockspace.
 
-### Introducing Elastic Supply Schedule and Novel Tie-Breaking
-
-In the realm of auctions, the traditional uniform price format has been a mainstay. However, we're on the cusp of an exciting evolution, introducing two groundbreaking features that promise to transform the auction landscape:
+### Elastic Supply Schedule
 
 **Elastic Supply Schedule**: Breaking away from the rigidness of a fixed supply, we're introducing elasticity. When prices dip low, we'll strategically limit the availability of options. This dynamic approach ensures a balance between supply and demand, maintaining value and interest.
 
@@ -83,6 +81,7 @@ Maximum capacity is fixed, but the supply curve
 $$ S:P→Q $$
 
 varies with price, offering different quantities of options.
+
 The supply function is designed to be initially concave, then constant at maximum capacity. This approach, theoretically supported by Licalzi (2005), aims to mitigate dramatic underpricing.
 
 ### Footnotes

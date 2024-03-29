@@ -3,7 +3,7 @@ site_url: https://mevauction.com
 site_description: >-
   MEV Auction documentation for builders, searchers and liquid staking protocols.
 site_author: MEV.io
-copyright: Manifold Finance, Inc and its contributors.
+copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
 
 repo_name: MEV-Protocol/platform-docs
 repo_url: https://github.com/MEV-Protocol/platform-docs
@@ -45,8 +45,8 @@ theme:
 
 extra:
   support:
-    chat: #
-    email: #
+    chat: https://t.me/foldfinance
+    email: ops@manifoldfinance.com
     website: #
     issues: #
     doc_issues: #
@@ -97,6 +97,7 @@ markdown_extensions:
       toc_depth: 3
 
 plugins:
+  - render_swagger:
   - search:
       lang: en
       # yamllint disable-line rule:line-length
@@ -117,9 +118,9 @@ plugins:
   #     plugins:
   #       - optimize
   #       - privacy
+# DISABLED: Vercel does not have git information
 #  - git-revision-date-localized:
 #      enable_creation_date: false
-  - render_swagger
 #  - mike
 
 extra_javascript:
@@ -140,11 +141,11 @@ nav:
       - 'Interface': 'Developers/interface.md'
       - 'Testnet': 'Developers/testnet.md'
   - Learning:
+      - 'Flashbots Comparison': 'Learning/flashbots-comparison.md'
       - 'Auction Design': 'Learning/aup_auction.md'
       - 'Primary Market': 'Learning/primary-market.md'
       - 'Secondary Market': 'Learning/secondary-market.md'
       - 'Payment Methods': 'Learning/payment-methods.md'
-      - 'Types of Auctions': 'Learning/types_of_auctions.md'
       - 'Rulebook': 'Learning/rulebook.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
