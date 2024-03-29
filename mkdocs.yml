@@ -54,11 +54,11 @@ extra:
     site_verification:
       - ''
     tag_manager: ''
-#  version:
-#    provider: mike
-#    default:
-#      - stable
-#      - development
+  #  version:
+  #    provider: mike
+  #    default:
+  #      - stable
+  #      - development
   generator: false
 
 markdown_extensions:

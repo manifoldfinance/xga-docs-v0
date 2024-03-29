@@ -17,12 +17,15 @@ python3 -m venv docs-venv
 source docs-venv/bin/activate
 pip3 install -r requirements.txt
 pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+npm install
+
 
 mkdir -p public/.well-known
 mkdocs build --clean --strict --site-dir public/
 touch public/.nojekyll
 
 
+cp platform-docs.xml public/.well-known/platform-docs.xml
 cp commit-ts.txt public/.well-known/commit-ts.txt
 cp sitemap.xml public/sitemap.xml
 cp nightly-release.txt public/.well-known/nightly-release.txt

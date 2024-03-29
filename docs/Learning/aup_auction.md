@@ -48,10 +48,10 @@ whether the discriminatory or uniform price auction provides more revenue, neith
   available options. It gives for each price the amount of gas space we offer.
 
 - The set of options will be determined by the tick size we provide. $Q$ will be further limited by
-  the max capacity we offer. That is, typically, 
-  
-$$ Q=\{0,t_q,2t_q,..,q^{max}\} $$ 
-  
+  the max capacity we offer. That is, typically,
+
+$$ Q=\{0,t_q,2t_q,..,q^{max}\} $$
+
 where $t_q$ is the tick size of one option and it should hold
 
 $$
