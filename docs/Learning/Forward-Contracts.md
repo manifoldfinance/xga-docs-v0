@@ -27,7 +27,7 @@ at all.
 
     If we fix ⍺-blockspace, we might be missing a significant amount of value. The tradeoff can be seen in the picture below.
 
-![tradeoff-⍺-vs-β-blockspace](../assets/images/illustration-tradeoff-⍺-blockspace-β-blockspace.png)
+![tradeoff-⍺-vs-β-blockspace](../assets/images/illustration-tradeoff-alpha-beta.png)
 
 We make the assumption that top of the block gas space is more valuable. The main assumption is that
 at some point, the marginal value for a builder owning the whole block (green) goes below the

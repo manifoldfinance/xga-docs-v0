@@ -50,12 +50,12 @@ whether the discriminatory or uniform price auction provides more revenue, neith
 - The set of options will be determined by the tick size we provide. $Q$ will be further limited by
   the max capacity we offer. That is, typically,
 
-$$ Q=\{0,t_q,2t_q,..,q^{max}\} $$
-
-where $t_q$ is the tick size of one option and it should hold
+$$
+Q=0, t_q, 2 t_q, \ldots, q^{\max } \text { where } t_q
+$$
 
 $$
- t_q=q^{max}/k
+t_q=q^{\max } / k
 $$
 
 for some $k \in N$.

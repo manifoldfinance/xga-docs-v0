@@ -99,7 +99,8 @@ markdown_extensions:
 plugins:
   - render_swagger:
   - search:
-      lang: en
+      indexing: 'full'
+      lang: en, ru, it
       # yamllint disable-line rule:line-length
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       pipeline:
