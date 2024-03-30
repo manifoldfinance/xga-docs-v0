@@ -18,7 +18,7 @@ alpha. The problem with this is that alpha might be more lucrative for us. In pa
 that lottery blocks come along that make up a large chunk of the overall remuneration we can achieve
 at all.
 
-!!! info inline "Reflection"
+!!! info  "Figure 1: Tradeoff of alpha-beta"
 
     If we fix alpha, we might be missing a significant amount of value. The tradeoff can be seen in the picture below.
 
@@ -33,23 +33,26 @@ If we had perfect information, we could fix the capacity constraint at exactly t
 point. But this information is not available. We can only approximate it. The question of lottery
 blocks can also be seen in the diagram, the question is whether for such a block both curves are
 shifted in the same way. If not, it would indicate the need to give alpha builders more space
-relative to beta builders. There is another aspect to consider. The larger the alpha part, the
+relative to beta builders.
+
+<!-- There is another aspect to consider. The larger the alpha part, the
 larger the possibility of including a txs in beta that will revert (due to state changes). This will
 degrade the value of the option to buy beta space. What is more, this might jeopardize the service
 as a whole. If builders get the impression that the service is not of sufficient quality, then they
 will stop using it. So there is also a reputation component - in particular at the beginning.
+-->
 
 ### Bidder characteristics
 
-!!! info inline "Reflection"
+!!! info inline "Assumption of Intrablock Position"
 
     We operate under the assumption that position does not matter; if it does might affect the design
     significantly.
 
-Bidders are possibly risk-averse. Standard revenue equivalence might go out of the window. Bidders
+- **Bidders are possibly risk-averse**: Standard revenue equivalence might go out of the window. Bidders
 are asymmetric; in particular if there is private orderflow.
 
-Bidders valuations are not clear: - If they draw from a public mempool or if there are global
+- **Bidders valuations are not clear**: If they draw from a public mempool or if there are global
 conditions affecting value of block space, their valuations will be interdependent. - There is also
 the danger of a further coordination issue; this might favor a winner-takes-all solution
 
@@ -64,6 +67,6 @@ significantly.
 New bidders are active on the secondary market. The secondary market therefore is not just a
 reallocation of the primary auction but includes information updates.
 
-!!! info inline "Reflection"
+!!! note "Secondary Market Effects"
 
     This is in contrast to most work on auctions with resale (re: secondary) markets. The secondary market changes the rationale for bidding in the primary auction

@@ -62,7 +62,7 @@ extra:
   generator: false
 
 markdown_extensions:
-  - mdx_math
+#  - mdx_math
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
@@ -140,13 +140,12 @@ nav:
       - 'SDK': 'Developers/sdk.md'
       - 'Interface': 'Developers/interface.md'
       - 'Testnet': 'Developers/testnet.md'
+      - 'Payment Methods': 'Developers/payment-methods.md'
   - Learning:
       - 'Flashbots Comparison': 'Learning/flashbots-comparison.md'
       - 'Auction Design': 'Learning/aup_auction.md'
       - 'Primary Market': 'Learning/primary-market.md'
       - 'Secondary Market': 'Learning/secondary-market.md'
-      - 'Payment Methods': 'Learning/payment-methods.md'
-      - 'Rulebook': 'Learning/rulebook.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
       - 'Accounting': 'Validators/accounting.md'

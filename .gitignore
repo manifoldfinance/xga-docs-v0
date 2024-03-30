@@ -1,5 +1,5 @@
 docs-venv/
-
+combined.md
 *.pyc
 dist/
 mkdocs_basic_theme.egg-info/
