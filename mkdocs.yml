@@ -156,8 +156,10 @@ nav:
       - 'Captive Insurance': 'Relay/captive-insurance.md'
       - 'SecureRPC Relay': 'https://securerpc.com'
   - API:
-      - 'RPC': 'api/index.md'
+      - 'Overview': 'api/index.md'
       - 'Relay': 'api/relay.md'
+      - 'Validator Self Report': 'api/self-report.md'
+      - 'Beta Auction': 'api/beta-auction.md'
       - 'Bundle': 'api/bundle.md'
       - 'Signature Scheme': 'api/signature-scheme.md'
   - Reference:
@@ -166,3 +168,8 @@ nav:
       - 'Glossary': 'Reference/glossary.md'
       - 'RPC Payload': 'Reference/rpc-payload.md'
       - 'ERC 6909': 'Reference/erc6909.md'
+  - Legal:
+      - 'Overview': 'Legal/index.md'
+      - 'Compliance': 'Legal/CDD.md'
+      - 'Content Disclaimer': 'Legal/Content-Disclaimer.md'
+      - 'Disclosure Statement': 'Legal/Disclosure-Statement.md'
