@@ -1,26 +1,7 @@
 ---
 title: Flashbots Comparison
-tags:
-  [
-    'primary market',
-    'secondary market',
-    'auction format',
-    'gas auction',
-    'mechanism design',
-  ]
+tags: ['flashbots', 'sgx', 'auction format', 'suave', 'mev boost']
 ---
-
-## Auction Platform
-
-Note that clearing and settlement is separate from the auction platform.
-
-## Venues
-
-### Gas Venues
-
-- Primary Market
-- Secondary Market
-- Inclusion Market
 
 ## MEV Boost
 
@@ -50,13 +31,13 @@ sequenceDiagram
     mev_boost-->>consensus: builder_proposeBlindedBlockV1 response
 ```
 
-### Suave SGX
+## Suave SGX
 
 ```mermaid
 sequenceDiagram
     participant Discovery
     participant Searcher
-    participant Searcher_SGX as "Searcher SGX"
+    participant Kettle_SGX as "Kettle SGX"
     participant Validators
     participant Execution_Client_SGX as "Execution Client SGX"
 
@@ -69,10 +50,10 @@ sequenceDiagram
     Searcher->>Searcher: Node generates block with bundle
     Searcher->>Searcher: Generates block witness and truncated header hash
 
-    Searcher_SGX->>Searcher_SGX: Inputs into SGX
-    Searcher_SGX->>Searcher_SGX: Uses block witness to verify block
-    Searcher_SGX->>Searcher_SGX: Verifies coinbase difference
-    Searcher_SGX->>Searcher_SGX: Encrypts block for validator
+    Kettle_SGX->>Kettle_SGX: Inputs into SGX
+    Kettle_SGX->>Kettle_SGX: Uses block witness to verify block
+    Kettle_SGX->>Kettle_SGX: Verifies coinbase difference
+    Kettle_SGX->>Kettle_SGX: Encrypts block for validator
 
     Validators->>Validators: Verifies block signed by searcher
     Validators->>Validators: Chooses most profitable block
@@ -82,5 +63,5 @@ sequenceDiagram
     Execution_Client_SGX->>Validators: Sends proposed block
 
     Validators->>Validators: Attest to the proposed block
-    Validators->>Validators: Finalizes block for inclusion in the blockchain
+    Validators->>Validators: Final
 ```

@@ -62,7 +62,7 @@ extra:
   generator: false
 
 markdown_extensions:
-#  - mdx_math
+  #  - mdx_math
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
@@ -144,8 +144,9 @@ nav:
   - Learning:
       - 'Flashbots Comparison': 'Learning/flashbots-comparison.md'
       - 'Auction Design': 'Learning/aup_auction.md'
-      - 'Primary Market': 'Learning/primary-market.md'
-      - 'Secondary Market': 'Learning/secondary-market.md'
+      - 'Forward Contracts': 'Learning/Forward-Contracts.md'
+  # Disable Article
+  #      - 'Secondary Market': 'Learning/secondary-market.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
       - 'Accounting': 'Validators/accounting.md'
