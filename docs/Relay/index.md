@@ -1,6 +1,10 @@
 ---
-title: Compare
+title: Relay
 ---
+
+
+## Comparision
+
 
 | **Name**                           | **MEV Auction Platform ** | **Paradigm Merkle.io**                              | **Kolibrio** | **BloXroute** | **MEV-Blocker** | **MEV-Share** |
 | ---------------------------------- | ------------------------- | --------------------------------------------------- | ------------ | ------------- | --------------- | ------------- |

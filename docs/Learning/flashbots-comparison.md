@@ -3,6 +3,8 @@ title: Flashbots Comparison
 tags: ['flashbots', 'sgx', 'auction format', 'suave', 'mev boost']
 ---
 
+
+
 ## MEV Boost
 
 ```mermaid
@@ -32,6 +34,8 @@ sequenceDiagram
 ```
 
 ## Suave SGX
+
+> Suave specification is in development, so terms may not be finalized.
 
 ```mermaid
 sequenceDiagram
