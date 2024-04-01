@@ -12,4 +12,4 @@ title: Validators
 Node Operators are being provided with a tailored risk management solution that addresses the unique
 challenges and risks of participating through the relay.
 
-\*Read more at [Relay: Captive Insurance](../Relay/captive-insurance.md)
+> Read more at [Relay: Captive Insurance](../Relay/captive-insurance.md)

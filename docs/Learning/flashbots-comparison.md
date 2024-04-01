@@ -3,8 +3,6 @@ title: Flashbots Comparison
 tags: ['flashbots', 'sgx', 'auction format', 'suave', 'mev boost']
 ---
 
-
-
 ## MEV Boost
 
 ```mermaid

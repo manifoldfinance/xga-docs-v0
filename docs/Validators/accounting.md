@@ -27,7 +27,7 @@ There is no evidence of proposer equivocation.
 
 Builder payment patterns in the context of MEV payments to the validators
 
-\*Read more at [Learning: Payment Methods](../Developers/payment-methods.md)
+> Read more at [Learning: Payment Methods](../Developers/payment-methods.md)
 
 ### Indirect Address Payment (IAP) Method
 

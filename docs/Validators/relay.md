@@ -2,7 +2,7 @@
 title: Relay
 ---
 
-# Relay
+## Relay
 
 proposer payout: empty block, 0; non empty block, non-negative value < 0
 
@@ -12,9 +12,8 @@ at that point due to possible slashing).
 
 There's several relay error scenarios:
 
-1.  payload withholding (relay doesn't release the payload and the proposer needs to forfeit the
-    slot)
+1.  payload withholding (relay doesn't release the payload and the proposer needs to forfeit the slot)
+
 2.  incorrect payload  
-    a. incorrect value (the final amount paid by the builder to the proposer was different to the
-    amount claimed in the `BuilderBid`)  
+    a. incorrect value (the final amount paid by the builder to the proposer was different to the amount claimed in the `BuilderBid`)  
     b. invalid block (invalid data / fields)
