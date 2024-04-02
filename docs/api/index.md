@@ -2,6 +2,15 @@
 title: API Reference
 ---
 
+API paths to resources are generally broken into multiple segments,
+
+`{scheme}://{host}/{version}/{category}/[{pathSegment}][?{query}]`:
+
+- `version`: can be v1.0 or beta.
+- `category`: is a logical grouping of APIs into top-level categories.
+- `pathSegment`: is one or many navigation segments that can address an entity, collection of entities, property, or operation available for an entity.
+- `query`: string must follow the OData standard for query representations
+
 ## Beta Block
 
 Beta Block API

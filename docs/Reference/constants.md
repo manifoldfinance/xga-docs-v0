@@ -2,6 +2,36 @@
 title: Constants
 ---
 
+### Gwei values
+
+| Name                          | Value                                   |
+| ----------------------------- | --------------------------------------- |
+| `MIN_DEPOSIT_AMOUNT`          | `Gwei(2**0 * 10**9)` (= 1,000,000,000)  |
+| `MAX_EFFECTIVE_BALANCE`       | `Gwei(2**5 * 10**9)` (= 32,000,000,000) |
+| `EFFECTIVE_BALANCE_INCREMENT` | `Gwei(2**0 * 10**9)` (= 1,000,000,000)  |
+
+### Time parameters
+
+| Name                               | Value                     |  Unit  |   Duration   |
+| ---------------------------------- | ------------------------- | :----: | :----------: |
+| `MIN_ATTESTATION_INCLUSION_DELAY`  | `uint64(2**0)` (= 1)      | slots  |  12 seconds  |
+| `SLOTS_PER_EPOCH`                  | `uint64(2**5)` (= 32)     | slots  | 6.4 minutes  |
+| `MIN_SEED_LOOKAHEAD`               | `uint64(2**0)` (= 1)      | epochs | 6.4 minutes  |
+| `MAX_SEED_LOOKAHEAD`               | `uint64(2**2)` (= 4)      | epochs | 25.6 minutes |
+| `MIN_EPOCHS_TO_INACTIVITY_PENALTY` | `uint64(2**2)` (= 4)      | epochs | 25.6 minutes |
+| `EPOCHS_PER_ETH1_VOTING_PERIOD`    | `uint64(2**6)` (= 64)     | epochs |  ~6.8 hours  |
+| `SLOTS_PER_HISTORICAL_ROOT`        | `uint64(2**13)` (= 8,192) | slots  |  ~27 hours   |
+
+### Time parameters
+
+| Name                                  | Value                     |    Unit     |  Duration  |
+| ------------------------------------- | ------------------------- | :---------: | :--------: |
+| `SECONDS_PER_SLOT`                    | `uint64(12)`              |   seconds   | 12 seconds |
+| `SECONDS_PER_ETH1_BLOCK`              | `uint64(14)`              |   seconds   | 14 seconds |
+| `MIN_VALIDATOR_WITHDRAWABILITY_DELAY` | `uint64(2**8)` (= 256)    |   epochs    | ~27 hours  |
+| `SHARD_COMMITTEE_PERIOD`              | `uint64(2**8)` (= 256)    |   epochs    | ~27 hours  |
+| `ETH1_FOLLOW_DISTANCE`                | `uint64(2**11)` (= 2,048) | Eth1 blocks |  ~8 hours  |
+
 ```ini
 # https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#misc
 FAR_FUTURE_EPOCH = 2 ** 64 - 1

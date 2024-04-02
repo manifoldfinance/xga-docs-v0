@@ -45,6 +45,8 @@ L2 _Auctioneer_: `0x277058D78307F11e590D91eDfF3D4b1C0fAA240c` L2 _SettlementHous
 To monetize yourself on L2, send some ETH on L1 (Holesky) to
 `0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C`
 
+mevETH Reward Address: `0x583d8a136e5e4387234A50EB9fd790d9c513484C`
+
 - Holesky Network ID: `17000`
 - Holesky Chain ID: `17000`
 - L2 Chain ID: `42169`
