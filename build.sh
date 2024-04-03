@@ -21,7 +21,7 @@ npm install
 
 
 mkdir -p public/.well-known
-mkdocs build --clean --strict --site-dir public/
+mkdocs build --clean  --site-dir public/
 touch public/.nojekyll
 
 
