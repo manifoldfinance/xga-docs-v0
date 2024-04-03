@@ -1,3 +1,4 @@
+mkdocs.yml
 *.min.js
 *.json
 *.css

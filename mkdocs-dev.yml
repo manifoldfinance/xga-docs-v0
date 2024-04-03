@@ -47,8 +47,8 @@ extra:
     doc_issues: #
   google:
     site_verification:
-      - ""
-    tag_manager: ""
+      - ''
+    tag_manager: ''
   #  version:
   #    provider: mike
   #    default:

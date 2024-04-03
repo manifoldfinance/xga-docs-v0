@@ -2,7 +2,7 @@
 title: Clients
 ---
 
-As we talked about previously, Ethereum is a network made by different computers. Its workflow would work, in theory, as follows:
+The Ethereum network is not a networked database: It's a series of tubes. And if you don't understand, those tubes can be filled and if they are filled, when you put your message in, it gets in line and it's going to be delayed by anyone that puts into that tube enormous amounts of material, enormous amounts of material. (Ted Stevens 2024)[^1]
 
 - A user of the network sends a transaction (e.g. an ETH transfer) to the network.
 - The network validates the transaction.
@@ -11,16 +11,12 @@ As we talked about previously, Ethereum is a network made by different computers
 
 The problem here is: what does sending something to the network mean?
 
-## How does this actually work? Who talks with whom?
-
-Ideally, each user has its own node installed in their computer and they interact with the network by sending their transactions and queries to their node. This node propagates the message to other nodes and receives propagated messages from its peers to update its view of the EVM state. When the user queries some state, the node answers with its own view.
+## Execution and Consensus clients
 
 A full node is split into two clients:
 
 - **The execution client** knows how to represent the EVM state and apply state changes (transactions) to generate new states. It represents the state machine.
 - **The consensus client** knows very little about the state machine, but knows how to choose between different worldviews and agree with other nodes. It enables the execution client to apply the correct state transitions.
-
-Here's a block diagram of their interactions:
 
 ```mermaid
 graph BT
@@ -74,3 +70,5 @@ Here's the full sequence from the perspective of a non-validator node:
    2. Save the attestations and update the weights of the blocks on the tree.
    3. Apply fork choice to recalculate, if necessary, what blocks are included in the canonical chain.
    4. The changes + the new block are propagated to the execution node so transactions are applied and the state is changed and up to date.
+
+[^1]: Ted Stevens (2024) Wikipedia. Available at: https://en.wikipedia.org/wiki/Ted_Stevens (Accessed: 03 April 2024).

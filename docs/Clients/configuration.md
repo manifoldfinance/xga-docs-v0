@@ -15,16 +15,15 @@ The equation is as follows:
 
 #### Prysm[^1]
 
-$$ 
-builder_bid_value _ 100 > local_block_value _ (local-block-value-boost + 100) 
 $$
-
+builder_bid_value _ 100 > local_block_value _ (local-block-value-boost + 100)
+$$
 
 #### Teku[^2]
 
-$$ 
-exec_node_payload_value >= builder_boost_factor \* (builder_payload_value // 100) 
-$$ 
+$$
+exec_node_payload_value >= builder_boost_factor \* (builder_payload_value // 100)
+$$
 
 ### Example: Prysm
 

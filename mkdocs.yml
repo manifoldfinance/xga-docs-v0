@@ -6,96 +6,84 @@ site_name: MEV Auction
 site_url: https://mevauction.com
 copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
 
-extra:
-  generator: false
-  google:
-    site_verification:
-    - ''
-    tag_manager: ''
-  support:
-    chat: https://t.me/foldfinance
-    doc_issues: null
-    email: ops@manifoldfinance.com
-    issues: null
-    website: null
-extra_css:
-- overrides/stylesheets/custom_theme.css
-extra_javascript:
-- javascripts/mathjax.js
-- https://polyfill.io/v3/polyfill.min.js?features=es6
-- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-- javascripts/shortcuts.js
-
-markdown_extensions:
-- pymdownx.arithmatex:
-    generic: true
-- pymdownx.superfences:
-    custom_fences:
-    - class: mermaid
-      name: mermaid
-- admonition
-- pymdownx.details
-- footnotes
-- pymdownx.critic
-- pymdownx.caret
-- pymdownx.keys
-- pymdownx.mark
-- pymdownx.tilde
-- tables
-- attr_list
-- md_in_html
-- abbr
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- toc:
-    permalink: true
-    toc_depth: 3
-
-plugins:
-- render_swagger: null
-- search:
-    indexing: full
-    lang: en
-    pipeline:
-    - stopWordFilter
-    - trimmer
-    separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-- table-reader
-- tags
-
 theme:
-  custom_dir: overrides
-  features:
-  - toc.follow
-  - toc.integrate
-  - content.code.copy
-  - content.tabs.link
-  - content.tooltips
-  - navigation.indexes
-  - navigation.instant
-  - navigation.instant.progress
-  - navigation.tracking
-  - navigation.footer
-  - navigation.tabs
-  - navigation.top
-  - navigation.tabs.sticky
-  - navigation.sections
-  - navigation.path
-  - search.suggest
-  - search.share
-  - search.highlight
-  - content.action.edit
-  font:
-    code: IBM Plex Sans
-    text: Inter
   name: material
+  features:
+    - toc.follow
+
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetchn
+    #    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.footer
+    - navigation.tabs
+    - navigation.top
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - search.suggest
+    - search.highlight
   palette:
     scheme: black
-use_directory_urls: false
+  font:
+    text: 'Source Sans 3'
+    code: 'Source Code Pro'
+
+extra:
+  support:
+    chat: #
+    email: #
+    website: #
+    issues: #
+    doc_issues: #
+  google:
+    site_verification:
+      - ''
+    tag_manager: ''
+  version:
+    default:
+      - stable
+      - development
+  generator: false
+
+markdown_extensions:
+  - mdx_math
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - attr_list
+  - md_in_html
+  - abbr
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
 
 nav:
   - Home: ./index.md
