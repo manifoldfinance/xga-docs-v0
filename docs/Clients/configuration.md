@@ -3,7 +3,6 @@ title: Configuration
 description: Mandatory values, settings and settings.
 ---
 
-
 ## Mandatory Values for Validator and Beacon clients
 
 **LocalBlockValueBoost** is the value boost for local block construction. This is used to prioritize local block construction over relay/builder block construction.
@@ -14,17 +13,13 @@ LocalBlockValueBoost = 0
 
 The equation is as follows:
 
-$$ builder_bid_value * 100 > local_block_value * (local-block-value-boost + 100) $$[^1]
+$$ builder_bid_value _ 100 > local_block_value _ (local-block-value-boost + 100) $$[^1]
 
-
-$$ exec_node_payload_value >= builder_boost_factor * (builder_payload_value // 100) $$[^2]
-
-
+$$ exec_node_payload_value >= builder_boost_factor \* (builder_payload_value // 100) $$[^2]
 
 ### Example: Prysm
 
-
-~~~golang
+```golang
 EthBurnAddressHex                string           // EthBurnAddressHex is the constant eth address written in hex format to burn fees in that network. the default is 0x0
 DefaultBuilderGasLimit           uint64           // DefaultBuilderGasLimit is the default used to set the gaslimit for the Builder APIs, typically at around 30M wei.
 
@@ -34,7 +29,7 @@ MaxBuilderEpochMissedSlots       primitives.Slot // MaxBuilderEpochMissedSlots i
 LocalBlockValueBoost             uint64          // LocalBlockValueBoost is the value boost for local block construction. This is used to prioritize local block construction over relay/builder block construction.
 
 // Execution engine timeout value
-~~~
+```
 
 ### Example: Teku
 
@@ -57,9 +52,9 @@ LocalBlockValueBoost             uint64          // LocalBlockValueBoost is the 
     } else {
       actualComparisonFactorString = actualBuilderBoostFactor + "%";
     }
- ```
+```
 
- ### Footnotes
+### Footnotes
 
- [^1]: Prysm
- [^2]: Teku
+[^1]: Prysm
+[^2]: Teku

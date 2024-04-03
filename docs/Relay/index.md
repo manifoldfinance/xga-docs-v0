@@ -33,7 +33,6 @@ title: Relay
 
 ## Latency Based
 
-Latency strategies within relay operations carry significant implications for relay competitiveness. The practical upshot is that some relays can only consistently compete through an artificial delay. An extreme case of this would be a relay which is technically consistently non-competitive, but captures exclusive order flow – in this case, a rational node operator will always query it with an artificial latency parameter. 
-
+Latency strategies within relay operations carry significant implications for relay competitiveness. The practical upshot is that some relays can only consistently compete through an artificial delay. An extreme case of this would be a relay which is technically consistently non-competitive, but captures exclusive order flow – in this case, a rational node operator will always query it with an artificial latency parameter.
 
 This competition among relays hints at a potential shift in the game, where relays might strategically delay responses to enhance their chances of providing the best bid. This adaptation could be likely incentivized by the benefits of optimized delay, particularly for vertically-integrated builders who may be inclined to pay a premium for more reliable bid inclusion.
