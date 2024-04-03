@@ -100,7 +100,7 @@ plugins:
   - render_swagger:
   - search:
       indexing: 'full'
-      lang: en, ru, it
+      lang: en
       # yamllint disable-line rule:line-length
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
       pipeline:
@@ -138,10 +138,11 @@ nav:
   - Developers:
       - 'Getting Started': 'Developers/index.md'
       - 'Auctioneer': 'Developers/auctioneer.md'
-      - 'SDK': 'Developers/sdk.md'
       - 'Interface': 'Developers/interface.md'
+      - 'Builders & Searchers': 'Developers/builders.md'
       - 'Testnet': 'Developers/testnet.md'
       - 'Payment Methods': 'Developers/payment-methods.md'
+      - 'SDK': 'Developers/sdk.md'
   - Learning:
       - 'Flashbots Comparison': 'Learning/flashbots-comparison.md'
       - 'Auction Design': 'Learning/aup_auction.md'
@@ -150,9 +151,11 @@ nav:
   #      - 'Secondary Market': 'Learning/secondary-market.md'
   - Validators:
       - 'Overview': 'Validators/index.md'
+      - 'Configuration': 'Validators/configuration.md'
       - 'Accounting': 'Validators/accounting.md'
       - 'Relay': 'Validators/relay.md'
   - Relay:
+      - 'SecureRpc Relay': 'Relay/index.md'
       - 'Captive Insurance': 'Relay/captive-insurance.md'
       - 'SecureRPC Relay': 'https://securerpc.com'
   - API:
@@ -167,6 +170,7 @@ nav:
       - 'Contract Summary': 'Reference/contract_summary.md'
       - 'Glossary': 'Reference/glossary.md'
       - 'RPC Payload': 'Reference/rpc-payload.md'
+      - 'Constant Values': 'Reference/constants.md'
       - 'ERC 6909': 'Reference/erc6909.md'
   - Legal:
       - 'Overview': 'Legal/index.md'
