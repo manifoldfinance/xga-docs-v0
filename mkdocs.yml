@@ -98,46 +98,48 @@ theme:
 use_directory_urls: false
 
 nav:
-- MEV Auction: index.md
-- Developers:
-  - Builders & Searchers: Developers/builders.md
-  - General: Developers/index.md
-  - Auction Protocol: Developers/auctioneer.md
-  - Interface: Developers/interface.md
-  - Builder Payment Methods: Developers/payment-methods.md
-  - RPC Endpoints: Developers/sdk.md
-  - Test Network: Developers/testnet.md
-- Learning:
-  - Specification for Primary Market: Learning/aup_auction.md
-  - MEV Boost: Learning/flashbots-comparison.md
-  - Forward Contracts: Learning/Forward-Contracts.md
-  - Secondary Market: Learning/secondary-market.md
-- Clients:
-  - Payment processing and finalization: Clients/accounting.md
-  - How does this actually work? Who talks with whom?: Clients/clients.md
-  - Mandatory Values for Validator and Beacon clients: Clients/configuration.md
-  - Requirements: Clients/index.md
-  - Relay: Clients/relay.md
-  - Networking: Clients/validators.md
-- Relay:
-  - Captive Market Infrastructure Insurance: Relay/captive-insurance.md
-  - Comparision: Relay/index.md
-- API:
-  - Beta Block: api/beta-auction.md
-  - Bundle API: api/bundle.md
-  - RPC Methods Available: api/index.md
-  - Relay REST API: api/relay.md
-  - Validator Reporting REST API: api/self-report.md
-  - Custom Payload Signature Scheme for Authenticated JSON RPC Service Access: api/signature-scheme.md
-- Reference:
-  - Gwei values: Reference/constants.md
-  - Market and Auction Design and Structure: Reference/contract_design.md
-  - Primary Market: Reference/contract_summary.md
-  - Functions: Reference/erc6909.md
-  - Terms: Reference/glossary.md
-  - Execution Layer Encoding: Reference/rpc-payload.md
-- Legal:
-  - Customer Due Diligence (CDD): Legal/CDD.md
-  - Disclaimer: Legal/Content-Disclaimer.md
-  - NFA Disclosure Statement: Legal/Disclosure-Statement.md
-  - Notices and Compliance: Legal/index.md
+  - Home: ./index.md
+  - Developers:
+      - Getting Started: Developers/index.md
+      - Auctioneer: Developers/auctioneer.md
+      - Interface: Developers/interface.md
+      - Builders & Searchers: Developers/builders.md
+      - Testnet: Developers/testnet.md
+      - Payment Methods: Developers/payment-methods.md
+      - SDK: Developers/sdk.md
+  - Learning:
+      - Flashbots Comparison: Learning/flashbots-comparison.md
+      - Auction Design: Learning/aup_auction.md
+      - Forward Contracts: Learning/Forward-Contracts.md
+  # Disable Article
+  #      - 'Secondary Market': 'Learning/secondary-market.md'
+  - Clients:
+      - Overview: Clients/index.md
+      - Clients: Clients/clients.md
+      - Validators: Clients/validators.md
+      - Configuration: Clients/configuration.md
+      - Accounting: Clients/accounting.md
+      - Relay: Clients/relay.md
+  - Relay:
+      - SecureRpc Relay: Relay/index.md
+      - Captive Insurance: Relay/captive-insurance.md
+      - SecureRPC Relay: https://securerpc.com
+  - API:
+      - Overview: api/index.md
+      - Relay: api/relay.md
+      - Validator Self Report: api/self-report.md
+      - Beta Auction: api/beta-auction.md
+      - Bundle: api/bundle.md
+      - Signature Scheme: api/signature-scheme.md
+  - Reference:
+      - Contract Design: Reference/contract_design.md
+      - Contract Summary: Reference/contract_summary.md
+      - Glossary: Reference/glossary.md
+      - RPC Payload: Reference/rpc-payload.md
+      - Constant Values: Reference/constants.md
+      - ERC 6909: Reference/erc6909.md
+  - Legal:
+      - Overview: Legal/index.md
+      - Compliance: Legal/CDD.md
+      - Content Disclaimer: Legal/Content-Disclaimer.md
+      - Disclosure Statement: Legal/Disclosure-Statement.md
