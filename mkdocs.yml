@@ -1,5 +1,11 @@
-copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs
-  2.5
+repo_name: MEV-Protocol/platform-docs
+repo_url: https://github.com/MEV-Protocol/platform-docs
+site_author: MEV.io
+site_description: MEV Auction documentation for builders, searchers and liquid staking protocols.
+site_name: MEV Auction
+site_url: https://mevauction.com
+copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
+
 extra:
   generator: false
   google:
@@ -19,6 +25,7 @@ extra_javascript:
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 - javascripts/shortcuts.js
+
 markdown_extensions:
 - pymdownx.arithmatex:
     generic: true
@@ -59,13 +66,7 @@ plugins:
     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 - table-reader
 - tags
-repo_name: MEV-Protocol/platform-docs
-repo_url: https://github.com/MEV-Protocol/platform-docs
-site_author: MEV.io
-site_description: MEV Auction documentation for builders, searchers and liquid staking
-  protocols.
-site_name: MEV Auction
-site_url: https://mevauction.com
+
 theme:
   custom_dir: overrides
   features:
@@ -99,13 +100,13 @@ use_directory_urls: false
 nav:
 - MEV Auction: index.md
 - Developers:
-  - Key Features: Developers/auctioneer.md
-  - Block Properties: Developers/builders.md
+  - Builders & Searchers: Developers/builders.md
   - General: Developers/index.md
+  - Auction Protocol: Developers/auctioneer.md
   - Interface: Developers/interface.md
   - Builder Payment Methods: Developers/payment-methods.md
   - RPC Endpoints: Developers/sdk.md
-  - Node Operators: Developers/testnet.md
+  - Test Network: Developers/testnet.md
 - Learning:
   - Specification for Primary Market: Learning/aup_auction.md
   - MEV Boost: Learning/flashbots-comparison.md
