@@ -98,20 +98,6 @@ use_directory_urls: false
 
 nav:
 - MEV Auction: index.md
-- api:
-  - Beta Block: api/beta-auction.md
-  - Bundle API: api/bundle.md
-  - RPC Methods Available: api/index.md
-  - Relay REST API: api/relay.md
-  - Validator Reporting REST API: api/self-report.md
-  - Custom Payload Signature Scheme for Authenticated JSON RPC Service Access: api/signature-scheme.md
-- Clients:
-  - Payment processing and finalization: Clients/accounting.md
-  - How does this actually work? Who talks with whom?: Clients/clients.md
-  - Mandatory Values for Validator and Beacon clients: Clients/configuration.md
-  - Requirements: Clients/index.md
-  - Relay: Clients/relay.md
-  - Networking: Clients/validators.md
 - Developers:
   - Key Features: Developers/auctioneer.md
   - Block Properties: Developers/builders.md
@@ -125,11 +111,23 @@ nav:
   - MEV Boost: Learning/flashbots-comparison.md
   - Forward Contracts: Learning/Forward-Contracts.md
   - Secondary Market: Learning/secondary-market.md
-- Legal:
-  - Customer Due Diligence (CDD): Legal/CDD.md
-  - Disclaimer: Legal/Content-Disclaimer.md
-  - NFA Disclosure Statement: Legal/Disclosure-Statement.md
-  - Notices and Compliance: Legal/index.md
+- Clients:
+  - Payment processing and finalization: Clients/accounting.md
+  - How does this actually work? Who talks with whom?: Clients/clients.md
+  - Mandatory Values for Validator and Beacon clients: Clients/configuration.md
+  - Requirements: Clients/index.md
+  - Relay: Clients/relay.md
+  - Networking: Clients/validators.md
+- Relay:
+  - Captive Market Infrastructure Insurance: Relay/captive-insurance.md
+  - Comparision: Relay/index.md
+- API:
+  - Beta Block: api/beta-auction.md
+  - Bundle API: api/bundle.md
+  - RPC Methods Available: api/index.md
+  - Relay REST API: api/relay.md
+  - Validator Reporting REST API: api/self-report.md
+  - Custom Payload Signature Scheme for Authenticated JSON RPC Service Access: api/signature-scheme.md
 - Reference:
   - Gwei values: Reference/constants.md
   - Market and Auction Design and Structure: Reference/contract_design.md
@@ -137,7 +135,8 @@ nav:
   - Functions: Reference/erc6909.md
   - Terms: Reference/glossary.md
   - Execution Layer Encoding: Reference/rpc-payload.md
-- Relay:
-  - Captive Market Infrastructure Insurance: Relay/captive-insurance.md
-  - Comparision: Relay/index.md
-
+- Legal:
+  - Customer Due Diligence (CDD): Legal/CDD.md
+  - Disclaimer: Legal/Content-Disclaimer.md
+  - NFA Disclosure Statement: Legal/Disclosure-Statement.md
+  - Notices and Compliance: Legal/index.md

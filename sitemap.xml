@@ -1,103 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://mevauction.com/SUMMARY.html</loc>
-        <lastmod>2024-03-23T18:16:33.434Z</lastmod>
+        <loc>https://mevauction.com/index.html</loc>
+        <lastmod>2024-04-03T14:51:37.820Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/index.html</loc>
-        <lastmod>2024-03-23T18:16:33.433Z</lastmod>
+        <loc>https://mevauction.com/Clients/accounting.html</loc>
+        <lastmod>2024-04-03T14:51:37.824Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Clients/clients.html</loc>
+        <lastmod>2024-04-03T14:51:37.826Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Clients/configuration.html</loc>
+        <lastmod>2024-04-03T14:51:37.830Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Clients/index.html</loc>
+        <lastmod>2024-04-03T14:51:37.822Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Clients/relay.html</loc>
+        <lastmod>2024-04-03T14:51:37.832Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Clients/validators.html</loc>
+        <lastmod>2024-04-03T14:51:37.834Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Developers/auctioneer.html</loc>
-        <lastmod>2024-03-23T18:16:33.446Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.847Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Developers/builders.html</loc>
+        <lastmod>2024-04-03T14:51:37.849Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Developers/index.html</loc>
-        <lastmod>2024-03-23T18:16:33.436Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.837Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Developers/interface.html</loc>
+        <lastmod>2024-04-03T14:51:37.859Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Developers/payment-methods.html</loc>
+        <lastmod>2024-04-03T14:51:37.862Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Developers/sdk.html</loc>
-        <lastmod>2024-03-23T18:16:33.447Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.868Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Developers/testnet.html</loc>
-        <lastmod>2024-03-23T18:16:33.449Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.870Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Learning/Forward-Contracts.html</loc>
+        <lastmod>2024-04-03T14:51:37.872Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Learning/aup_auction.html</loc>
-        <lastmod>2024-03-23T18:16:33.451Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.875Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Learning/primary-market.html</loc>
-        <lastmod>2024-03-23T18:16:33.452Z</lastmod>
-    </url>
-    <url>
-        <loc>https://mevauction.com/Learning/rulebook.html</loc>
-        <lastmod>2024-03-23T18:16:33.454Z</lastmod>
+        <loc>https://mevauction.com/Learning/flashbots-comparison.html</loc>
+        <lastmod>2024-04-03T14:51:37.876Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Learning/secondary-market.html</loc>
-        <lastmod>2024-03-23T18:16:33.455Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.878Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Learning/types_of_auctions.html</loc>
-        <lastmod>2024-03-23T18:16:33.457Z</lastmod>
+        <loc>https://mevauction.com/Legal/CDD.html</loc>
+        <lastmod>2024-04-03T14:51:37.882Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Legal/Content-Disclaimer.html</loc>
+        <lastmod>2024-04-03T14:51:37.884Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Legal/Disclosure-Statement.html</loc>
+        <lastmod>2024-04-03T14:51:37.886Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Legal/index.html</loc>
-        <lastmod>2024-03-23T18:16:33.458Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.880Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Reference/SUMMARY.html</loc>
-        <lastmod>2024-03-23T18:16:33.459Z</lastmod>
-    </url>
-    <url>
-        <loc>https://mevauction.com/Reference/compare.html</loc>
-        <lastmod>2024-03-23T18:16:33.462Z</lastmod>
+        <loc>https://mevauction.com/Reference/constants.html</loc>
+        <lastmod>2024-04-03T14:51:37.889Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Reference/contract_design.html</loc>
-        <lastmod>2024-03-23T18:16:33.464Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.892Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Reference/contract_summary.html</loc>
-        <lastmod>2024-03-23T18:16:33.465Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.894Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/Reference/erc6909.html</loc>
+        <lastmod>2024-04-03T14:51:37.901Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Reference/glossary.html</loc>
-        <lastmod>2024-03-23T18:16:33.467Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.903Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/Reference/rpc-payload.html</loc>
-        <lastmod>2024-03-23T18:16:33.469Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.906Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Validators/accounting,.html</loc>
-        <lastmod>2024-03-23T18:16:33.472Z</lastmod>
+        <loc>https://mevauction.com/Relay/captive-insurance.html</loc>
+        <lastmod>2024-04-03T14:51:37.913Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Validators/index.html</loc>
-        <lastmod>2024-03-23T18:16:33.470Z</lastmod>
+        <loc>https://mevauction.com/Relay/index.html</loc>
+        <lastmod>2024-04-03T14:51:37.909Z</lastmod>
     </url>
     <url>
-        <loc>https://mevauction.com/Validators/relay.html</loc>
-        <lastmod>2024-03-23T18:16:33.473Z</lastmod>
+        <loc>https://mevauction.com/api/beta-auction.html</loc>
+        <lastmod>2024-04-03T14:51:37.917Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/api/bundle.html</loc>
+        <lastmod>2024-04-03T14:51:37.919Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/api/index.html</loc>
-        <lastmod>2024-03-23T18:16:33.474Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.915Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/api/relay.html</loc>
-        <lastmod>2024-03-23T18:16:33.476Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.921Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mevauction.com/api/self-report.html</loc>
+        <lastmod>2024-04-03T14:51:37.923Z</lastmod>
     </url>
     <url>
         <loc>https://mevauction.com/api/signature-scheme.html</loc>
-        <lastmod>2024-03-23T18:16:33.478Z</lastmod>
-    </url>
-    <url>
-        <loc>https://mevauction.com/api/swagger.html</loc>
-        <lastmod>2024-03-23T18:16:33.325Z</lastmod>
+        <lastmod>2024-04-03T14:51:37.925Z</lastmod>
     </url>
 </urlset>
