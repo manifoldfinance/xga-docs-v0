@@ -89,7 +89,7 @@ nav:
   - Home: ./index.md
   - Developers:
       - Getting Started: Developers/index.md
-      - Auctioneer: Developers/auctioneer.md
+      # - Auctioneer: Developers/auctioneer.md
       - Interface: Developers/interface.md
       - Builders & Searchers: Developers/builders.md
       - Testnet: Developers/testnet.md

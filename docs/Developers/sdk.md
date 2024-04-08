@@ -143,20 +143,23 @@ A minimal viable bidder is provided below:
 /// SPDX-License-Identifier: UPL-1.0
 pragma solidity ^0.8.25;
 
-import {Auctioneer} from "github.com/manifoldfinance/auctioneer/Auctioneer.sol";
-import {SettlementHouse} from "github.com/manifoldfinance/auctioneer/SettlementHouse.sol";
 import {WETH} from "solmate/tokens/WETH.sol";
+import {ERC6909} from "solmate/tokens/ERC6909.sol";
+
+interface SettlementHouse {
+    function submitBundle(uint256 slot, uint256 amount, bytes32[] calldata hashes) external;
+}
 
 /// @title MockBidder
 contract MockBidder {
     uint256[] public bids;
-    Auctioneer auctioneer;
+    ERC6909 auctioneer;
     SettlementHouse house;
     WETH weth;
 
     constructor(WETH _weth, address _auctioneer, address settlement) {
         weth = _weth;
-        auctioneer = Auctioneer(_auctioneer);
+        auctioneer = ERC6909(_auctioneer);
         house = SettlementHouse(settlement);
         weth.approve(_auctioneer, type(uint256).max);
     }
