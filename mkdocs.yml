@@ -8,6 +8,7 @@ copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribut
 
 theme:
   name: material
+  custom_dir: .docs/overrides/
   features:
     - toc.follow
 
@@ -29,12 +30,34 @@ theme:
     - search.suggest
     - search.highlight
   palette:
-    scheme: black
+    - scheme: "default"
+      primary: "ethereum-blue"
+      accent: "deep orange"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: "slate"
+      primary: "ethereum-blue"
+      accent: "red"
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font:
     text: 'Source Sans 3'
     code: 'Source Code Pro'
 
+extra_css:
+  - stylesheets/extra.css
 extra:
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://#
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mevdotio
+    - icon: fontawesome/solid/envelopes-bulk
+      link: "#"
+    - icon: fontawesome/brands/medium
+      link: https://blog.mev.io/
   support:
     chat: #
     email: #
@@ -51,6 +74,24 @@ extra:
       - development
   generator: false
 
+plugins:
+  - search
+  - exclude:
+      glob:
+        - README.md
+        - "*.gotmpl"
+        - "*.gotmpl.md"
+  - awesome-pages
+  - macros:
+      module_name: .docs/macros/includes/main
+  - mike:
+      # these fields are all optional; the defaults are as below...
+      version_selector: true # set to false to leave out the version selector
+      css_dir: css # the directory to put the version selector's CSS
+      javascript_dir: js # the directory to put the version selector's JS
+      canonical_version:
+        null # the version for <link rel="canonical">; `null`
+        # uses the version specified via `mike deploy`
 markdown_extensions:
   - mdx_math
   - pymdownx.arithmatex:

@@ -31,7 +31,7 @@ cp sitemap.xml public/sitemap.xml
 cp nightly-release.txt public/.well-known/nightly-release.txt
 
 header "Next Steps\n"
-echo "Build Artifact is available at: site/build_id.txt"
+echo "Build Artifact is available at: public/build_id.txt"
 
 
 date "+%Y-%m-%dT%H:%M:%S%z" > public/build_id.txt
@@ -39,3 +39,4 @@ date "+%Y-%m-%dT%H:%M:%S%z" > public/build_id.txt
 # TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > public/.well-known/nightly-release.txt
 sleep 1
 
+echo "Build completed successfully"
