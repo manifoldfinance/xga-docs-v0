@@ -4,7 +4,6 @@
   "private": true,
   "description": "MEV Auction Documentation",
   "scripts": {
-    "build": "mkdocs build -d public",
     "make": "bash build.sh",
     "vercel": "npx vercel deploy",
     "fmt": "npx prettier --config .prettierrc.js --write .",
