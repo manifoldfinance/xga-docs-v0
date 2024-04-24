@@ -11,19 +11,16 @@ copyright: |
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌀</text></svg>">
   </a>
   <p>
-    &#169; Manifold Finance, Inc. 2022. Documentation distributed under
+    &#169; 2024 The Contributors. Documentation distributed under
     <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">CC-BY-NC-ND-2.5</a>.
-  </p>
-  <p>
-    &#169; 2022 Manifold Finance, Inc.. All rights reserved. Manifold Finance, Inc. has
-    registered trademarks and uses trademarks. For a list of trademarks of Manifold Finance, Inc., please see our
-    <a href="#">Trademark Usage</a> page.
   </p>
 theme:
   name: material
   custom_dir: .docs/overrides/
   features:
     - toc.follow
+    - toc.integrate
+    - content.footnote.tooltips
     - content.code.copy
     - content.tabs.link
     - content.tooltips
@@ -59,21 +56,6 @@ extra_css:
   - stylesheets/extra.css
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/slack
-      link: https://#
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/mevdotio
-    - icon: fontawesome/solid/envelopes-bulk
-      link: "#"
-    - icon: fontawesome/brands/medium
-      link: https://blog.mev.io/
-  support:
-    chat: #
-    email: #
-    website: #
-    issues: #
-    doc_issues: #
   google:
     site_verification:
       - ''
