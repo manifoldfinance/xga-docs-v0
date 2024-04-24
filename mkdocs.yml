@@ -4,14 +4,26 @@ site_author: MEV.io
 site_description: MEV Auction documentation for builders, searchers and liquid staking protocols.
 site_name: MEV Auction
 site_url: https://mevauction.com
-copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
-
+# copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
+use_directory_urls: true
+copyright: |
+  <a class="logo" href="/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌀</text></svg>">
+  </a>
+  <p>
+    &#169; Manifold Finance, Inc. 2022. Documentation distributed under
+    <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">CC-BY-NC-ND-2.5</a>.
+  </p>
+  <p>
+    &#169; 2022 Manifold Finance, Inc.. All rights reserved. Manifold Finance, Inc. has
+    registered trademarks and uses trademarks. For a list of trademarks of Manifold Finance, Inc., please see our
+    <a href="#">Trademark Usage</a> page.
+  </p>
 theme:
   name: material
   custom_dir: .docs/overrides/
   features:
     - toc.follow
-
     - content.code.copy
     - content.tabs.link
     - content.tooltips
@@ -42,13 +54,11 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-  font:
-    text: 'Source Sans 3'
-    code: 'Source Code Pro'
 
 extra_css:
   - stylesheets/extra.css
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/slack
       link: https://#
@@ -69,13 +79,12 @@ extra:
       - ''
     tag_manager: ''
   version:
-    default:
-      - stable
-      - development
-  generator: false
+    provider: mike
+    default: latest-release
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - exclude:
       glob:
         - README.md
@@ -85,12 +94,10 @@ plugins:
   - macros:
       module_name: .docs/macros/includes/main
   - mike:
-      # these fields are all optional; the defaults are as below...
       version_selector: true # set to false to leave out the version selector
       css_dir: css # the directory to put the version selector's CSS
       javascript_dir: js # the directory to put the version selector's JS
-      canonical_version:
-        null # the version for <link rel="canonical">; `null`
+      canonical_version: null
         # uses the version specified via `mike deploy`
 markdown_extensions:
   - mdx_math
@@ -107,7 +114,8 @@ markdown_extensions:
           case: lower
   - admonition
   - pymdownx.details
-  - footnotes
+  - pymdownx.magiclink
+  - pymdownx.mark
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -115,12 +123,16 @@ markdown_extensions:
   - pymdownx.tilde
   - tables
   - attr_list
+  - def_list
+  - footnotes
+  - meta
   - md_in_html
   - abbr
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - toc:

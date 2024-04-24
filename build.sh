@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+set -o -u pipefail
 
 echo " ✔︎ Staring Build process.."
 echo ""
@@ -20,23 +20,25 @@ pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-inside
 npm install
 
 
-mkdir -p public/.well-known
-mkdocs build --clean  --site-dir public/
-touch public/.nojekyll
+mkdir -p site/.well-known
+mkdocs build --clean  --site-dir site/
+mike deploy --push --update-aliases 0.1.2 latest
+mike deploy v0.1.1
+touch site/.nojekyll
 
 
-cp platform-docs.xml public/.well-known/platform-docs.xml
-cp commit-ts.txt public/.well-known/commit-ts.txt
-cp sitemap.xml public/sitemap.xml
-cp nightly-release.txt public/.well-known/nightly-release.txt
+cp platform-docs.xml site/.well-known/platform-docs.xml
+cp commit-ts.txt site/.well-known/commit-ts.txt
+cp sitemap.xml site/sitemap.xml
+cp nightly-release.txt site/.well-known/nightly-release.txt
 
 header "Next Steps\n"
-echo "Build Artifact is available at: public/build_id.txt"
+echo "Build Artifact is available at: site/build_id.txt"
 
 
-date "+%Y-%m-%dT%H:%M:%S%z" > public/build_id.txt
+date "+%Y-%m-%dT%H:%M:%S%z" > site/build_id.txt
 
-# TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > public/.well-known/nightly-release.txt
+TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > site/.well-known/nightly-release.txt
 sleep 1
 
 echo "Build completed successfully"

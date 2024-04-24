@@ -1,12 +1,8 @@
 {
   "name": "mevauction-docs",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "private": true,
   "description": "MEV Auction Documentation",
-  "directories": {
-    "doc": "docs",
-    "public": "public"
-  },
   "scripts": {
     "build": "mkdocs build -d public",
     "make": "bash build.sh",

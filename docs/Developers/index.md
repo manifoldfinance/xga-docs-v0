@@ -1,19 +1,20 @@
 ---
 title: Developer overview
-description: Developer related information for builders, searchers and intergrators.
+description:
+    Developer related information for builders, searchers and intergrators.
 ---
 
 ## General
 
-- [SDK](./sdk.md)
+-   [SDK](./sdk.md)
 
-- [Holesky Testnet](./testnet.md)
+-   [Holesky Testnet](./testnet.md)
 
 ## Contracts
 
-- [Interface](./interface.md)
+-   [Interface](./interface.md)
 
-- [Auctioneer](./auctioneer.md)
+-   [Auctioneer](./auctioneer.md)
 
 ### Builder and Searcher specific
 

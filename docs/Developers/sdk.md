@@ -6,25 +6,29 @@ title: Auction SDK
 
 ## RPC Endpoints
 
-- **L2 RPC (TESTNET):**
+-   **L2 RPC (TESTNET):**
 
-  - Description: L2 Node RPC (Testnet)
-  - URL: [https://holesky-api.securerpc.com/l2](https://holesky-api.securerpc.com/l2/)
-  - Methods: eth\_\*
-  - ChainId: 42169
+    -   Description: L2 Node RPC (Testnet)
+    -   URL:
+        [https://holesky-api.securerpc.com/l2](https://holesky-api.securerpc.com/l2/)
+    -   Methods: eth\_\*
+    -   ChainId: 42169
 
-- **Beta bundle RPC (Testnet):**
-  - Description: Beta bundle submission RPC
-  - URL: [https://holesky-api.securerpc.com/v2](https://holesky-api.securerpc.com/v2)
-  - Method: mev_sendBetaBundle
-  - Parameters:
-    - `txs`: List of txs as bundle e.g. [0x2323...,]
-    - `slot`: slot number e.g. "11282389"
-  - ChainId: 17000
+-   **Beta bundle RPC (Testnet):**
+    -   Description: Beta bundle submission RPC
+    -   URL:
+        [https://holesky-api.securerpc.com/v2](https://holesky-api.securerpc.com/v2)
+    -   Method: mev_sendBetaBundle
+    -   Parameters:
+        -   `txs`: List of txs as bundle e.g. [0x2323...,]
+        -   `slot`: slot number e.g. "11282389"
+    -   ChainId: 17000
 
 ## Bundler Examples
 
-- [Python bundler](https://github.com/MEV-Protocol/beta-bundles-py) - employs a deployed bidder contract for continuous automated bidding, while listening for auction close event, then submits the bundle
+-   [Python bundler](https://github.com/MEV-Protocol/beta-bundles-py) - employs
+    a deployed bidder contract for continuous automated bidding, while listening
+    for auction close event, then submits the bundle
 
 ## Bundle JSON Requests and Responses
 
@@ -48,10 +52,10 @@ title: Auction SDK
 
 ```jsonc
 {
-  "jsonrpc": "2.0",
-  "id": 1,
-  "method": "mev_sendBetaBundle",
-  "result": "0x79e5cba7876f532218ac35a357209800be2362dd2e3f1e6dc5974698f0d7cee4",
+	"jsonrpc": "2.0",
+	"id": 1,
+	"method": "mev_sendBetaBundle",
+	"result": "0x79e5cba7876f532218ac35a357209800be2362dd2e3f1e6dc5974698f0d7cee4",
 }
 ```
 
@@ -84,7 +88,8 @@ SETTLEMENT="0x7Ac1A452B59114Fb1E67470720343A2e9AE18297"
 
 ### Registering a bidder
 
-Only registered bidders can participate in the auction. Operators can onboard new bidders through the contract.
+Only registered bidders can participate in the auction. Operators can onboard
+new bidders through the contract.
 
 To check for bidderId when registered, call `IdMap` on the contract:
 
