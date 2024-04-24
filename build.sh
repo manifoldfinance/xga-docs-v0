@@ -16,7 +16,7 @@ npm install
 
 mkdocs build --clean  --site-dir site/
 mkdir -p site/.well-known
-mike deploy --push --update-aliases 0.1.2 latest
+mike deploy --push --update-aliases 0.1.7 latest
 
 
 header "Next Steps\n"
