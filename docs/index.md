@@ -1,9 +1,10 @@
 ---
 title: MEV Auction Platform
 description: The Gang Designs the Ultimate MEV Auction
+date: 2024-04-24
 ---
 
-# MEV Auction
+## MEV Auction
 
 Multi-unit auctions, unlike their single-unit counterparts, present complex
 allocation mechanisms. The MEV Auction platform implements several innovative
@@ -75,7 +76,7 @@ availability of options. This dynamic approach ensures a balance between supply
 and demand, maintaining value and interest.
 
 **Revamped Tie-Breaking Rule**: In the world of auctions, ties are inevitable.
-But our approach is different. We're moving away from the conventional method
+Our approach is different. We're moving away from the conventional method
 that prioritizes higher marginal bids. Instead, we're implementing a novel rule
 that intensifies competition, particularly for those crucial marginal
 quantities.
@@ -108,11 +109,12 @@ the discrete nature of bids, it can happen that there is market-clearing price
 marginal bids first. We will consider an alternative that introduces more
 pressure at the quantity at the margin.
 
-#### Elastic Supply Curve Details
+#### Elastic Supply Curve Detail
 
 Maximum capacity is fixed, but the supply curve
 
-$$ S:P→Q $$
+$S:P→Q$
+
 
 varies with price, offering different quantities of options.
 

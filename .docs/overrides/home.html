@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+<!-- Render landing page under tabs -->
+{% block tabs %} {{ super() }}
+
+<!-- Additional styles for landing page -->
+<style>
+  body {
+    overflow-x: hidden;
+  }
+
+  .md-content__inner {
+    margin-bottom: 0;
+    padding: 2.2rem 0;
+  }
+
+  .md-content__inner:before {
+    display: none;
+  }
+
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+
+  /* Hide sidebar, preventing unnecessary margins on the page */
+  .md-main__inner > .md-content,
+  .md-main__inner > .md-sidebar--secondary {
+    display: none;
+  }
+
+  /* Prevent removing default title on the page */
+  .md-content__inner h1:first-child {
+    display: block;
+  }
+
+  .tx-landing__image {
+    margin-top: 45px;
+  }
+
+  /* Prevent layout shift after image loading */
+  .tx-landing__image dotlottie-player {
+    aspect-ratio: 1.66;
+  }
+
+  @media (max-width: 959px) {
+    .tx-landing__image {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .md-typeset .headerlink {
+      display: none;
+    }
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
+{% endblock %}
