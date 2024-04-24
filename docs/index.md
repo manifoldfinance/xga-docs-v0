@@ -124,7 +124,3 @@ to mitigate dramatic underpricing.
 
 [^1]: Previously this was called 'above'
 [^2]: Previously this was called 'below'
-
-## License
-
-Creative Commons Attribution-NonCommercial-NoDerivs 2.5
