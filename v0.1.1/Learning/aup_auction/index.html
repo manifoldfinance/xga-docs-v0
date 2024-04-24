@@ -50,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -2045,42 +2045,46 @@
 <p>We are augmenting the standard uniform price auction format with two features:</p>
 <ol>
 <li>
-<p>Instead of providing a perfectly inelastic supply (also known as a fixed amount that we auction
-    off), we offer an elastic supply schedule: If the price is very low, we will offer only limited
-    amounts of options.</p>
+<p>Instead of providing a perfectly inelastic supply (also known as a fixed
+    amount that we auction off), we offer an elastic supply schedule: If the
+    price is very low, we will offer only limited amounts of options.</p>
 </li>
 <li>
-<p>We introduce a different tie-breaking rule for excess demand. Owing to the discrete nature of
-    bids, situations can arise where no market-clearing price exists (where demand equals supply).
-    While the typical rule in many auctions prioritizes high marginal bids first, we propose an
-    alternative that exerts more pressure at the marginal quantity level.</p>
+<p>We introduce a different tie-breaking rule for excess demand. Owing to the
+    discrete nature of bids, situations can arise where no market-clearing price
+    exists (where demand equals supply). While the typical rule in many auctions
+    prioritizes high marginal bids first, we propose an alternative that exerts
+    more pressure at the marginal quantity level.</p>
 </li>
 </ol>
 <p>We explain the rationale behind these two features below.</p>
-<p>Before we delve into the details, let us address the issue with the standard uniform price auction.
-When the supply is fixed, or perfectly inelastic, there is a risk of resulting in very low prices.
-This concept, well understood since the work of Wilson (1979), highlights that bidders are
-incentivized to understate their bids, a common challenge in most multi-unit auctions. In the
-uniform price auction, the tradeoff is evident: if you lower your bid for the marginal unit, not
-only do you reduce your price for that unit, but if you win, you also decrease the overall price you
-pay.</p>
-<p>Now, the overall effect and danger of severe under-pricing is contingent on demand factors. It
-cannot be easily inferred from data. It is also well understood that there is no clear way to tell
-whether the discriminatory or uniform price auction provides more revenue, neither theoretically
-(Ausubel et al. 2011) nor empirically.</p>
+<p>Before we delve into the details, let us address the issue with the standard
+uniform price auction. When the supply is fixed, or perfectly inelastic, there
+is a risk of resulting in very low prices. This concept, well understood since
+the work of Wilson (1979), highlights that bidders are incentivized to
+understate their bids, a common challenge in most multi-unit auctions. In the
+uniform price auction, the tradeoff is evident: if you lower your bid for the
+marginal unit, not only do you reduce your price for that unit, but if you win,
+you also decrease the overall price you pay.</p>
+<p>Now, the overall effect and danger of severe under-pricing is contingent on
+demand factors. It cannot be easily inferred from data. It is also well
+understood that there is no clear way to tell whether the discriminatory or
+uniform price auction provides more revenue, neither theoretically (Ausubel et
+al. 2011) nor empirically.</p>
 <h2 id="elastic-supply-curve">Elastic supply curve<a class="headerlink" href="#elastic-supply-curve" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Fix the max capacity of beta, <span class="arithmatex">\(q^{max}\)</span>. We assume this is given for the auction. Obviously, it
-  can be a parameter that we will optimize over time.</p>
+<p>Fix the max capacity of beta, <span class="arithmatex">\(q^{max}\)</span>. We assume this is given for the
+    auction. Obviously, it can be a parameter that we will optimize over time.</p>
 </li>
 <li>
-<p>The supply curve, <span class="arithmatex">\(S \colon P \to Q\)</span>, where <span class="arithmatex">\(P\)</span> is the set of allowed prices; and <span class="arithmatex">\(Q\)</span> the set of
-  available options. It gives for each price the amount of gas space we offer.</p>
+<p>The supply curve, <span class="arithmatex">\(S \colon P \to Q\)</span>, where <span class="arithmatex">\(P\)</span> is the set of allowed
+    prices; and <span class="arithmatex">\(Q\)</span> the set of available options. It gives for each price the
+    amount of gas space we offer.</p>
 </li>
 <li>
-<p>The set of options will be determined by the tick size we provide. <span class="arithmatex">\(Q\)</span> will be further limited by
-  the max capacity we offer. That is, typically,</p>
+<p>The set of options will be determined by the tick size we provide. <span class="arithmatex">\(Q\)</span> will
+    be further limited by the max capacity we offer. That is, typically,</p>
 </li>
 </ul>
 <div class="arithmatex">\[
@@ -2092,9 +2096,10 @@ t_q=q^{\max } / k
 <p>for some <span class="arithmatex">\(k \in N\)</span>.</p>
 <ul>
 <li>
-<p>The idea for the shape of the supply function is to have an initial segment of the supply curve
-  which is concave and a second segment that then only provides a constant amount. This is the
-  maximally available capacity. Below are pictures, that will make this clearer.</p>
+<p>The idea for the shape of the supply function is to have an initial segment
+    of the supply curve which is concave and a second segment that then only
+    provides a constant amount. This is the maximally available capacity. Below
+    are pictures, that will make this clearer.</p>
 </li>
 <li>
 <p>Concretely, one parameterized functional form is this:</p>
@@ -2111,57 +2116,64 @@ s(p') &amp; \text{for } p &gt;= p'
 <div class="arithmatex">\[
 s(p) = ap^n
 \]</div>
-<p>where <span class="arithmatex">\(a,n\)</span> are constants. The idea, again, is that the function is concave and thereby
-monotonically increasing until price <span class="arithmatex">\(p'\)</span>.</p>
-<p>This price is calculated by setting the max quantity, <span class="arithmatex">\(q^{max} = ap^n\)</span>, and then deriving</p>
+<p>where <span class="arithmatex">\(a,n\)</span> are constants. The idea, again, is that the function is concave and
+thereby monotonically increasing until price <span class="arithmatex">\(p'\)</span>.</p>
+<p>This price is calculated by setting the max quantity, <span class="arithmatex">\(q^{max} = ap^n\)</span>, and then
+deriving</p>
 <div class="arithmatex">\[
  p' \equiv (q^{max} / a)^{1/n}
 \]</div>
-<p>NOTE: It goes without saying that the functional form above is up for change if we want to.</p>
-<p>NOTE: It is theoretically well understood that an elastic supply curve can reduce the danger of
-dramatically underpricing. In practice, this is not so often used. One reason can be that the value
-of the good might be lower for the auctioneer.</p>
-<p>In our case, however, this can be different. The reason is that we possibly have use for the space
-ourselves. So, as remarked above, we might have a positive outside value and might not be willing to
-sell for any price.</p>
+<p>NOTE: It goes without saying that the functional form above is up for change if
+we want to.</p>
+<p>NOTE: It is theoretically well understood that an elastic supply curve can
+reduce the danger of dramatically underpricing. In practice, this is not so
+often used. One reason can be that the value of the good might be lower for the
+auctioneer.</p>
+<p>In our case, however, this can be different. The reason is that we possibly have
+use for the space ourselves. So, as remarked above, we might have a positive
+outside value and might not be willing to sell for any price.</p>
 <h2 id="bidders">Bidders<a class="headerlink" href="#bidders" title="Permanent link">&para;</a></h2>
-<p>Each bidder can submit several (quantity,price) pairs. We thereby elicit his (partial) demand
-function <span class="arithmatex">\(d_i(p) \colon P \to Q\)</span>.</p>
+<p>Each bidder can submit several (quantity,price) pairs. We thereby elicit his
+(partial) demand function <span class="arithmatex">\(d_i(p) \colon P \to Q\)</span>.</p>
 <h2 id="aggregation-of-demand">Aggregation of demand<a class="headerlink" href="#aggregation-of-demand" title="Permanent link">&para;</a></h2>
-<p>The way that a uniform auction proceeds is by aggregating demand and matching it to supply. This
-allows to determine a market clearing price - if it exists. Reasons for non-existence can be
-increasing demand curves.</p>
+<p>The way that a uniform auction proceeds is by aggregating demand and matching it
+to supply. This allows to determine a market clearing price - if it exists.
+Reasons for non-existence can be increasing demand curves.</p>
 <p>Now, first, consider the aggregate demand:</p>
 <div class="arithmatex">\[
 D(p) \equiv \sum_j d_j(p)
 \]</div>
-<p>Fix the highest price at which the all the demand can be satisfied (if it exists). That is,</p>
+<p>Fix the highest price at which the all the demand can be satisfied (if it
+exists). That is,</p>
 <div class="arithmatex">\[
 p^{*}=max\{p|D(p)=S(p)\}
 \]</div>
-<p>Note, in the case where there is excess demand for this price, i.e. <span class="arithmatex">\(D(p^{*})&gt;S(p^{*})\)</span>, we need an
-allocation rule that determines who gets what.</p>
-<p>Note, if demand schedules <span class="arithmatex">\(d_j(p)\)</span> were continuous, then excess demand would not be feasible.</p>
-<p>Lastly note, that the fact that actual bids are discontinuous might reduce the likelihood of a low
-price outcome (Kastl 2011).</p>
+<p>Note, in the case where there is excess demand for this price, i.e.
+<span class="arithmatex">\(D(p^{*})&gt;S(p^{*})\)</span>, we need an allocation rule that determines who gets what.</p>
+<p>Note, if demand schedules <span class="arithmatex">\(d_j(p)\)</span> were continuous, then excess demand would not
+be feasible.</p>
+<p>Lastly note, that the fact that actual bids are discontinuous might reduce the
+likelihood of a low price outcome (Kastl 2011).</p>
 <h2 id="allocation-rule">Allocation rule<a class="headerlink" href="#allocation-rule" title="Permanent link">&para;</a></h2>
 <p>In case of excess demand, how is the excess demand cleared?</p>
 <p>The standard rule is higher price, higher priority:</p>
 <div class="arithmatex">\[
 q_j = d_{j,\&gt;}(p^{*}) + \frac{d_{j}(p^{ *})- d_{j,&gt;}(p^{*})}{D_{j}(p^{ *})- D_{j,&gt;}(p^{*})}
 \]</div>
-<p>where <span class="arithmatex">\(d_{j,\&gt;}(p^{*})\)</span> is the individual demand of <span class="arithmatex">\(j\)</span> for higher prices than <span class="arithmatex">\(p^{*}\)</span> and
-<span class="arithmatex">\(D_{j,&gt;}(p^{*}\)</span> is the aggregate demand at prices higher than <span class="arithmatex">\(p^{*}\)</span>.</p>
-<p>So, an agent first gets his demand that he stated at higher prices. Then he will receive a relative
-share of the remaining excess demand at the market clearing price.</p>
+<p>where <span class="arithmatex">\(d_{j,\&gt;}(p^{*})\)</span> is the individual demand of <span class="arithmatex">\(j\)</span> for higher prices than
+<span class="arithmatex">\(p^{*}\)</span> and <span class="arithmatex">\(D_{j,&gt;}(p^{*}\)</span> is the aggregate demand at prices higher than
+<span class="arithmatex">\(p^{*}\)</span>.</p>
+<p>So, an agent first gets his demand that he stated at higher prices. Then he will
+receive a relative share of the remaining excess demand at the market clearing
+price.</p>
 <p>There is an alternative allocation rule though:</p>
 <p>Give a share relative to individual demand at that point. That is,</p>
 <div class="arithmatex">\[
 q_i = d_i(p^{**})/D(p^{**})
 \]</div>
-<p>Which means the larger the demand relative to overall demand at that price, the larger the share
-that a player will get. In contrast to the rule above, only the marginal demand matters; demand
-stated at higher demand levels are irrelevant.</p>
+<p>Which means the larger the demand relative to overall demand at that price, the
+larger the share that a player will get. In contrast to the rule above, only the
+marginal demand matters; demand stated at higher demand levels are irrelevant.</p>
 <div class="admonition info inline">
 <p class="admonition-title">Reflection</p>
 <p>This creates stronger incentives to bid closer to true valuations; it reduces the tendency to end up</p>
@@ -2262,11 +2274,6 @@ stated at higher demand levels are irrelevant.</p>
 
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
-    </a>
   
 </div>
       

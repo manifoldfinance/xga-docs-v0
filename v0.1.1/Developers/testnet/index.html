@@ -50,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -2076,29 +2076,29 @@
   <h1>Testnet</h1>
 
 <h2 id="node-operators">Node Operators<a class="headerlink" href="#node-operators" title="Permanent link">&para;</a></h2>
-<p>Please coordinate with us to register your validator set with our registry service. We will provide
-you with the necessary information to get started.</p>
+<p>Please coordinate with us to register your validator set with our registry
+service. We will provide you with the necessary information to get started.</p>
 <h2 id="validators">Validators<a class="headerlink" href="#validators" title="Permanent link">&para;</a></h2>
-<p>Connecting to the relay without being registered will result in your validator operating correctly
-so long as MEV Boost is also running.</p>
+<p>Connecting to the relay without being registered will result in your validator
+operating correctly so long as MEV Boost is also running.</p>
 <h2 id="holesky-information">Holesky Information<a class="headerlink" href="#holesky-information" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><strong>L2 RPC (TESTNET):</strong></p>
-</li>
-<li>
-<p>Description: L2 Node RPC (Testnet)</p>
-</li>
-<li>URL: <a href="https://holesky-api.securerpc.com/l2/">https://holesky-api.securerpc.com/l2</a></li>
+<ul>
+<li>Description: L2 Node RPC (Testnet)</li>
+<li>URL:
+    <a href="https://holesky-api.securerpc.com/l2/">https://holesky-api.securerpc.com/l2</a></li>
 <li>Methods: eth_*</li>
-<li>
-<p>ChainId: 42169</p>
+<li>ChainId: 42169</li>
+</ul>
 </li>
 <li>
 <p><strong>Beta bundle RPC (Testnet):</strong></p>
-</li>
+<ul>
 <li>Description: Beta bundle submission RPC</li>
-<li>URL: <a href="https://holesky-api.securerpc.com/v2">https://holesky-api.securerpc.com/v2</a></li>
+<li>URL:
+    <a href="https://holesky-api.securerpc.com/v2">https://holesky-api.securerpc.com/v2</a></li>
 <li>Method: mev_sendBetaBundle</li>
 <li>Parameters:<ul>
 <li><code>txs</code>: List of txs as bundle e.g. [0x2323...,]</li>
@@ -2107,9 +2107,11 @@ so long as MEV Boost is also running.</p>
 </li>
 <li>ChainId: 17000</li>
 </ul>
+</li>
+</ul>
 <h2 id="builders-and-searchers">Builders and searchers<a class="headerlink" href="#builders-and-searchers" title="Permanent link">&para;</a></h2>
-<p>Aquire some Holesky Testnet ETH through a faucet in the resources listed below. If you are unable to
-secure enough, please reach out to us.</p>
+<p>Aquire some Holesky Testnet ETH through a faucet in the resources listed below.
+If you are unable to secure enough, please reach out to us.</p>
 <h3 id="contracts">Contracts<a class="headerlink" href="#contracts" title="Permanent link">&para;</a></h3>
 <p>L2 <em>Auctioneer</em>: <code>0xD88e271AD39dAb4DEB0f7f9475d993ed4Bf5029b</code></p>
 <p>L2 <em>SettlementHouse</em>: <code>0x7Ac1A452B59114Fb1E67470720343A2e9AE18297</code></p>
@@ -2121,7 +2123,8 @@ secure enough, please reach out to us.</p>
 <li>Holesky Network ID: <code>17000</code></li>
 <li>Holesky Chain ID: <code>17000</code></li>
 <li>L2 Chain ID: <code>42169</code></li>
-<li>L2 RPC Endpoint: <a href="https://holesky-l2.v2-stag.manifoldx.com/">@holesky-l2.v2-stag.manifoldx.com</a></li>
+<li>L2 RPC Endpoint:
+    <a href="https://holesky-l2.v2-stag.manifoldx.com/">@holesky-l2.v2-stag.manifoldx.com</a></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -2129,16 +2132,21 @@ secure enough, please reach out to us.</p>
 </div>
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Block Explorers</li>
+<li>Block Explorers<ul>
 <li><a href="https://holesky.etherscan.io/">holesky.etherscan.io</a></li>
 <li><a href="https://holesky.beaconcha.in/">holesky.beaconcha.in</a></li>
 <li><a href="https://dora-holesky.pk910.de/">dora-holesky.pk910.de</a></li>
-<li>Ethstats: <a href="https://ethstats.holesky.ethpandaops.io">ethstats.holesky.ethpandaops.io</a></li>
-<li>Faucets:</li>
+</ul>
+</li>
+<li>Ethstats:
+    <a href="https://ethstats.holesky.ethpandaops.io">ethstats.holesky.ethpandaops.io</a></li>
+<li>Faucets:<ul>
 <li><a href="https://holesky-faucet.pk910.de/">holesky-faucet.pk910.de</a></li>
 <li><a href="https://faucet.quicknode.com/ethereum/holesky">QuickNode Faucet</a></li>
 <li><a href="https://faucet.chainstack.com/holesky-faucet">Chainstack Faucet</a></li>
 <li><a href="https://holeskyfaucet.io">Automata Holesky Faucet</a></li>
+</ul>
+</li>
 </ul>
 
 
@@ -2235,11 +2243,6 @@ secure enough, please reach out to us.</p>
 
     </div>
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs Insiders
-    </a>
   
 </div>
       
