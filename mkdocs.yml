@@ -4,16 +4,9 @@ site_author: MEV.io
 site_description: MEV Auction documentation for builders, searchers and liquid staking protocols.
 site_name: MEV Auction
 site_url: https://mevauction.com
-# copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
+copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
 use_directory_urls: true
-copyright: |
-  <a class="logo" href="/">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌀</text></svg>">
-  </a>
-  <p>
-    &#169; 2024 The Contributors. Documentation distributed under
-    <a href="https://creativecommons.org/licenses/by-nc-nd/2.5/">CC-BY-NC-ND-2.5</a>.
-  </p>
+
 theme:
   name: material
   custom_dir: .docs/overrides/
@@ -172,3 +165,12 @@ nav:
       - Compliance: Legal/CDD.md
       - Content Disclaimer: Legal/Content-Disclaimer.md
       - Disclosure Statement: Legal/Disclosure-Statement.md
+  - Rulebook:
+      - Bylaws: guidelines/bylaws.md
+      - Definitions: guidelines/definitions.md
+      - Settlement: guidelines/delivery-and-settlement.md
+      - General: guidelines/general.md
+      - Governance: guidelines/governance.md
+      - Clearing: guidelines/network-clearing-participants.md
+      - Obligations: guidelines/obligations.md
+      - Suspension: guidelines/suspension.md

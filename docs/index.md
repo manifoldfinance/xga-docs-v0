@@ -76,10 +76,9 @@ availability of options. This dynamic approach ensures a balance between supply
 and demand, maintaining value and interest.
 
 **Revamped Tie-Breaking Rule**: In the world of auctions, ties are inevitable.
-Our approach is different. We're moving away from the conventional method
-that prioritizes higher marginal bids. Instead, we're implementing a novel rule
-that intensifies competition, particularly for those crucial marginal
-quantities.
+Our approach is different. We're moving away from the conventional method that
+prioritizes higher marginal bids. Instead, we're implementing a novel rule that
+intensifies competition, particularly for those crucial marginal quantities.
 
 ## Why These Changes Matter
 
@@ -114,7 +113,6 @@ pressure at the quantity at the margin.
 Maximum capacity is fixed, but the supply curve
 
 $S:P→Q$
-
 
 varies with price, offering different quantities of options.
 

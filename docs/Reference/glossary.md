@@ -36,7 +36,7 @@ title: Glossary
 
 ## Terms
 
--           | **value**        | **description**                                                                                                                 | **** |
+-             | **value**        | **description**                                                                                                                 | **** |
     |------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|------|
     | `blockhash` | uint blockNumber | returns (bytes32): **hash** of the given
     block when `blocknumber` is one of the 256 most recent blocks; otherwise

@@ -22,6 +22,10 @@ npm install
 
 mkdir -p site/.well-known
 mkdocs build --clean  --site-dir site/
+date "+%Y-%m-%dT%H:%M:%S%z" > site/build_id.txt
+
+TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > site/.well-known/nightly-release.txt
+
 mike deploy --push --update-aliases 0.1.2 latest
 mike deploy v0.1.1
 touch site/.nojekyll
@@ -35,10 +39,6 @@ cp nightly-release.txt site/.well-known/nightly-release.txt
 header "Next Steps\n"
 echo "Build Artifact is available at: site/build_id.txt"
 
-
-date "+%Y-%m-%dT%H:%M:%S%z" > site/build_id.txt
-
-TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > site/.well-known/nightly-release.txt
 sleep 1
 
 echo "Build completed successfully"
