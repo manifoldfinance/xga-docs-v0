@@ -32,18 +32,8 @@ theme:
     - search.suggest
     - search.highlight
   palette:
-    - scheme: "default"
-      primary: "ethereum-blue"
-      accent: "deep orange"
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: "slate"
-      primary: "ethereum-blue"
-      accent: "red"
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+      primary: blue-grey
+      accent: teal
 
 extra_css:
   - stylesheets/extra.css
@@ -142,6 +132,7 @@ nav:
       - Configuration: Clients/configuration.md
       - Accounting: Clients/accounting.md
       - Relay: Clients/relay.md
+      - Requirements: Clients/requirements.md
   - Relay:
       - SecureRpc Relay: Relay/index.md
       - Captive Insurance: Relay/captive-insurance.md
@@ -166,11 +157,11 @@ nav:
       - Content Disclaimer: Legal/Content-Disclaimer.md
       - Disclosure Statement: Legal/Disclosure-Statement.md
   - Rulebook:
-      - Bylaws: guidelines/bylaws.md
-      - Definitions: guidelines/definitions.md
-      - Settlement: guidelines/delivery-and-settlement.md
-      - General: guidelines/general.md
-      - Governance: guidelines/governance.md
-      - Clearing: guidelines/network-clearing-participants.md
-      - Obligations: guidelines/obligations.md
-      - Suspension: guidelines/suspension.md
+      - Bylaws: Rulebook/bylaws.md
+      - Definitions: Rulebook/definitions.md
+      - Settlement: Rulebook/delivery-and-settlement.md
+      - General: Rulebook/general.md
+      - Governance: Rulebook/governance.md
+      - Clearing: Rulebook/network-clearing-participants.md
+      - Obligations: Rulebook/obligations.md
+      - Suspension: Rulebook/suspension.md

@@ -4,18 +4,21 @@ description:
     Developer related information for builders, searchers and intergrators.
 ---
 
+
+
 ## General
 
 -   [SDK](./sdk.md)
 
 -   [Holesky Testnet](./testnet.md)
 
-## Contracts
+## Auction Contracts v1.0
 
 -   [Interface](./interface.md)
 
--   [Auctioneer](./auctioneer.md)
 
 ### Builder and Searcher specific
+
+[Requirements](./builders.md)
 
 [Payment Methods](./payment-methods.md)

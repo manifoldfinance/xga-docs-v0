@@ -1,0 +1,20 @@
+txOrderingGame  = [opengame|
+   inputs    :      ;
+   feedback  :      ;
+
+   :----------------------------:
+   inputs    :      ;
+   feedback  :      ;
+   operation : dependentDecision "proposer" (const actionSpace);
+   outputs   : ordering ;
+   returns   : blockPayoff initAccounts (blockPerm ordering) 0     ;
+   :----------------------------:
+
+   outputs   :      ;
+   returns   :      ;
+  |]
+  where
+   actionSpace = [0..(product [1..4]-1)]
+   blockPerm = \x -> ((permutations block1)!!x)
+
+analyseTxOrderingGame strat = generateIsEq $ evaluate txOrderingGame strat void

@@ -2,6 +2,8 @@
 title: Glossary
 ---
 
+### Platform Terms
+
 | Term                                 | Description                                                                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Auctioneer Contract                  | A smart contract designed for auctioning Ethereum block space, enabling dynamic participation and settlement.                                     |
@@ -34,14 +36,3 @@ title: Glossary
 | Staking                              | The act of locking up cryptocurrency holdings to support the operation of a blockchain network, often in exchange for rewards.                    |
 | Epoch                                | A division of time used in blockchain networks, referring to a set period during which certain processes or updates occur.                        |
 
-## Terms
-
--             | **value**        | **description**                                                                                                                 | **** |
-    |------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------|------|
-    | `blockhash` | uint blockNumber | returns (bytes32): **hash** of the given
-    block when `blocknumber` is one of the 256 most recent blocks; otherwise
-    returns zero | | | `block.basefee ` | uint | current block’s base fee
-    (EIP-3198 and EIP-1559) | | | `block.chainid ` | uint | current chain id | |
-    | `block.coinbase` | address payable | current block miner’s address | | |
-    `block.difficulty` | uint | current block difficulty | | | `block.gaslimit`
-    | uint | current block `gaslimit` | |

@@ -1,0 +1,18 @@
+addBlock = [opengame|
+ 
+    inputs    : chainOld, chosenIdOrWait ;
+    feedback  :   ;
+ 
+    :-----:
+    inputs    : chainOld, chosenIdOrWait ;
+    feedback  :   ;
+    operation : forwardFunction $ 
+                  uncurry addToChainWait ;
+    outputs   : chainNew ;
+    returns   : ;
+ 
+    :-----:
+ 
+    outputs   : chainNew ;
+    returns   :          ;
+  |]
