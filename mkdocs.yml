@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
 repo_name: MEV-Protocol/platform-docs
 repo_url: https://github.com/MEV-Protocol/platform-docs
 site_author: MEV.io
@@ -11,29 +13,56 @@ theme:
   name: material
   custom_dir: .docs/overrides/
   features:
-    - toc.follow
-    - toc.integrate
-    - content.footnote.tooltips
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
     - content.code.copy
-    - content.tabs.link
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
     - content.tooltips
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetchn
-    #    - navigation.instant.preview
-    - navigation.instant.progress
-    - navigation.tracking
+    # - header.autohide
+    # - navigation.expand
     - navigation.footer
-    - navigation.tabs
-    - navigation.top
-    - navigation.tabs.sticky
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
     - navigation.sections
-    - navigation.path
-    - search.suggest
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
     - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-      primary: blue-grey
-      accent: teal
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 extra_css:
   - stylesheets/extra.css
@@ -120,7 +149,7 @@ nav:
       - Payment Methods: Developers/payment-methods.md
       - SDK: Developers/sdk.md
   - Learning:
-      - Flashbots Comparison: Learning/flashbots-comparison.md
+  #    - Flashbots Comparison: Learning/flashbots-comparison.md
       - Auction Design: Learning/aup_auction.md
       - Forward Contracts: Learning/Forward-Contracts.md
   # Disable Article
