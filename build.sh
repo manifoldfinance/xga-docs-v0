@@ -27,17 +27,16 @@ date "+%Y-%m-%dT%H:%M:%S%z" > site/build_id.txt
 #TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > site/.well-known/nightly-release.txt
 #cp nightly-release.txt site/.well-known/nightly-release.txt
 # git config user.name github-actions[bot]
-export GIT_COMMITTER_NAME='github-actions[bot]'
+#export GIT_COMMITTER_NAME='github-actions[bot]'
 # git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
 #export GIT_COMMITTER_EMAIL='41898282+github-actions[bot]@users.noreply.github.com'
 #export GIT_COMMITTER_DATE=2024-04-26
 
-GIT_COMMITTER_EMAIL='41898282+github-actions[bot]@users.noreply.github.com' GIT_AUTHOR_DATE="Fri Apr 26 23:36:15 PDT 2024" GIT_COMMITTER_DATE="Fri Apr 26 23:36:15 PDT 2024" git init && git add . && git commit --allow-empty --allow-empty-message -m '' && git branch -M gh-pages
+#GIT_COMMITTER_EMAIL='41898282+github-actions[bot]@users.noreply.github.com' GIT_AUTHOR_DATE="Fri Apr 26 23:36:15 PDT 2024" GIT_COMMITTER_DATE="Fri Apr 26 23:36:15 PDT 2024" git init && git add . && git commit --allow-empty --allow-empty-message -m '' && git branch -M gh-pages
 # mike deploy --push --ignore-remote-status --allow-empty --update-aliases 0.2.1 latest
 # 
 #mike deploy v0.1.1
-touch site/.nojekyll
 
 
 cp platform-docs.xml site/.well-known/platform-docs.xml

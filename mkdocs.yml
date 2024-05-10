@@ -88,9 +88,6 @@ extra:
     site_verification:
       - ''
     tag_manager: ''
-  version:
-    provider: mike
-    default: latest-release
 
 plugins:
   - search:
@@ -101,7 +98,6 @@ plugins:
       strict: false
       type: date
       locale: en
-  - markdownextradata: {}
   - exclude:
       glob:
         - README.md
