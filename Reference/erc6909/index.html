@@ -6,37 +6,37 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Developer related information for builders, searchers and intergrators.">
+        <meta name="description" content="Interface for ERC6909">
       
       
         <meta name="author" content="MEV.io">
       
       
-        <link rel="canonical" href="https://mevauction.com/Developers/">
+        <link rel="canonical" href="https://mevauction.com/Reference/erc6909/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../constants/">
       
       
-        <link rel="next" href="interface/">
+        <link rel="next" href="../../Legal/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18+insiders-4.53.6">
     
     
       
-        <title>Developer overview - MEV Auction</title>
+        <title>ERC6909 Interface - MEV Auction</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.d5b5f0fd.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.d5b5f0fd.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#general" class="md-skip">
+        <a href="#functions" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   This documentation is not for the latest stable version of MEV Auction.
-  <a href="../../latest-release/">
+  <a href="../../../latest-release/">
     <strong>Click here for the latest release documentation.</strong>
   </a>
 
@@ -112,7 +112,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
+    <a href="../.." title="MEV Auction" class="md-header__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer overview
+              ERC6909 Interface
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -271,13 +271,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Developers/" class="md-tabs__link">
           
   
     
@@ -297,7 +295,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Learning/aup_auction/" class="md-tabs__link">
+        <a href="../../Learning/aup_auction/" class="md-tabs__link">
           
   
     
@@ -317,7 +315,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Clients/" class="md-tabs__link">
+        <a href="../../Clients/" class="md-tabs__link">
           
   
     
@@ -337,7 +335,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Relay/" class="md-tabs__link">
+        <a href="../../Relay/" class="md-tabs__link">
           
   
     
@@ -357,7 +355,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../api/" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
     
@@ -373,11 +371,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Reference/contract_design/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../contract_design/" class="md-tabs__link">
           
   
     
@@ -397,7 +397,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Legal/" class="md-tabs__link">
+        <a href="../../Legal/" class="md-tabs__link">
           
   
     
@@ -417,7 +417,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Rulebook/bylaws/" class="md-tabs__link">
+        <a href="../../Rulebook/bylaws/" class="md-tabs__link">
           
   
     
@@ -452,7 +452,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
+    <a href="../.." title="MEV Auction" class="md-nav__button md-logo" aria-label="MEV Auction" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -482,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -505,8 +505,6 @@
       
   
   
-    
-  
   
   
     
@@ -529,24 +527,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../Developers/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -563,13 +558,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -589,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="interface/" class="md-nav__link">
+      <a href="../../Developers/interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="builders/" class="md-nav__link">
+      <a href="../../Developers/builders/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -643,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="testnet/" class="md-nav__link">
+      <a href="../../Developers/testnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="payment-methods/" class="md-nav__link">
+      <a href="../../Developers/payment-methods/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -697,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sdk/" class="md-nav__link">
+      <a href="../../Developers/sdk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -787,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Learning/aup_auction/" class="md-nav__link">
+      <a href="../../Learning/aup_auction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -814,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Learning/Forward-Contracts/" class="md-nav__link">
+      <a href="../../Learning/Forward-Contracts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +878,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Clients/" class="md-nav__link ">
+            <a href="../../Clients/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -926,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/clients/" class="md-nav__link">
+      <a href="../../Clients/clients/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -953,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/validators/" class="md-nav__link">
+      <a href="../../Clients/validators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -980,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/configuration/" class="md-nav__link">
+      <a href="../../Clients/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/accounting/" class="md-nav__link">
+      <a href="../../Clients/accounting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/relay/" class="md-nav__link">
+      <a href="../../Clients/relay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1061,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Clients/requirements/" class="md-nav__link">
+      <a href="../../Clients/requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1122,7 +1117,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Relay/" class="md-nav__link ">
+            <a href="../../Relay/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1165,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Relay/captive-insurance/" class="md-nav__link">
+      <a href="../../Relay/captive-insurance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1259,7 +1254,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../api/" class="md-nav__link ">
+            <a href="../../api/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1302,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/relay/" class="md-nav__link">
+      <a href="../../api/relay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1329,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/self-report/" class="md-nav__link">
+      <a href="../../api/self-report/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1356,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/beta-auction/" class="md-nav__link">
+      <a href="../../api/beta-auction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,7 +1378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/bundle/" class="md-nav__link">
+      <a href="../../api/bundle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1410,7 +1405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/signature-scheme/" class="md-nav__link">
+      <a href="../../api/signature-scheme/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1441,8 +1436,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1461,19 +1458,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1490,7 +1490,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1508,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/contract_design/" class="md-nav__link">
+      <a href="../contract_design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1535,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/contract_summary/" class="md-nav__link">
+      <a href="../contract_summary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1562,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/glossary/" class="md-nav__link">
+      <a href="../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1589,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/rpc-payload/" class="md-nav__link">
+      <a href="../rpc-payload/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1616,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reference/constants/" class="md-nav__link">
+      <a href="../constants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1640,10 +1640,34 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Reference/erc6909/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    ERC 6909
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1658,6 +1682,168 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#balanceof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        balanceOf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        allowance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isoperator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isOperator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transfer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transferfrom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transferFrom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        approve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoperator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setOperator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transfer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transfer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operatorset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OperatorSet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approval
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1706,7 +1892,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Legal/" class="md-nav__link ">
+            <a href="../../Legal/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1749,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Legal/CDD/" class="md-nav__link">
+      <a href="../../Legal/CDD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1776,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Legal/Content-Disclaimer/" class="md-nav__link">
+      <a href="../../Legal/Content-Disclaimer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1803,7 +1989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Legal/Disclosure-Statement/" class="md-nav__link">
+      <a href="../../Legal/Disclosure-Statement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1905,7 +2091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/bylaws/" class="md-nav__link">
+      <a href="../../Rulebook/bylaws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1932,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/definitions/" class="md-nav__link">
+      <a href="../../Rulebook/definitions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1959,7 +2145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/delivery-and-settlement/" class="md-nav__link">
+      <a href="../../Rulebook/delivery-and-settlement/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1986,7 +2172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/general/" class="md-nav__link">
+      <a href="../../Rulebook/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2013,7 +2199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/governance/" class="md-nav__link">
+      <a href="../../Rulebook/governance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2040,7 +2226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/network-clearing-participants/" class="md-nav__link">
+      <a href="../../Rulebook/network-clearing-participants/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2067,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/obligations/" class="md-nav__link">
+      <a href="../../Rulebook/obligations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2094,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Rulebook/suspension/" class="md-nav__link">
+      <a href="../../Rulebook/suspension/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2146,33 +2332,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#general" class="md-nav__link">
+  <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        General
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#balanceof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        balanceOf
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#auction-contracts-v10" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#allowance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Auction Contracts v1.0
+        allowance
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Auction Contracts v1.0">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isoperator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isOperator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transfer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transferfrom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        transferFrom
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        approve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setoperator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setOperator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Events
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Events">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#builder-and-searcher-specific" class="md-nav__link">
+  <a href="#transfer_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Builder and Searcher specific
+        Transfer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operatorset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OperatorSet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approval
       
     </span>
   </a>
@@ -2201,7 +2492,7 @@
 
 
   
-    <a href="https://github.com/MEV-Protocol/platform-docs/edit/master/docs/Developers/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/MEV-Protocol/platform-docs/edit/master/docs/Reference/erc6909.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2210,31 +2501,383 @@
     
       
     
-    <a href="https://github.com/MEV-Protocol/platform-docs/raw/master/docs/Developers/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/MEV-Protocol/platform-docs/raw/master/docs/Reference/erc6909.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Getting Started</h1>
+  <h1>ERC 6909</h1>
 
-<h2 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><a href="sdk/">SDK</a></p>
-</li>
-<li>
-<p><a href="testnet/">Holesky Testnet</a></p>
-</li>
-</ul>
-<h2 id="auction-contracts-v10">Auction Contracts v1.0<a class="headerlink" href="#auction-contracts-v10" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="interface/">Interface</a></li>
-</ul>
-<h3 id="builder-and-searcher-specific">Builder and Searcher specific<a class="headerlink" href="#builder-and-searcher-specific" title="Permanent link">&para;</a></h3>
-<p><a href="builders/">Requirements</a></p>
-<p><a href="payment-methods/">Payment Methods</a></p>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<h3 id="balanceof">balanceOf<a class="headerlink" href="#balanceof" title="Permanent link">&para;</a></h3>
+<p>Owner balance of an id.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">balanceOf</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">owner</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">id</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>owner</code></td>
+<td><code>address</code></td>
+<td>The address of the owner.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The balance of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="allowance">allowance<a class="headerlink" href="#allowance" title="Permanent link">&para;</a></h3>
+<p>Spender allowance of an id.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">allowance</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">owner</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">spender</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">id</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>owner</code></td>
+<td><code>address</code></td>
+<td>The address of the owner.</td>
+</tr>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The allowance of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="isoperator">isOperator<a class="headerlink" href="#isoperator" title="Permanent link">&para;</a></h3>
+<p>Checks if a spender is approved by an owner as an operator</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">isOperator</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">owner</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">spender</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="nv">approved</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>owner</code></td>
+<td><code>address</code></td>
+<td>The address of the owner.</td>
+</tr>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>approved</code></td>
+<td><code>bool</code></td>
+<td>The approval status.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer">transfer<a class="headerlink" href="#transfer" title="Permanent link">&para;</a></h3>
+<p>Transfers an amount of an id from the caller to a receiver.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">transfer</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">receiver</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">bool</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>receiver</code></td>
+<td><code>address</code></td>
+<td>The address of the receiver.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The amount of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transferfrom">transferFrom<a class="headerlink" href="#transferfrom" title="Permanent link">&para;</a></h3>
+<p>Transfers an amount of an id from a sender to a receiver.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">transferFrom</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">sender</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">receiver</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">bool</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sender</code></td>
+<td><code>address</code></td>
+<td>The address of the sender.</td>
+</tr>
+<tr>
+<td><code>receiver</code></td>
+<td><code>address</code></td>
+<td>The address of the receiver.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The amount of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="approve">approve<a class="headerlink" href="#approve" title="Permanent link">&para;</a></h3>
+<p>Approves an amount of an id to a spender.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">approve</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">spender</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">id</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">bool</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The amount of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="setoperator">setOperator<a class="headerlink" href="#setoperator" title="Permanent link">&para;</a></h3>
+<p>Sets or removes a spender as an operator for the caller.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">setOperator</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">spender</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nv">approved</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">bool</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+<tr>
+<td><code>approved</code></td>
+<td><code>bool</code></td>
+<td>The approval status.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="transfer_1">Transfer<a class="headerlink" href="#transfer_1" title="Permanent link">&para;</a></h3>
+<p>The event emitted when a transfer occurs.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">Transfer</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">caller</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>sender<span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>receiver<span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>id<span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>caller</code></td>
+<td><code>address</code></td>
+<td>The caller of the transfer.</td>
+</tr>
+<tr>
+<td><code>sender</code></td>
+<td><code>address</code></td>
+<td>The address of the sender.</td>
+</tr>
+<tr>
+<td><code>receiver</code></td>
+<td><code>address</code></td>
+<td>The address of the receiver.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The amount of the token.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operatorset">OperatorSet<a class="headerlink" href="#operatorset" title="Permanent link">&para;</a></h3>
+<p>The event emitted when an operator is set.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">OperatorSet</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>owner<span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>spender<span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nv">approved</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>owner</code></td>
+<td><code>address</code></td>
+<td>The address of the owner.</td>
+</tr>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+<tr>
+<td><code>approved</code></td>
+<td><code>bool</code></td>
+<td>The approval status.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="approval">Approval<a class="headerlink" href="#approval" title="Permanent link">&para;</a></h3>
+<p>The event emitted when an approval occurs.</p>
+<div class="language-solidity highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">Approval</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>owner<span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>spender<span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>id<span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amount</span><span class="p">);</span>
+</span></code></pre></div></td></tr></table></div>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>owner</code></td>
+<td><code>address</code></td>
+<td>The address of the owner.</td>
+</tr>
+<tr>
+<td><code>spender</code></td>
+<td><code>address</code></td>
+<td>The address of the spender.</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td><code>uint256</code></td>
+<td>The id of the token.</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td><code>uint256</code></td>
+<td>The amount of the token.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2273,7 +2916,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../constants/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Constant Values">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2283,20 +2926,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Constant Values
               </div>
             </div>
           </a>
         
         
           
-          <a href="interface/" class="md-footer__link md-footer__link--next" aria-label="Next: Interface">
+          <a href="../../Legal/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Interface
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2329,12 +2972,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.e1f28405.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e1f28405.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
