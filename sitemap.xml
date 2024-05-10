@@ -225,4 +225,24 @@
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://docs.xga.com/blog/announcements/changelog/timeline-for-v0-to-v1/</loc>
+         <lastmod>2024-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.xga.com/blog/archive/2024/</loc>
+         <lastmod>2024-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.xga.com/blog/category/announcements/</loc>
+         <lastmod>2024-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.xga.com/blog/category/changelog/</loc>
+         <lastmod>2024-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
