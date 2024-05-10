@@ -111,7 +111,9 @@ plugins:
   - macros:
       module_name: .docs/macros/includes/main
   - typeset
-  - blog
+  - blog:
+      post_url_format: "{categories}/{slug}"
+      post_url_max_categories: 2
   - meta
 
 
@@ -174,7 +176,7 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: ./index.md
+  - index.md
   - Developers:
       - Getting Started: Developers/index.md
       # - Auctioneer: Developers/auctioneer.md
@@ -208,24 +210,26 @@ nav:
       - Beta Auction: api/beta-auction.md
       - Bundle: api/bundle.md
       - Signature Scheme: api/signature-scheme.md
-  - Reference:
-      - Contract Design: Reference/contract_design.md
-      - Contract Summary: Reference/contract_summary.md
-      - Glossary: Reference/glossary.md
-      - RPC Payload: Reference/rpc-payload.md
-      - Constant Values: Reference/constants.md
-      - ERC 6909: Reference/erc6909.md
+      - Reference:
+          - Contract Design: Reference/contract_design.md
+          - Contract Summary: Reference/contract_summary.md
+          - Glossary: Reference/glossary.md
+          - RPC Payload: Reference/rpc-payload.md
+          - Constant Values: Reference/constants.md
+          - ERC 6909: Reference/erc6909.md
   - Legal:
-      - Overview: Legal/index.md
+      - Legal/index.md
       - Compliance: Legal/CDD.md
       - Content Disclaimer: Legal/Content-Disclaimer.md
       - Disclosure Statement: Legal/Disclosure-Statement.md
-  - Rulebook:
-      - Bylaws: Rulebook/bylaws.md
-      - Definitions: Rulebook/definitions.md
-      - Settlement: Rulebook/delivery-and-settlement.md
-      - General: Rulebook/general.md
-      - Governance: Rulebook/governance.md
-      - Clearing: Rulebook/network-clearing-participants.md
-      - Obligations: Rulebook/obligations.md
-      - Suspension: Rulebook/suspension.md
+      - Rulebook:
+          - Bylaws: Rulebook/bylaws.md
+          - Definitions: Rulebook/definitions.md
+          - Settlement: Rulebook/delivery-and-settlement.md
+          - General: Rulebook/general.md
+          - Governance: Rulebook/governance.md
+          - Clearing: Rulebook/network-clearing-participants.md
+          - Obligations: Rulebook/obligations.md
+          - Suspension: Rulebook/suspension.md
+  - Blog:
+      - blog/index.md
