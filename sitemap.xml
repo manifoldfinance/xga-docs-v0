@@ -1,222 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mevauction.com/</loc>
+         <loc>https://docs.xga.com/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/</loc>
+         <loc>https://docs.xga.com/Clients/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/accounting/</loc>
+         <loc>https://docs.xga.com/Clients/accounting/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/clients/</loc>
+         <loc>https://docs.xga.com/Clients/clients/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/configuration/</loc>
+         <loc>https://docs.xga.com/Clients/configuration/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/relay/</loc>
+         <loc>https://docs.xga.com/Clients/relay/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/requirements/</loc>
+         <loc>https://docs.xga.com/Clients/requirements/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Clients/validators/</loc>
+         <loc>https://docs.xga.com/Clients/validators/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/</loc>
+         <loc>https://docs.xga.com/Developers/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/builders/</loc>
+         <loc>https://docs.xga.com/Developers/builders/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/interface/</loc>
+         <loc>https://docs.xga.com/Developers/interface/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/payment-methods/</loc>
+         <loc>https://docs.xga.com/Developers/payment-methods/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/sdk/</loc>
+         <loc>https://docs.xga.com/Developers/sdk/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Developers/testnet/</loc>
+         <loc>https://docs.xga.com/Developers/testnet/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/Forward-Contracts/</loc>
+         <loc>https://docs.xga.com/Learning/Forward-Contracts/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/aup_auction/</loc>
+         <loc>https://docs.xga.com/Learning/aup_auction/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/flashbots-comparison/</loc>
+         <loc>https://docs.xga.com/Learning/flashbots-comparison/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Learning/secondary-market/</loc>
+         <loc>https://docs.xga.com/Learning/secondary-market/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Legal/</loc>
+         <loc>https://docs.xga.com/Legal/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Legal/CDD/</loc>
+         <loc>https://docs.xga.com/Legal/CDD/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Legal/Content-Disclaimer/</loc>
+         <loc>https://docs.xga.com/Legal/Content-Disclaimer/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Legal/Disclosure-Statement/</loc>
+         <loc>https://docs.xga.com/Legal/Disclosure-Statement/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/constants/</loc>
+         <loc>https://docs.xga.com/Reference/constants/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/contract_design/</loc>
+         <loc>https://docs.xga.com/Reference/contract_design/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/contract_summary/</loc>
+         <loc>https://docs.xga.com/Reference/contract_summary/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/erc6909/</loc>
+         <loc>https://docs.xga.com/Reference/erc6909/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/glossary/</loc>
+         <loc>https://docs.xga.com/Reference/glossary/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Reference/rpc-payload/</loc>
+         <loc>https://docs.xga.com/Reference/rpc-payload/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Relay/</loc>
+         <loc>https://docs.xga.com/Relay/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Relay/captive-insurance/</loc>
+         <loc>https://docs.xga.com/Relay/captive-insurance/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/bylaws/</loc>
+         <loc>https://docs.xga.com/Rulebook/bylaws/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/definitions/</loc>
+         <loc>https://docs.xga.com/Rulebook/definitions/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/delivery-and-settlement/</loc>
+         <loc>https://docs.xga.com/Rulebook/delivery-and-settlement/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/general/</loc>
+         <loc>https://docs.xga.com/Rulebook/general/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/governance/</loc>
+         <loc>https://docs.xga.com/Rulebook/governance/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/network-clearing-participants/</loc>
+         <loc>https://docs.xga.com/Rulebook/network-clearing-participants/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/obligations/</loc>
+         <loc>https://docs.xga.com/Rulebook/obligations/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/Rulebook/suspension/</loc>
+         <loc>https://docs.xga.com/Rulebook/suspension/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/</loc>
+         <loc>https://docs.xga.com/api/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/beta-auction/</loc>
+         <loc>https://docs.xga.com/api/beta-auction/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/bundle/</loc>
+         <loc>https://docs.xga.com/api/bundle/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/relay/</loc>
+         <loc>https://docs.xga.com/api/relay/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/self-report/</loc>
+         <loc>https://docs.xga.com/api/self-report/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mevauction.com/api/signature-scheme/</loc>
+         <loc>https://docs.xga.com/api/signature-scheme/</loc>
+         <lastmod>2024-05-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.xga.com/blog/</loc>
          <lastmod>2024-05-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
