@@ -31,15 +31,17 @@ document$.subscribe(() => {
 
 /* global $ */
 $(document).ready(function () {
-  displayLatestWarning()
-})
+  displayLatestWarning();
+});
 
 $(window).on('hashchange', function () {
-  displayLatestWarning()
-})
+  displayLatestWarning();
+});
 
 function displayLatestWarning() {
-  const latestWarningTrigger = "/latest-warning"; // Declare and initialize latestWarningTrigger
-  $(".latest-warning").css("display",
-    $(location).attr('href').includes(latestWarningTrigger) ? "block" : "none");
+  const latestWarningTrigger = '/latest-warning'; // Declare and initialize latestWarningTrigger
+  $('.latest-warning').css(
+    'display',
+    $(location).attr('href').includes(latestWarningTrigger) ? 'block' : 'none',
+  );
 }
