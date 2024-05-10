@@ -1,18 +1,20 @@
+# yamllint disable-line rule:line-length
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-repo_name: MEV-Protocol/platform-docs
-repo_url: https://github.com/MEV-Protocol/platform-docs
-site_author: MEV.io
+repo_name: manifoldfinance/auction-platform-docs
+repo_url: https://github.com/manifoldfinance/auction-platform-docs
+site_author: Manifold Finance & 20squares
+# yamllint disable-line rule:line-length
 site_description: MEV Auction documentation for builders, searchers and liquid staking protocols.
-site_name: MEV Auction
-site_url: https://mevauction.com
-copyright: Manifold Finance, Inc and its contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
+site_name: XGA Auctions Documentation
+site_url: https://docs.xga.com
+# yamllint disable-line rule:line-length
+copyright: Manifold Finance, Inc, 20squares UG, and contributors. Creative Commons Attribution-NonCommercial-NoDerivs 2.5
 use_directory_urls: true
 
 theme:
   name: material
   custom_dir: .docs/overrides/
-  features:
   features:
     - announce.dismiss
     - content.action.edit
@@ -26,21 +28,27 @@ theme:
     # - header.autohide
     # - navigation.expand
     - navigation.footer
-    - navigation.indexes
     # - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
     # - navigation.prune
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.expand
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+# breadcrumbs
+    - navigation.indexes
+    - navigation.path
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+# keep TOC on righthand side enabled
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -68,23 +76,28 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/extra.js
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
+  is_insider: true
   generator: false
   google:
     site_verification:
       - ''
     tag_manager: ''
-  version:
-    provider: mike
-    default: latest-release
 
 plugins:
   - search:
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      separator: '[\s\-\.\_]+'
+      lang: 'en'
+  - git-revision-date-localized:
+      strict: false
+      type: date
+      locale: en
   - exclude:
       glob:
         - README.md
@@ -93,13 +106,24 @@ plugins:
   - awesome-pages
   - macros:
       module_name: .docs/macros/includes/main
-  - mike:
-      version_selector: true # set to false to leave out the version selector
-      css_dir: css # the directory to put the version selector's CSS
-      javascript_dir: js # the directory to put the version selector's JS
-      canonical_version: null
-        # uses the version specified via `mike deploy`
+  - typeset
+  - blog:
+      post_url_format: "{categories}/{slug}"
+      post_url_max_categories: 2
+  - meta
+
+
 markdown_extensions:
+# Built-in
+  - markdown.extensions.abbr:
+  - markdown.extensions.admonition:
+  - markdown.extensions.attr_list:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.md_in_html:
+  - markdown.extensions.meta:
+  - markdown.extensions.tables:
+  - markdown.extensions.toc:
+      permalink: true
   - mdx_math
   - pymdownx.arithmatex:
       generic: true
@@ -114,7 +138,15 @@ markdown_extensions:
           case: lower
   - admonition
   - pymdownx.details
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shortener: true
+      social_url_shorthand: true
+      normalize_issue_symbols: true
+      provider: github
+      user: manifoldfinance
+      repo: auction-platform-docs
   - pymdownx.mark
   - pymdownx.critic
   - pymdownx.caret
@@ -137,9 +169,10 @@ markdown_extensions:
   - pymdownx.snippets
   - toc:
       permalink: true
+      toc_depth: 3
 
 nav:
-  - Home: ./index.md
+  - index.md
   - Developers:
       - Getting Started: Developers/index.md
       # - Auctioneer: Developers/auctioneer.md
@@ -173,24 +206,26 @@ nav:
       - Beta Auction: api/beta-auction.md
       - Bundle: api/bundle.md
       - Signature Scheme: api/signature-scheme.md
-  - Reference:
-      - Contract Design: Reference/contract_design.md
-      - Contract Summary: Reference/contract_summary.md
-      - Glossary: Reference/glossary.md
-      - RPC Payload: Reference/rpc-payload.md
-      - Constant Values: Reference/constants.md
-      - ERC 6909: Reference/erc6909.md
+      - Reference:
+          - Contract Design: Reference/contract_design.md
+          - Contract Summary: Reference/contract_summary.md
+          - Glossary: Reference/glossary.md
+          - RPC Payload: Reference/rpc-payload.md
+          - Constant Values: Reference/constants.md
+          - ERC 6909: Reference/erc6909.md
   - Legal:
-      - Overview: Legal/index.md
+      - Legal/index.md
       - Compliance: Legal/CDD.md
       - Content Disclaimer: Legal/Content-Disclaimer.md
       - Disclosure Statement: Legal/Disclosure-Statement.md
-  - Rulebook:
-      - Bylaws: Rulebook/bylaws.md
-      - Definitions: Rulebook/definitions.md
-      - Settlement: Rulebook/delivery-and-settlement.md
-      - General: Rulebook/general.md
-      - Governance: Rulebook/governance.md
-      - Clearing: Rulebook/network-clearing-participants.md
-      - Obligations: Rulebook/obligations.md
-      - Suspension: Rulebook/suspension.md
+      - Rulebook:
+          - Bylaws: Rulebook/bylaws.md
+          - Definitions: Rulebook/definitions.md
+          - Settlement: Rulebook/delivery-and-settlement.md
+          - General: Rulebook/general.md
+          - Governance: Rulebook/governance.md
+          - Clearing: Rulebook/network-clearing-participants.md
+          - Obligations: Rulebook/obligations.md
+          - Suspension: Rulebook/suspension.md
+  - Blog:
+      - blog/index.md

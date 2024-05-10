@@ -35,4 +35,3 @@ title: Glossary
 | Block Proposal                       | The process by which validators or miners propose a set of transactions to be included in a new block.                                            |
 | Staking                              | The act of locking up cryptocurrency holdings to support the operation of a blockchain network, often in exchange for rewards.                    |
 | Epoch                                | A division of time used in blockchain networks, referring to a set period during which certain processes or updates occur.                        |
-

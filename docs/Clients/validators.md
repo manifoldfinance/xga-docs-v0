@@ -2,7 +2,8 @@
 title: Validators
 ---
 
-This is a block diagram of all the parts of the system and will be updated as needed.
+This is a block diagram of all the parts of the system and will be updated as
+needed.
 
 ```mermaid
 graph LR

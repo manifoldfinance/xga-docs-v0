@@ -13,7 +13,7 @@ mkdocs-render-swagger-plugin
 mike
 mkdocs-exclude
 mkdocs-macros-plugin
-
+mkdocs-material[imaging]
 mkdocs-awesome-pages-plugin
 mkdocs-exclude
 mkdocs-minify-plugin

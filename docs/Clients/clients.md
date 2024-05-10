@@ -75,6 +75,7 @@ Here's the full sequence from the perspective of a non-validator node:
    `hardhat`, or `foundry`.
 
 2. The execution client receives the transaction and:
+
     1. Validates it (checks the user has enough ETH, the signature matches,
        etc).
 
@@ -85,6 +86,7 @@ Here's the full sequence from the perspective of a non-validator node:
        nodes. Other execution nodes include it in their mempools.
 
 3. A validator node is selected as a block proposer. As a proposer:
+
     1. Their execution client bundles many transactions from its mempool into a
        block.
 
@@ -95,7 +97,6 @@ Here's the full sequence from the perspective of a non-validator node:
        "execution payload") and adds consensus layer information, like
        attestations, slashings, rewards, penalties, etc. The execution payload +
        consensus metadata forms a "beacon block".
-       
     4. The beacon block is signed and sent over the consensus gossip layer to
        other nodes.
 
@@ -111,9 +112,10 @@ Here's the full sequence from the perspective of a non-validator node:
        transactions are applied and the state is changed and up to date.
 
 [^1]:
-   The Ethereum network is not a networked database: It's a series of tubes. And if
-   you don't understand, those tubes can be filled and if they are filled, when you
-   put your message in, it gets in line and it's going to be delayed by anyone that
-   puts into that tube enormous amounts of material, enormous amounts of material.
-    Ted Stevens (2024) Wikipedia. Available at:
-    https://en.wikipedia.org/wiki/Ted_Stevens (Accessed: 03 April 2024).
+
+The Ethereum network is not a networked database: It's a series of tubes. And if
+you don't understand, those tubes can be filled and if they are filled, when you
+put your message in, it gets in line and it's going to be delayed by anyone that
+puts into that tube enormous amounts of material, enormous amounts of material.
+Ted Stevens (2024) Wikipedia. Available at:
+https://en.wikipedia.org/wiki/Ted_Stevens (Accessed: 03 April 2024).
