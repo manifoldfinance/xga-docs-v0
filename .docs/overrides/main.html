@@ -6,3 +6,23 @@
     <strong>Click here for the latest release documentation.</strong>
   </a>
 {% endblock %}
+
+
+{% block config %}
+  {{ super() }}
+  {% if config.plugins.search %}
+    <script>
+      // Make the search query replace _-. by spaces to extend the search to all RPC methods
+      // see https://github.com/hyperledger/besu-docs/issues/448
+      var search = {
+        transform: function(query) {
+          var transformedQuery = query
+            .replace(/[\_\-\.]/g, " ")
+            .trim()
+          console.log(transformedQuery)
+          return transformedQuery
+        }
+      }
+    </script>
+  {% endif %}
+{% endblock %}

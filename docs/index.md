@@ -2,9 +2,10 @@
 title: MEV Auction Platform
 description: The Gang Designs the Ultimate MEV Auction
 date: 2024-04-24
+
 ---
 
-## MEV Auction
+# MEV Auction
 
 Multi-unit auctions, unlike their single-unit counterparts, present complex
 allocation mechanisms. The MEV Auction platform implements several innovative

@@ -29,14 +29,17 @@ document$.subscribe(() => {
   MathJax.typesetPromise();
 });
 
-$( document ).ready(function() {
-  displayLatestWarning();
-});
+/* global $ */
+$(document).ready(function () {
+  displayLatestWarning()
+})
 
-$(window).on('hashchange', function(){
-  displayLatestWarning();
-});
+$(window).on('hashchange', function () {
+  displayLatestWarning()
+})
 
-function displayLatestWarning(){
-  $( ".latest-warning" ).css( "display", $(location).attr('href').includes(latestWarningTrigger)?"block":"none" );
+function displayLatestWarning() {
+  const latestWarningTrigger = "/latest-warning"; // Declare and initialize latestWarningTrigger
+  $(".latest-warning").css("display",
+    $(location).attr('href').includes(latestWarningTrigger) ? "block" : "none");
 }
