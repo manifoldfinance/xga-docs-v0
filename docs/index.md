@@ -2,7 +2,6 @@
 title: MEV Auction Platform
 description: The Gang Designs the Ultimate MEV Auction
 date: 2024-04-24
-
 ---
 
 # MEV Auction

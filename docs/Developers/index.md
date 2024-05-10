@@ -4,8 +4,6 @@ description:
     Developer related information for builders, searchers and intergrators.
 ---
 
-
-
 ## General
 
 -   [SDK](./sdk.md)
@@ -15,7 +13,6 @@ description:
 ## Auction Contracts v1.0
 
 -   [Interface](./interface.md)
-
 
 ### Builder and Searcher specific
 
