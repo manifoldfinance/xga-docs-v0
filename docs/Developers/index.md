@@ -8,6 +8,8 @@ description:
 
 -   [SDK](./sdk.md)
 
+-   [Mainnet](./mainnet.md)
+
 -   [Holesky Testnet](./testnet.md)
 
 ## Auction Contracts v1.0

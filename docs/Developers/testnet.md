@@ -1,8 +1,11 @@
 ---
-title: MEV L2 Testnet
+title: XGA L2 Testnet
 description:
     Testing information for node operators, validators, builders, and searchers.
 ---
+
+- [Live auction dashboard](https://holesky-auction-dashboard.securerpc.com/)
+- [L2 Blockchain explorer](https://holesky-blockscout.securerpc.com/)
 
 ## Node Operators
 
@@ -49,18 +52,6 @@ _L1StandardBridgeProxy_: `0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C`
 
 To monetize yourself on L2, send some ETH on L1 (Holesky) to
 `0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C`
-
-mevETH Reward Address: `0x583d8a136e5e4387234A50EB9fd790d9c513484C`
-
--   Holesky Network ID: `17000`
--   Holesky Chain ID: `17000`
--   L2 Chain ID: `42169`
--   L2 RPC Endpoint:
-    [@holesky-l2.v2-stag.manifoldx.com](https://holesky-l2.v2-stag.manifoldx.com/)
-
-!!! warning
-
-    The L2 RPC Endpoint requires a username and password, this is provided by us during the closed testing period
 
 ### Resources
 
