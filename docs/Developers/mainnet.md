@@ -23,14 +23,15 @@ operating correctly so long as MEV Boost is also running.
 
     -   Description: L2 Node RPC
     -   URL:
-        [https://mainnet-api.securerpc.com/l2](https://mainnet-api.securerpc.com/l2/)
+        [https://xga-api.securerpc.com/v1](https://xga-api.securerpc.com/v1)
     -   Methods: eth\_\*
     -   ChainId: 7890785
+    -   Limits: 300 req per minute per IP
 
 -   **Beta bundle RPC:**
     -   Description: Beta bundle submission RPC
     -   URL:
-        [https://mainnet-api.securerpc.com/v2](https://mainnet-api.securerpc.com/v2)
+        [https://mainnet-auction.securerpc.com/](https://mainnet-auction.securerpc.com/)
     -   Method: mev_sendBetaBundle
     -   Parameters:
         -   `txs`: List of txs as bundle e.g. [0x2323...,]
