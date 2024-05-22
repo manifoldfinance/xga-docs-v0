@@ -4,7 +4,30 @@ sidebar_position: 1
 title: Auction SDK
 ---
 
-## RPC Endpoints
+XGA auction winners are granted future block space via a token, which is used with submission of transactions for inclusion in the beta block. Budding bidders can register themselves with the protocol to participate in beta block auctions. Thereupon custom implementations will be required to bid and submit transactions. Technical details are provided herein. 
+
+Technical Overview:
+- [Bidding](#bidding):
+    - [Connect to L2 RPC](#l2-rpc)
+    - [Bridge eth to L2](#l1-bridge)
+    - [Understand auction contracts](#auction-contracts)
+    - [Deploy custom bidding strategy contract](#bidder-contracts)
+- [Submitting bundles](#submitting-bundles):
+    - [Beta Bundle RPC](#beta-bundle-rpc)
+    - [Bundle JSON Requests and Responses](#bundle-json-requests-and-responses)
+
+Full working examples are available for:
+- [Zero latency open bidder contract](https://github.com/manifoldfinance/open-bidder-contracts/)
+- [Bundle submissions](https://github.com/MEV-Protocol/beta-bundles-py)
+
+# Bidding
+## L2 RPC
+-   **L2 RPC:**
+    -   Description: L2 Node RPC
+    -   URL:
+        [https://xga-api.securerpc.com/v1](https://xga-api.securerpc.com/v1)
+    -   Methods: eth\_\*
+    -   ChainId: 7890785
 
 -   **L2 RPC (TESTNET):**
 
@@ -13,55 +36,16 @@ title: Auction SDK
         [https://holesky-api.securerpc.com/l2](https://holesky-api.securerpc.com/l2/)
     -   Methods: eth\_\*
     -   ChainId: 42169
-
--   **Beta bundle RPC (Testnet):**
-    -   Description: Beta bundle submission RPC
-    -   URL:
-        [https://holesky-api.securerpc.com/v2](https://holesky-api.securerpc.com/v2)
-    -   Method: mev_sendBetaBundle
-    -   Parameters:
-        -   `txs`: List of txs as bundle e.g. [0x2323...,]
-        -   `slot`: slot number e.g. "11282389"
-    -   ChainId: 17000
-
-## Bundler Examples
-
--   [Python bundler](https://github.com/MEV-Protocol/beta-bundles-py) - employs
-    a deployed bidder contract for continuous automated bidding, while listening
-    for auction close event, then submits the bundle
-
-## Bundle JSON Requests and Responses
-
-### Example JSON request
-
-```jsonc
-{
-    "jsonrpc": "2.0",
-    "method": "mev_sendBetaBundle",
-    "params": [
-      {
-        "txs": [0x... ],
-        "slot": "1001"
-      }
-    ],
-    "id": 8
-}
-```
-
-### Example JSON response
-
-```jsonc
-{
-	"jsonrpc": "2.0",
-	"id": 1,
-	"method": "mev_sendBetaBundle",
-	"result": "0x79e5cba7876f532218ac35a357209800be2362dd2e3f1e6dc5974698f0d7cee4",
-}
-```
-
+    
 ## L1 Bridge
 
-Fund L2 address by sending ETH to the bridge address.
+Fund L2 address by sending ETH to the L1 bridge address.
+
+### Deployed Address
+
+```bash
+L1_BRIDGE="0x490B959870889D5FA0B329431683B8B3e850DD95"
+```
 
 ### Deployed Address (Testnet)
 
@@ -71,13 +55,20 @@ L1_BRIDGE="0x3Ae5Ca0B05bE12d4FF9983Ed70D86de9C34e820C"
 
 ## WETH
 
-### Deployed Address (Testnet)
+### Deployed Address (Mainnet and Testnet)
 
 ```bash
 WETH="0x4200000000000000000000000000000000000006"
 ```
 
 ## Auction Contracts
+
+### Deployed Addresses
+
+```bash
+AUCTIONEER="0x86Bc75A43704E38f0FD94BdA423C50071fE17c99"
+SETTLEMENT="0x80C5FfF824d14c87C799D6F90b7D8e0a715bd33C"
+```
 
 ### Deployed Addresses (Testnet)
 
@@ -142,7 +133,7 @@ After an auction is closed, bidders can query their bid results:
 
 ## Bidder Contracts
 
-A minimal viable bidder is provided below:
+A minimal viable bidder is provided below. [A more sophisticated fill or kill open bidder contract is provided](https://github.com/manifoldfinance/open-bidder-contracts/).
 
 ```solidity
 /// SPDX-License-Identifier: UPL-1.0
@@ -183,3 +174,62 @@ contract MockBidder {
     }
 }
 ```
+
+# Submitting bundles
+
+## Beta Bundle RPC
+-   **Beta bundle RPC:**
+    -   Description: Beta bundle submission RPC
+    -   URL:
+        [https://mainnet-auction.securerpc.com/](https://mainnet-auction.securerpc.com/)
+    -   Method: mev_sendBetaBundle
+    -   Parameters:
+        -   `txs`: List of txs as bundle e.g. [0x2323...,]
+        -   `slot`: slot number e.g. "11282389"
+    -   ChainId: 1
+
+-   **Beta bundle RPC (Testnet):**
+    -   Description: Beta bundle submission RPC
+    -   URL:
+        [https://holesky-api.securerpc.com/v2](https://holesky-api.securerpc.com/v2)
+    -   Method: mev_sendBetaBundle
+    -   Parameters:
+        -   `txs`: List of txs as bundle e.g. [0x2323...,]
+        -   `slot`: slot number e.g. "11282389"
+    -   ChainId: 17000
+
+
+## Bundle JSON Requests and Responses
+
+### Example JSON request
+
+```jsonc
+{
+    "jsonrpc": "2.0",
+    "method": "mev_sendBetaBundle",
+    "params": [
+      {
+        "txs": [0x... ],
+        "slot": "1001"
+      }
+    ],
+    "id": 8
+}
+```
+
+### Example JSON response
+
+```jsonc
+{
+	"jsonrpc": "2.0",
+	"id": 1,
+	"method": "mev_sendBetaBundle",
+	"result": "0x79e5cba7876f532218ac35a357209800be2362dd2e3f1e6dc5974698f0d7cee4",
+}
+```
+
+## Bundler Examples
+
+-   [Python bundler](https://github.com/MEV-Protocol/beta-bundles-py) - employs
+    a deployed bidder contract for continuous automated bidding, while listening
+    for auction close event, then submits the bundle
