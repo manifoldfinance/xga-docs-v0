@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18+insiders-4.53.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24+insiders-4.53.10">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.d5b5f0fd.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c0d16a3a.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interface" class="md-skip">
+        <a href="#summary-interfaces" class="md-skip">
           Skip to content
         </a>
       
@@ -90,22 +90,6 @@
     <div data-md-component="announce">
       
     </div>
-    
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-          <aside class="md-banner md-banner--warning">
-            <div class="md-banner__inner md-grid md-typeset">
-              
-  This documentation is not for the latest stable version of MEV Auction.
-  <a href="../../../latest-release/">
-    <strong>Click here for the latest release documentation.</strong>
-  </a>
-
-            </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
-          </aside>
-        
-      </div>
     
     
       
@@ -257,7 +241,7 @@
   
     
   
-  MEV Auction Platform
+  XGA Auction Platform
 
       </a>
     </li>
@@ -472,7 +456,7 @@
   <span class="md-ellipsis">
     
   
-    MEV Auction Platform
+    XGA Auction Platform
   
 
     
@@ -579,23 +563,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    
-  
-    Interface
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -612,534 +581,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Interface
-        </span>
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Functions
-        </span>
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getbid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          getBid
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#newbidder" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          newBidder
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#removebidder" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          removeBidder
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#addoperator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          addOperator
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#removeoperator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          removeOperator
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openauction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          openAuction
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          bid
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          run
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          settle
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#runandsettle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          runAndSettle
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getbidderinfo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          getBidderInfo
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#packbid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          packBid
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decodebid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          decodeBid
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#checkandstorebid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          checkAndStoreBid
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#structs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Structs
-        </span>
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Structs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#auction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Auction
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bidderinfo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          BidderInfo
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Events
-        </span>
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operatoradded" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          OperatorAdded
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operatorremoved" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          OperatorRemoved
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionsettled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionSettled
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bidderadded" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          BidderAdded
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bidderremoved" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          BidderRemoved
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionopened" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionOpened
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Errors
-        </span>
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Errors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#invalidid" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          InvalidId
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unauthorized" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          Unauthorized
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#invalidbiditems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          InvalidBidItems
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#insufficientfunds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          InsufficientFunds
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionnotopen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionNotOpen
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionnotclosed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionNotClosed
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionalreadyopen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionAlreadyOpen
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#auctionalreadysettled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          AuctionAlreadySettled
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#biddernotregistered" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          BidderNotRegistered
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bidderalreadyexists" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        <span class="md-typeset">
-          BidderAlreadyExists
-        </span>
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -3007,7 +2448,7 @@
       <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    MEV Auction Platform
+    XGA Auction Platform
   </span>
 
       </a>
@@ -3059,164 +2500,77 @@
   
 
 
-  <h1>Interface</h1>
-
-<h2 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h2>
-<p><a href="../../Reference/erc6909/"><em>See the ERC6909 Interface reference for additional information</em></a></p>
-<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
-<h4 id="getbid">getBid<a class="headerlink" href="#getbid" title="Permanent link">&para;</a></h4>
-<p><em>Get the bid from a bidder for a specific slot and round.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">getBid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">[]</span><span class="w"> </span><span class="kt">memory</span><span class="w"> </span>packedBids<span class="p">);</span>
+<h1 id="summary-interfaces">Summary Interfaces<a class="headerlink" href="#summary-interfaces" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="#auctioneer-interface">Auctioneer</a></li>
+<li><a href="#settlementhouse-interface">Settlement</a></li>
+<li><a href="#bidder-interface">Bidder</a></li>
+</ul>
+<h1 id="auctioneer-interface">Auctioneer Interface<a class="headerlink" href="#auctioneer-interface" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/manifoldfinance/open-bidder-contracts/blob/main/src/interfaces/IAuctioneer.sol">Git Source</a></p>
+<p><strong>Inherits:</strong>
+ERC6909, Ownable2Step</p>
+<p><em>Implements an auction mechanism for selling block space.</em></p>
+<h2 id="structs">Structs<a class="headerlink" href="#structs" title="Permanent link">&para;</a></h2>
+<h3 id="auction">Auction<a class="headerlink" href="#auction" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">struct</span><span class="w"> </span><span class="nv">Auction</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isOpen</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isSettled</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isPaidOut</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isRefunded</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="kt">mapping</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>BidderInfo<span class="p">)</span><span class="w"> </span>biddersInfo<span class="p">;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>slot</code></td>
-<td><code>uint256</code></td>
-<td>The auction slot.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>packedBids</code></td>
-<td><code>uint256[]</code></td>
-<td>Array of bids (in a packed format). uint256(uint128(bidPrice),uint120(itemsToBuy),uint8(biderId))</td>
-</tr>
-</tbody>
-</table>
-<h3 id="newbidder">newBidder<a class="headerlink" href="#newbidder" title="Permanent link">&para;</a></h3>
-<p><em>Add a new bidder to the auction.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">newBidder</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">additionalBidder</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8</span><span class="w"> </span><span class="nv">newId</span><span class="p">);</span>
+<h3 id="bidderinfo">BidderInfo<a class="headerlink" href="#bidderinfo" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">struct</span><span class="w"> </span><span class="nv">BidderInfo</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsBought</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">amountOwed</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>additionalBidder</code></td>
-<td><code>address</code></td>
-<td>The address of the additional bidder.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="removebidder">removeBidder<a class="headerlink" href="#removebidder" title="Permanent link">&para;</a></h3>
-<p><em>Remove a bidder from the auction.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">removeBidder</span><span class="p">(</span><span class="kt">uint8</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="p">;</span>
+<h2 id="state-variables">State Variables<a class="headerlink" href="#state-variables" title="Permanent link">&para;</a></h2>
+<h3 id="maxbidder">maxBidder<a class="headerlink" href="#maxbidder" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">uint8</span><span class="w"> </span><span class="k">public </span><span class="nv">maxBidder</span><span class="p">;</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>bidderId</code></td>
-<td><code>uint8</code></td>
-<td>The index of the bidder to be removed.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="addoperator">addOperator<a class="headerlink" href="#addoperator" title="Permanent link">&para;</a></h3>
-<p><em>Add a new operator to the auction.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">addOperator</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">newOperator</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="p">;</span>
+<h3 id="weth9">WETH9<a class="headerlink" href="#weth9" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>WETH<span class="w"> </span><span class="kt">public</span><span class="w"> </span>immutable<span class="w"> </span>WETH9<span class="p">;</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>newOperator</code></td>
-<td><code>address</code></td>
-<td>The address of the new operator</td>
-</tr>
-</tbody>
-</table>
-<h3 id="removeoperator">removeOperator<a class="headerlink" href="#removeoperator" title="Permanent link">&para;</a></h3>
-<p><em>Remove an operator from the auction.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">removeOperator</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">oldOperator</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOwner<span class="p">;</span>
+<h3 id="accountant">accountant<a class="headerlink" href="#accountant" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">address</span><span class="w"> </span><span class="k">public </span><span class="nv">accountant</span><span class="p">;</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>oldOperator</code></td>
-<td><code>address</code></td>
-<td>Address of operator to be removed.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="openauction">openAuction<a class="headerlink" href="#openauction" title="Permanent link">&para;</a></h3>
-<p><em>Open a new auction for a specific slot.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">openAuction</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOperator<span class="p">;</span>
+<h3 id="maxbids">maxBids<a class="headerlink" href="#maxbids" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">maxBids</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m m-Decimal">50</span><span class="p">;</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>slot</code></td>
-<td><code>uint256</code></td>
-<td>The auction slot.</td>
-</tr>
-<tr>
-<td><code>itemsForSale</code></td>
-<td><code>uint120</code></td>
-<td>The number of items available for sale in the auction.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="mingasamount">minGasAmount<a class="headerlink" href="#mingasamount" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">uint120</span><span class="w"> </span><span class="k">public </span><span class="nv">minGasAmount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m m-Decimal">20000</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="operator">operator<a class="headerlink" href="#operator" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">address</span><span class="w"> </span><span class="k">public </span><span class="nv">operator</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="idmap">IdMap<a class="headerlink" href="#idmap" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">mapping</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">id</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>IdMap<span class="p">;</span>
+</span></code></pre></div>
+<h3 id="biddermap">bidderMap<a class="headerlink" href="#biddermap" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">mapping</span><span class="p">(</span><span class="kt">uint8</span><span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>bidderMap<span class="p">;</span>
+</span></code></pre></div>
+<h3 id="auctions">auctions<a class="headerlink" href="#auctions" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">mapping</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>Auction<span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>auctions<span class="p">;</span>
+</span></code></pre></div>
+<h3 id="slotscount">slotsCount<a class="headerlink" href="#slotscount" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">uint256</span><span class="w"> </span><span class="k">public </span><span class="nv">slotsCount</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="slotsauctioned">slotsAuctioned<a class="headerlink" href="#slotsauctioned" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">mapping</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">index</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>slotsAuctioned<span class="p">;</span>
+</span></code></pre></div>
+<h3 id="bidcount">bidCount<a class="headerlink" href="#bidcount" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">mapping</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">count</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>bidCount<span class="p">;</span>
+</span></code></pre></div>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <h3 id="bid">bid<a class="headerlink" href="#bid" title="Permanent link">&para;</a></h3>
 <p><em>Bid function for bidders to submit manual bids.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">bid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="p">[]</span><span class="w"> </span><span class="kt">memory</span><span class="w"> </span>packedBids<span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="p">;</span>
+<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">bid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="p">[]</span><span class="w"> </span><span class="kt">memory</span><span class="w"> </span>packedBids<span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="p">;</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
+<strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -3238,61 +2592,11 @@
 </tr>
 </tbody>
 </table>
-<h3 id="run">run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h3>
-<p><em>Execute the auction for a specific slot.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">run</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>onlyOperator<span class="p">;</span>
-</span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>slot</code></td>
-<td><code>uint256</code></td>
-<td>The auction slot.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="settle">settle<a class="headerlink" href="#settle" title="Permanent link">&para;</a></h3>
-<p><em>Settle the auction for a specific slot.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">settle</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">recipient</span><span class="p">)</span><span class="w"> </span><span class="kt">public</span><span class="w"> </span>onlyOperator<span class="p">;</span>
-</span></code></pre></div>
-<p><strong>Parameters</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>slot</code></td>
-<td><code>uint256</code></td>
-<td>The auction slot.</td>
-</tr>
-<tr>
-<td><code>recipient</code></td>
-<td><code>address</code></td>
-<td>The address of the recipient of the settled funds.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="runandsettle">runAndSettle<a class="headerlink" href="#runandsettle" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">runAndSettle</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">recipient</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>onlyOperator<span class="p">;</span>
-</span></code></pre></div>
 <h3 id="getbidderinfo">getBidderInfo<a class="headerlink" href="#getbidderinfo" title="Permanent link">&para;</a></h3>
 <p><em>Retrieve information about a bidder after auction settlement.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">getBidderInfo</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsBought</span><span class="p">,</span><span class="w"> </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">amountOwed</span><span class="p">);</span>
+<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">getBidderInfo</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsBought</span><span class="p">,</span><span class="w"> </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">amountOwed</span><span class="p">);</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
+<strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -3338,9 +2642,9 @@
 </table>
 <h3 id="packbid">packBid<a class="headerlink" href="#packbid" title="Permanent link">&para;</a></h3>
 <p><em>Packed Bid details into a uint256 for submission.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">packBid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">bidPrice</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">itemsToBuy</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">packedBid</span><span class="p">);</span>
+<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">packBid</span><span class="p">(</span><span class="kt">uint128</span><span class="w"> </span><span class="nv">bidPrice</span><span class="p">,</span><span class="w"> </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsToBuy</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">packedBid</span><span class="p">);</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
+<strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -3352,17 +2656,17 @@
 <tbody>
 <tr>
 <td><code>bidPrice</code></td>
-<td><code>uint256</code></td>
+<td><code>uint128</code></td>
 <td>Price per item.</td>
 </tr>
 <tr>
 <td><code>itemsToBuy</code></td>
-<td><code>uint256</code></td>
+<td><code>uint120</code></td>
 <td>Items to buy in the auction.</td>
 </tr>
 <tr>
 <td><code>bidderId</code></td>
-<td><code>uint256</code></td>
+<td><code>uint8</code></td>
 <td>Id for bidder</td>
 </tr>
 </tbody>
@@ -3384,11 +2688,11 @@
 </tr>
 </tbody>
 </table>
-<h3 id="decodebid">decodeBid<a class="headerlink" href="#decodebid" title="Permanent link">&para;</a></h3>
-<p><em>Decode the packed bid information.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">decodeBid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">packedBid</span><span class="p">)</span><span class="w"> </span><span class="kt">internal</span><span class="w"> </span>pure<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">,</span><span class="w"> </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsToBuy</span><span class="p">,</span><span class="w"> </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">bidPrice</span><span class="p">);</span>
+<h3 id="calcaveragebid">calcAverageBid<a class="headerlink" href="#calcaveragebid" title="Permanent link">&para;</a></h3>
+<p><em>Calculate average bid price for the last n auctions</em></p>
+<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">calcAverageBid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">numAuctions</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint128</span><span class="w"> </span><span class="nv">avBidPrice</span><span class="p">);</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
+<strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -3399,9 +2703,9 @@
 </thead>
 <tbody>
 <tr>
-<td><code>packedBid</code></td>
+<td><code>numAuctions</code></td>
 <td><code>uint256</code></td>
-<td>The packed bid information.</td>
+<td>Number of auctions to average for</td>
 </tr>
 </tbody>
 </table>
@@ -3416,33 +2720,89 @@
 </thead>
 <tbody>
 <tr>
-<td><code>bidderId</code></td>
-<td><code>uint8</code></td>
-<td>The bidder's ID.</td>
-</tr>
-<tr>
-<td><code>itemsToBuy</code></td>
-<td><code>uint120</code></td>
-<td>The number of items the bidder wants to buy.</td>
-</tr>
-<tr>
-<td><code>bidPrice</code></td>
+<td><code>avBidPrice</code></td>
 <td><code>uint128</code></td>
-<td>The price per item in the bid.</td>
+<td>for last n auctions</td>
 </tr>
 </tbody>
 </table>
-<h3 id="checkandstorebid">checkAndStoreBid<a class="headerlink" href="#checkandstorebid" title="Permanent link">&para;</a></h3>
-<p><em>Check the validity of a bid.</em></p>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">checkAndStoreBid</span><span class="p">(</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">revertInvalid</span><span class="p">,</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">,</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">,</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="kt">uint256</span><span class="p">[]</span><span class="w"> </span><span class="kt">memory</span><span class="w"> </span>packedBids
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">)</span><span class="w"> </span><span class="kt">internal</span><span class="p">;</span>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<h3 id="auctionsettled">AuctionSettled<a class="headerlink" href="#auctionsettled" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionSettled</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">);</span>
 </span></code></pre></div>
-<p><strong>Parameters</strong></p>
+<h3 id="bidderadded">BidderAdded<a class="headerlink" href="#bidderadded" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">BidderAdded</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidder<span class="p">,</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidderId<span class="p">);</span>
+</span></code></pre></div>
+<h3 id="bidderremoved">BidderRemoved<a class="headerlink" href="#bidderremoved" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">BidderRemoved</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidder<span class="p">,</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidderId<span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionopened">AuctionOpened<a class="headerlink" href="#auctionopened" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionOpened</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">,</span><span class="w"> </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionpaidout">AuctionPaidOut<a class="headerlink" href="#auctionpaidout" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionPaidOut</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionrefund">AuctionRefund<a class="headerlink" href="#auctionrefund" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionRefund</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">);</span>
+</span></code></pre></div>
+<h2 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h2>
+<h3 id="invalidid">InvalidId<a class="headerlink" href="#invalidid" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>error<span class="w"> </span>InvalidId<span class="p">();</span>
+</span></code></pre></div>
+<h3 id="unauthorized">Unauthorized<a class="headerlink" href="#unauthorized" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>error<span class="w"> </span>Unauthorized<span class="p">();</span>
+</span></code></pre></div>
+<h3 id="invalidbiditems">InvalidBidItems<a class="headerlink" href="#invalidbiditems" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>error<span class="w"> </span>InvalidBidItems<span class="p">();</span>
+</span></code></pre></div>
+<h3 id="insufficientfunds">InsufficientFunds<a class="headerlink" href="#insufficientfunds" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>error<span class="w"> </span>InsufficientFunds<span class="p">();</span>
+</span></code></pre></div>
+<h3 id="auctionnotopen">AuctionNotOpen<a class="headerlink" href="#auctionnotopen" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>error<span class="w"> </span>AuctionNotOpen<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionnotclosed">AuctionNotClosed<a class="headerlink" href="#auctionnotclosed" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>error<span class="w"> </span>AuctionNotClosed<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionalreadyopen">AuctionAlreadyOpen<a class="headerlink" href="#auctionalreadyopen" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>error<span class="w"> </span>AuctionAlreadyOpen<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="auctionalreadysettled">AuctionAlreadySettled<a class="headerlink" href="#auctionalreadysettled" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>error<span class="w"> </span>AuctionAlreadySettled<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="biddernotregistered">BidderNotRegistered<a class="headerlink" href="#biddernotregistered" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>error<span class="w"> </span>BidderNotRegistered<span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="bidderalreadyexists">BidderAlreadyExists<a class="headerlink" href="#bidderalreadyexists" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>error<span class="w"> </span>BidderAlreadyExists<span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">);</span>
+</span></code></pre></div>
+<h1 id="settlementhouse-interface">SettlementHouse Interface<a class="headerlink" href="#settlementhouse-interface" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/manifoldfinance/open-bidder-contracts/blob/main/src/interfaces/ISettlement.sol">Git Source</a></p>
+<p><em>A contract for managing bundles of transactions for a futures token.</em></p>
+<h2 id="structs_1">Structs<a class="headerlink" href="#structs_1" title="Permanent link">&para;</a></h2>
+<h3 id="bundle">Bundle<a class="headerlink" href="#bundle" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kt">struct</span><span class="w"> </span><span class="nv">Bundle</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span><span class="kt">address</span><span class="w"> </span><span class="nv">submitter</span><span class="p">;</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amountOfGas</span><span class="p">;</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="w">    </span><span class="kt">bytes32</span><span class="p">[]</span><span class="w"> </span>bundleHashes<span class="p">;</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="state-variables_1">State Variables<a class="headerlink" href="#state-variables_1" title="Permanent link">&para;</a></h2>
+<h3 id="futurestoken">futuresToken<a class="headerlink" href="#futurestoken" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>IERC6909<span class="w"> </span><span class="kt">public</span><span class="w"> </span>immutable<span class="w"> </span>futuresToken<span class="p">;</span>
+</span></code></pre></div>
+<h2 id="functions_1">Functions<a class="headerlink" href="#functions_1" title="Permanent link">&para;</a></h2>
+<h3 id="submitbundle">submitBundle<a class="headerlink" href="#submitbundle" title="Permanent link">&para;</a></h3>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">submitBundle</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">amountOfGas</span><span class="p">,</span><span class="w"> </span><span class="kt">bytes32</span><span class="p">[]</span><span class="w"> </span>calldata<span class="w"> </span>bundleHashes<span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="p">;</span>
+</span></code></pre></div>
+<h1 id="bidder-interface">Bidder Interface<a class="headerlink" href="#bidder-interface" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/manifoldfinance/open-bidder-contracts/blob/main/src/interfaces/IBidder.sol">Git Source</a></p>
+<h2 id="functions_2">Functions<a class="headerlink" href="#functions_2" title="Permanent link">&para;</a></h2>
+<h3 id="getbid">getBid<a class="headerlink" href="#getbid" title="Permanent link">&para;</a></h3>
+<p><em>Get the bid from a bidder for a specific slot and round.</em></p>
+<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">getBid</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">)</span><span class="w"> </span><span class="kt">external</span><span class="w"> </span>view<span class="w"> </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint256</span><span class="p">[]</span><span class="w"> </span><span class="kt">memory</span><span class="w"> </span>packedBids<span class="p">);</span>
+</span></code></pre></div>
+<strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -3453,97 +2813,29 @@
 </thead>
 <tbody>
 <tr>
-<td><code>revertInvalid</code></td>
-<td><code>bool</code></td>
-<td>true for manual bids causing reverts for invalid data</td>
-</tr>
-<tr>
-<td><code>bidder</code></td>
-<td><code>address</code></td>
-<td>Address of bidder.</td>
-</tr>
-<tr>
 <td><code>slot</code></td>
 <td><code>uint256</code></td>
 <td>The auction slot.</td>
 </tr>
+</tbody>
+</table>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
 <tr>
-<td><code>itemsForSale</code></td>
-<td><code>uint256</code></td>
-<td>Total items for sale for the slot.</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><code>packedBids</code></td>
 <td><code>uint256[]</code></td>
-<td>Array of packed bids Requirements: - The number of items in the bid must not exceed the available items for sale in the auction. - The bidder must have enough funds to cover the bid amount.</td>
+<td>Array of bids (in a packed format). uint256(uint128(bidPrice),uint120(itemsToBuy),uint8(bidderId))</td>
 </tr>
 </tbody>
 </table>
-<h2 id="structs">Structs<a class="headerlink" href="#structs" title="Permanent link">&para;</a></h2>
-<h3 id="auction">Auction<a class="headerlink" href="#auction" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">struct</span><span class="w"> </span><span class="nv">Auction</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">;</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isOpen</span><span class="p">;</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nv">isSettled</span><span class="p">;</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="kt">mapping</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span>BidderInfo<span class="p">)</span><span class="w"> </span>biddersInfo<span class="p">;</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="bidderinfo">BidderInfo<a class="headerlink" href="#bidderinfo" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">struct</span><span class="w"> </span><span class="nv">BidderInfo</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsBought</span><span class="p">;</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">amountOwed</span><span class="p">;</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
-<h3 id="operatoradded">OperatorAdded<a class="headerlink" href="#operatoradded" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">OperatorAdded</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">newOperator</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="operatorremoved">OperatorRemoved<a class="headerlink" href="#operatorremoved" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">OperatorRemoved</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">oldOperator</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="auctionsettled">AuctionSettled<a class="headerlink" href="#auctionsettled" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionSettled</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">);</span>
-</span></code></pre></div>
-<h3 id="bidderadded">BidderAdded<a class="headerlink" href="#bidderadded" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">BidderAdded</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidder<span class="p">,</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="bidderremoved">BidderRemoved<a class="headerlink" href="#bidderremoved" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">BidderRemoved</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>bidder<span class="p">,</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="nv">bidderId</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="auctionopened">AuctionOpened<a class="headerlink" href="#auctionopened" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">event</span><span class="w"> </span><span class="nv">AuctionOpened</span><span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">indexed</span><span class="w"> </span>slot<span class="p">,</span><span class="w"> </span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsForSale</span><span class="p">);</span>
-</span></code></pre></div>
-<h2 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h2>
-<h3 id="invalidid">InvalidId<a class="headerlink" href="#invalidid" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>error<span class="w"> </span>InvalidId<span class="p">();</span>
-</span></code></pre></div>
-<h3 id="unauthorized">Unauthorized<a class="headerlink" href="#unauthorized" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>error<span class="w"> </span>Unauthorized<span class="p">();</span>
-</span></code></pre></div>
-<h3 id="invalidbiditems">InvalidBidItems<a class="headerlink" href="#invalidbiditems" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>error<span class="w"> </span>InvalidBidItems<span class="p">();</span>
-</span></code></pre></div>
-<h3 id="insufficientfunds">InsufficientFunds<a class="headerlink" href="#insufficientfunds" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>error<span class="w"> </span>InsufficientFunds<span class="p">();</span>
-</span></code></pre></div>
-<h3 id="auctionnotopen">AuctionNotOpen<a class="headerlink" href="#auctionnotopen" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>error<span class="w"> </span>AuctionNotOpen<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="auctionnotclosed">AuctionNotClosed<a class="headerlink" href="#auctionnotclosed" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>error<span class="w"> </span>AuctionNotClosed<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="auctionalreadyopen">AuctionAlreadyOpen<a class="headerlink" href="#auctionalreadyopen" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>error<span class="w"> </span>AuctionAlreadyOpen<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="auctionalreadysettled">AuctionAlreadySettled<a class="headerlink" href="#auctionalreadysettled" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>error<span class="w"> </span>AuctionAlreadySettled<span class="p">(</span><span class="kt">uint256</span><span class="w"> </span><span class="nv">slot</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="biddernotregistered">BidderNotRegistered<a class="headerlink" href="#biddernotregistered" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>error<span class="w"> </span>BidderNotRegistered<span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">);</span>
-</span></code></pre></div>
-<h3 id="bidderalreadyexists">BidderAlreadyExists<a class="headerlink" href="#bidderalreadyexists" title="Permanent link">&para;</a></h3>
-<div class="language-solidity highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>error<span class="w"> </span>BidderAlreadyExists<span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">bidder</span><span class="p">);</span>
-</span></code></pre></div>
 
 
 
@@ -3564,7 +2856,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 25, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 22, 2024</span>
   </span>
 
     
@@ -3659,12 +2951,12 @@
     
     
     
-  <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.path", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
+  <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.path", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
   
 
     
-      <script src="../../assets/javascripts/bundle.e1f28405.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e3055991.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

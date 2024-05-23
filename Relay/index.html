@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18+insiders-4.53.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24+insiders-4.53.10">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.d5b5f0fd.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c0d16a3a.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comparision" class="md-skip">
+        <a href="#validatorregistration" class="md-skip">
           Skip to content
         </a>
       
@@ -90,22 +90,6 @@
     <div data-md-component="announce">
       
     </div>
-    
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-          <aside class="md-banner md-banner--warning">
-            <div class="md-banner__inner md-grid md-typeset">
-              
-  This documentation is not for the latest stable version of MEV Auction.
-  <a href="../../latest-release/">
-    <strong>Click here for the latest release documentation.</strong>
-  </a>
-
-            </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
-          </aside>
-        
-      </div>
     
     
       
@@ -257,7 +241,7 @@
   
     
   
-  MEV Auction Platform
+  XGA Auction Platform
 
       </a>
     </li>
@@ -472,7 +456,7 @@
   <span class="md-ellipsis">
     
   
-    MEV Auction Platform
+    XGA Auction Platform
   
 
     
@@ -2454,7 +2438,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    MEV Auction Platform
+    XGA Auction Platform
   </span>
 
       </a>
@@ -2506,235 +2490,76 @@
   
 
 
-  <h1>SecureRpc Relay</h1>
-
-<h2 id="comparision">Comparision<a class="headerlink" href="#comparision" title="Permanent link">&para;</a></h2>
+<h1 id="validatorregistration">ValidatorRegistration<a class="headerlink" href="#validatorregistration" title="Permanent link">&para;</a></h1>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Name</strong></th>
-<th>**MEV Auction Platform **</th>
-<th><strong>Paradigm Merkle.io</strong></th>
-<th><strong>Kolibrio</strong></th>
-<th><strong>BloXroute</strong></th>
-<th><strong>MEV-Blocker</strong></th>
-<th><strong>MEV-Share</strong></th>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Revenue</td>
-<td></td>
-<td>90% of MEV,guaranteed at least$0.02 per transaction</td>
-<td>90% of MEV</td>
-<td>90% of MEV</td>
-<td>$0</td>
-<td>$0</td>
+<td><strong>fee_recipient</strong></td>
+<td><strong>String</strong></td>
+<td>Address to receive fees from the block.</td>
+<td>[default to null]</td>
 </tr>
 <tr>
-<td>Future Inclusion</td>
-<td>✔︎</td>
-<td>✕</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>gas_limit</strong></td>
+<td><strong>String</strong></td>
+<td>Preferred gas limit of validator.</td>
+<td>[default to null]</td>
 </tr>
 <tr>
-<td>MEV Boost Compatible</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>timestamp</strong></td>
+<td><strong>String</strong></td>
+<td>Unix timestamp of registration.</td>
+<td>[default to null]</td>
 </tr>
 <tr>
-<td>New Trust Assumptions</td>
-<td></td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-</tr>
-<tr>
-<td>Exclude Reverting Transactions</td>
-<td></td>
-<td>✔︎</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Multi Block Support</td>
-<td></td>
-<td>✔︎</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Latency based</td>
-<td>✕</td>
-<td>✔︎</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Requires RPC Connection</td>
-<td>✕</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-<td>✔︎</td>
-</tr>
-<tr>
-<td>Requires Block Builder integration</td>
-<td>✕</td>
-<td>✔︎</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Dashboard</td>
-<td></td>
-<td>theta</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-</tr>
-<tr>
-<td>Compliant</td>
-<td></td>
-<td>theta</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-</tr>
-<tr>
-<td>Programmable privacy</td>
-<td></td>
-<td>Theta</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-<td>Theta</td>
-</tr>
-<tr>
-<td>Status API</td>
-<td></td>
-<td>theta</td>
-<td>ox</td>
-<td>ox</td>
-<td>ox</td>
-<td>theta</td>
-</tr>
-<tr>
-<td>Advanced API</td>
-<td></td>
-<td>Theta</td>
-<td>ox</td>
-<td></td>
-<td></td>
-<td>ox</td>
-</tr>
-<tr>
-<td>Dedicated RPC</td>
-<td></td>
-<td>theta</td>
-<td></td>
-<td></td>
-<td>Theta</td>
-<td>theta</td>
-</tr>
-<tr>
-<td>Fast inclusion</td>
-<td></td>
-<td>theta</td>
-<td>ox</td>
-<td>Theta</td>
-<td>Theta</td>
-<td></td>
-</tr>
-<tr>
-<td>MEV Protection</td>
-<td></td>
-<td>theta</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>theta</td>
-</tr>
-<tr>
-<td>Chains</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ethereum</td>
-<td></td>
-<td>Theta</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>Theta</td>
-</tr>
-<tr>
-<td>Polygon</td>
-<td>✕</td>
-<td>theta</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>ox</td>
-<td>ox</td>
-</tr>
-<tr>
-<td>Binance Smart Chain</td>
-<td>✕</td>
-<td>( )</td>
-<td>Theta</td>
-<td>Theta</td>
-<td>ox</td>
-<td>ox</td>
-</tr>
-<tr>
-<td>Total</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>pubkey</strong></td>
+<td><strong>String</strong></td>
+<td>BLS public key of validator.</td>
+<td>[default to null]</td>
 </tr>
 </tbody>
 </table>
-<h2 id="strategies">Strategies<a class="headerlink" href="#strategies" title="Permanent link">&para;</a></h2>
-<h2 id="latency-based">Latency Based<a class="headerlink" href="#latency-based" title="Permanent link">&para;</a></h2>
-<p>Latency strategies within relay operations carry significant implications for
-relay competitiveness. The practical upshot is that some relays can only
-consistently compete through an artificial delay. An extreme case of this would
-be a relay which is technically consistently non-competitive, but captures
-exclusive order flow – in this case, a rational node operator will always query
-it with an artificial latency parameter.</p>
-<p>This competition among relays hints at a potential shift in the game, where
-relays might strategically delay responses to enhance their chances of providing
-the best bid. This adaptation could be likely incentivized by the benefits of
-optimized delay, particularly for vertically-integrated builders who may be
-inclined to pay a premium for more reliable bid inclusion.</p>
+<h1 id="validatorsresponseentry">ValidatorsResponseEntry<a class="headerlink" href="#validatorsresponseentry" title="Permanent link">&para;</a></h1>
+<h2 id="properties_1">Properties<a class="headerlink" href="#properties_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>slot</strong></td>
+<td><strong>String</strong></td>
+<td></td>
+<td>[optional] [default to null]</td>
+</tr>
+<tr>
+<td><strong>validator_index</strong></td>
+<td><strong>String</strong></td>
+<td></td>
+<td>[optional] [default to null]</td>
+</tr>
+<tr>
+<td><strong>entry</strong></td>
+<td><a href="#"><strong>getValidators_200_response_inner_entry</strong></a></td>
+<td></td>
+<td>[optional] [default to null]</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2755,7 +2580,7 @@ inclined to pay a premium for more reliable bid inclusion.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 10, 2024</span>
   </span>
 
     
@@ -2850,12 +2675,12 @@ inclined to pay a premium for more reliable bid inclusion.</p>
     
     
     
-  <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.path", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest-release", "provider": "mike"}}</script>
+  <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.instant", "navigation.instant.progress", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.path", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
   
 
     
-      <script src="../assets/javascripts/bundle.e1f28405.min.js"></script>
+      <script src="../assets/javascripts/bundle.e3055991.min.js"></script>
       
         <script src="../javascripts/extra.js"></script>
       
