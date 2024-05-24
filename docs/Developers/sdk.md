@@ -4,25 +4,34 @@ sidebar_position: 1
 title: Auction SDK
 ---
 
-XGA auction winners are granted future block space via a token, which is used with submission of transactions for inclusion in the beta block. Budding bidders can register themselves with the protocol to participate in beta block auctions. Thereupon custom implementations will be required to bid and submit transactions. Technical details are provided herein. 
+XGA auction winners are granted future block space via a token, which is used
+with submission of transactions for inclusion in the beta block. Budding bidders
+can register themselves with the protocol to participate in beta block auctions.
+Thereupon custom implementations will be required to bid and submit
+transactions. Technical details are provided herein.
 
 Technical Overview:
-- [Bidding](#bidding):
-    - [Connect to L2 RPC](#l2-rpc)
-    - [Bridge eth to L2](#l1-bridge)
-    - [Understand auction contracts](#auction-contracts)
-    - [Deploy custom bidding strategy contract](#bidder-contracts)
-- [Submitting bundles](#submitting-bundles):
-    - [Beta Bundle RPC](#beta-bundle-rpc)
-    - [Bundle JSON Requests and Responses](#bundle-json-requests-and-responses)
+
+-   [Bidding](#bidding):
+    -   [Connect to L2 RPC](#l2-rpc)
+    -   [Bridge eth to L2](#l1-bridge)
+    -   [Understand auction contracts](#auction-contracts)
+    -   [Deploy custom bidding strategy contract](#bidder-contracts)
+-   [Submitting bundles](#submitting-bundles):
+    -   [Beta Bundle RPC](#beta-bundle-rpc)
+    -   [Bundle JSON Requests and Responses](#bundle-json-requests-and-responses)
 
 Full working examples are available for:
-- [Zero latency open bidder contract](https://github.com/manifoldfinance/open-bidder-contracts/)
-- [Bundle submissions](https://github.com/MEV-Protocol/beta-bundles-py)
+
+-   [Zero latency open bidder contract](https://github.com/manifoldfinance/open-bidder-contracts/)
+-   [Bundle submissions](https://github.com/MEV-Protocol/beta-bundles-py)
 
 # Bidding
+
 ## L2 RPC
+
 -   **L2 RPC:**
+
     -   Description: L2 Node RPC
     -   URL:
         [https://xga-api.securerpc.com/v1](https://xga-api.securerpc.com/v1)
@@ -36,7 +45,7 @@ Full working examples are available for:
         [https://holesky-api.securerpc.com/l2](https://holesky-api.securerpc.com/l2/)
     -   Methods: eth\_\*
     -   ChainId: 42169
-    
+
 ## L1 Bridge
 
 Fund L2 address by sending ETH to the L1 bridge address.
@@ -133,7 +142,8 @@ After an auction is closed, bidders can query their bid results:
 
 ## Bidder Contracts
 
-A minimal viable bidder is provided below. [A more sophisticated fill or kill open bidder contract is provided](https://github.com/manifoldfinance/open-bidder-contracts/).
+A minimal viable bidder is provided below.
+[A more sophisticated fill or kill open bidder contract is provided](https://github.com/manifoldfinance/open-bidder-contracts/).
 
 ```solidity
 /// SPDX-License-Identifier: UPL-1.0
@@ -178,7 +188,9 @@ contract MockBidder {
 # Submitting bundles
 
 ## Beta Bundle RPC
+
 -   **Beta bundle RPC:**
+
     -   Description: Beta bundle submission RPC
     -   URL:
         [https://mainnet-auction.securerpc.com/](https://mainnet-auction.securerpc.com/)
@@ -197,7 +209,6 @@ contract MockBidder {
         -   `txs`: List of txs as bundle e.g. [0x2323...,]
         -   `slot`: slot number e.g. "11282389"
     -   ChainId: 17000
-
 
 ## Bundle JSON Requests and Responses
 

@@ -4,8 +4,8 @@ description:
     Testing information for node operators, validators, builders, and searchers.
 ---
 
-- [Live auction dashboard](https://holesky-auction-dashboard.securerpc.com/)
-- [L2 Blockchain explorer](https://holesky-blockscout.securerpc.com/)
+-   [Live auction dashboard](https://holesky-auction-dashboard.securerpc.com/)
+-   [L2 Blockchain explorer](https://holesky-blockscout.securerpc.com/)
 
 ## Node Operators
 

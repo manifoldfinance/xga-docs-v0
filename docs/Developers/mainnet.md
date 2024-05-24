@@ -4,8 +4,8 @@ description:
     Mainnet information for node operators, validators, builders, and searchers.
 ---
 
-- [Live auction dashboard](https://mainnet-auction-dashboard.securerpc.com/)
-- [L2 Blockchain explorer](https://mainnet-blockscout.securerpc.com/)
+-   [Live auction dashboard](https://mainnet-auction-dashboard.securerpc.com/)
+-   [L2 Blockchain explorer](https://mainnet-blockscout.securerpc.com/)
 
 ## Node Operators
 

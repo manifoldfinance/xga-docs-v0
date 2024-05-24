@@ -1,7 +1,10 @@
 ---
 title: Relay API
+description: Relay Extended API
 ---
 
-# Relay REST API
+## Relay REST API
 
-!!swagger relay-oapi.yaml!!
+Extended from the Relay spec
+
+[OAD(./docs/api/relay-oapi.yaml)]
