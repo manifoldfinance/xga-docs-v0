@@ -113,7 +113,6 @@ markdown_extensions:
   - markdown.extensions.tables:
   - markdown.extensions.toc:
       permalink: true
-  - mdx_math
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
