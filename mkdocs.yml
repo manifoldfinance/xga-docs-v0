@@ -94,23 +94,12 @@ plugins:
       #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
       separator: '[\s\-\.\_]+'
       lang: 'en'
-  - git-revision-date-localized:
-      strict: false
-      type: date
-      locale: en
-  - exclude:
-      glob:
-        - README.md
-        - "*.gotmpl"
-        - "*.gotmpl.md"
-  - awesome-pages
   - macros:
       module_name: .docs/macros/includes/main
-  - typeset
+#  - typeset
   - blog:
       post_url_format: "{categories}/{slug}"
       post_url_max_categories: 2
-  - meta
 
 
 markdown_extensions:
