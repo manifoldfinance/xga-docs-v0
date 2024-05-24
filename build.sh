@@ -17,11 +17,10 @@ python3 -m venv docs-venv
 source docs-venv/bin/activate
 pip3 install -r requirements.txt
 pip3 install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-npm install
 
 
 mkdir -p site/.well-known
-INSIDERS=1 mkdocs build --clean  --site-dir site/
+INSIDERS=1 mkdocs build --clean --site-dir site/
 date "+%Y-%m-%dT%H:%M:%S%z" > site/build_id.txt
 
 #TZ=UTC git show --quiet --date="format-local:%Y.%-m.%-d" --format="nightly-%cd" > site/.well-known/nightly-release.txt

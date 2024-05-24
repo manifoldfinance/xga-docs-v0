@@ -14,7 +14,7 @@ use_directory_urls: true
 
 theme:
   name: material
-  custom_dir: .docs/overrides/
+#  custom_dir: .docs/overrides/
   features:
     - announce.dismiss
     - content.action.edit
@@ -22,15 +22,13 @@ theme:
     - content.code.annotate
     - content.code.copy
     # - content.code.select
-    # - content.footnote.tooltips
+    - content.footnote.tooltips
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.footer
-    # - navigation.instant
     # - navigation.instant.prefetch
-    # - navigation.instant.progress
     # - navigation.prune
     - navigation.instant
     - navigation.instant.progress
@@ -96,9 +94,8 @@ plugins:
       #separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
       separator: '[\s\-\.\_]+'
       lang: 'en'
-  - macros:
-      module_name: .docs/macros/includes/main
-  - typeset
+#  - macros:
+#      module_name: .docs/macros/includes/main
   - blog:
       post_url_format: "{categories}/{slug}"
       post_url_max_categories: 2
