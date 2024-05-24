@@ -55,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-mkdocs.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2723,19 +2723,31 @@
   
 
 
-<p>XGA auction winners are granted future block space via a token, which is used with submission of transactions for inclusion in the beta block. Budding bidders can register themselves with the protocol to participate in beta block auctions. Thereupon custom implementations will be required to bid and submit transactions. Technical details are provided herein. </p>
-<p>Technical Overview:
-- <a href="#bidding">Bidding</a>:
-    - <a href="#l2-rpc">Connect to L2 RPC</a>
-    - <a href="#l1-bridge">Bridge eth to L2</a>
-    - <a href="#auction-contracts">Understand auction contracts</a>
-    - <a href="#bidder-contracts">Deploy custom bidding strategy contract</a>
-- <a href="#submitting-bundles">Submitting bundles</a>:
-    - <a href="#beta-bundle-rpc">Beta Bundle RPC</a>
-    - <a href="#bundle-json-requests-and-responses">Bundle JSON Requests and Responses</a></p>
-<p>Full working examples are available for:
-- <a href="https://github.com/manifoldfinance/open-bidder-contracts/">Zero latency open bidder contract</a>
-- <a href="https://github.com/MEV-Protocol/beta-bundles-py">Bundle submissions</a></p>
+<p>XGA auction winners are granted future block space via a token, which is used
+with submission of transactions for inclusion in the beta block. Budding bidders
+can register themselves with the protocol to participate in beta block auctions.
+Thereupon custom implementations will be required to bid and submit
+transactions. Technical details are provided herein.</p>
+<p>Technical Overview:</p>
+<ul>
+<li><a href="#bidding">Bidding</a>:<ul>
+<li><a href="#l2-rpc">Connect to L2 RPC</a></li>
+<li><a href="#l1-bridge">Bridge eth to L2</a></li>
+<li><a href="#auction-contracts">Understand auction contracts</a></li>
+<li><a href="#bidder-contracts">Deploy custom bidding strategy contract</a></li>
+</ul>
+</li>
+<li><a href="#submitting-bundles">Submitting bundles</a>:<ul>
+<li><a href="#beta-bundle-rpc">Beta Bundle RPC</a></li>
+<li><a href="#bundle-json-requests-and-responses">Bundle JSON Requests and Responses</a></li>
+</ul>
+</li>
+</ul>
+<p>Full working examples are available for:</p>
+<ul>
+<li><a href="https://github.com/manifoldfinance/open-bidder-contracts/">Zero latency open bidder contract</a></li>
+<li><a href="https://github.com/MEV-Protocol/beta-bundles-py">Bundle submissions</a></li>
+</ul>
 <h1 id="bidding">Bidding<a class="headerlink" href="#bidding" title="Permanent link">&para;</a></h1>
 <h2 id="l2-rpc">L2 RPC<a class="headerlink" href="#l2-rpc" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2823,7 +2835,8 @@ new bidders through the contract.</p>
 </span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">        </span><span class="kt">returns</span><span class="w"> </span><span class="p">(</span><span class="kt">uint120</span><span class="w"> </span><span class="nv">itemsBought</span><span class="p">,</span><span class="w"> </span><span class="kt">uint128</span><span class="w"> </span><span class="nv">amountOwed</span><span class="p">);</span>
 </span></code></pre></div>
 <h2 id="bidder-contracts">Bidder Contracts<a class="headerlink" href="#bidder-contracts" title="Permanent link">&para;</a></h2>
-<p>A minimal viable bidder is provided below. <a href="https://github.com/manifoldfinance/open-bidder-contracts/">A more sophisticated fill or kill open bidder contract is provided</a>.</p>
+<p>A minimal viable bidder is provided below.
+<a href="https://github.com/manifoldfinance/open-bidder-contracts/">A more sophisticated fill or kill open bidder contract is provided</a>.</p>
 <div class="language-solidity highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">/// SPDX-License-Identifier: UPL-1.0</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">pragma solidity</span><span class="w"> </span><span class="o">^</span><span class="k">0.8.25</span><span class="p">;</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
@@ -2932,26 +2945,8 @@ new bidders through the contract.</p>
 
 
   
-    
-  
   
 
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 22, 2024</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
 
 
 
@@ -3047,8 +3042,6 @@ new bidders through the contract.</p>
       <script src="../../assets/javascripts/bundle.e3055991.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

@@ -51,7 +51,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/neoteroi-mkdocs.css">
     
     <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -2447,18 +2447,18 @@
 <p><a href="https://github.com/manifoldfinance/auctioneer/blob/94186b27ea5ddae3ff2f27674c7d42c6d498df0f/src/interfaces/IL2Bridge.sol">Git Source</a></p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
 <h3 id="withdrawto">withdrawTo<a class="headerlink" href="#withdrawto" title="Permanent link">&para;</a></h3>
-<p>Initiates a withdrawal from L2 to L1 to a target account on L1.
-Note that if ETH is sent to a contract on L1 and the call fails, then that ETH will
-be locked in the L1StandardBridge. ETH may be recoverable if the call can be
-successfully replayed by increasing the amount of gas supplied to the call. If the
-call will fail for any amount of gas, then the ETH will be locked permanently.
-This function only works with OptimismMintableERC20 tokens or ether. Use the
+<p>Initiates a withdrawal from L2 to L1 to a target account on L1. Note that if ETH
+is sent to a contract on L1 and the call fails, then that ETH will be locked in
+the L1StandardBridge. ETH may be recoverable if the call can be successfully
+replayed by increasing the amount of gas supplied to the call. If the call will
+fail for any amount of gas, then the ETH will be locked permanently. This
+function only works with OptimismMintableERC20 tokens or ether. Use the
 <code>bridgeERC20To</code> function to bridge native L2 tokens to L1.</p>
-<p><div class="language-solidity highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">withdrawTo</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">_l2Token</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">_to</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">_amount</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32</span><span class="w"> </span><span class="nv">_minGasLimit</span><span class="p">,</span><span class="w"> </span><span class="kt">bytes</span><span class="w"> </span><span class="nv">calldata</span><span class="w"> </span>_extraData<span class="p">)</span>
+<div class="language-solidity highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">function</span><span class="w"> </span><span class="nv">withdrawTo</span><span class="p">(</span><span class="kt">address</span><span class="w"> </span><span class="nv">_l2Token</span><span class="p">,</span><span class="w"> </span><span class="kt">address</span><span class="w"> </span><span class="nv">_to</span><span class="p">,</span><span class="w"> </span><span class="kt">uint256</span><span class="w"> </span><span class="nv">_amount</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32</span><span class="w"> </span><span class="nv">_minGasLimit</span><span class="p">,</span><span class="w"> </span><span class="kt">bytes</span><span class="w"> </span><span class="nv">calldata</span><span class="w"> </span>_extraData<span class="p">)</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">external</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">payable</span><span class="p">;</span>
 </span></code></pre></div>
-<strong>Parameters</strong></p>
+<p><strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -2502,27 +2502,6 @@ This function only works with OptimismMintableERC20 tokens or ether. Use the
 
 
 
-  
-    
-  
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 22, 2024</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
 
 
 
@@ -2580,8 +2559,6 @@ This function only works with OptimismMintableERC20 tokens or ether. Use the
       <script src="../../../../../assets/javascripts/bundle.e3055991.min.js"></script>
       
         <script src="../../../../../javascripts/extra.js"></script>
-      
-        <script src="../../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
