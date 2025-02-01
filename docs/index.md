@@ -17,39 +17,22 @@ strategies:
 5. Backwards compatible with MEV-Boost
 6. Exclusive Relay endpoint for Validator usage
 
-
 ::cards::cols=2
 
-- title: Want to learn more about the platform?
-  content: |
-    <br/>
-    Get started on the test net or jump right into main net!
-    <br/>
-    <br/>
+-   title: Want to learn more about the platform? content: | <br/> Get started
+    on the test net or jump right into main net! <br/> <br/>
     [Getting Started ](#){ .md-button }
 
-- title: Technical specifications and roadmap
-  content: |
-    <br />
-    See our list of roadmap iteams and technical specifications.
-    <br />
-    <br />
+-   title: Technical specifications and roadmap content: | <br /> See our list
+    of roadmap iteams and technical specifications. <br /> <br />
     [See supported features and more ](#){ .md-button }
 
-- title: Want to connect for your Validator?
-  content: |
-    <br />
-    Run Ethereum services easily with our supported Validator setups.
-    <br />
-    <br />
+-   title: Want to connect for your Validator? content: | <br /> Run Ethereum
+    services easily with our supported Validator setups. <br /> <br />
     [Run XGA Ethereum services on... ](#){ .md-button }
 
-- title: Have a question or need help?
-  content: |
-    <br />
-    Ask questions on our discussion board and get in touch with our community.
-    <br />
-    <br />
+-   title: Have a question or need help? content: | <br /> Ask questions on our
+    discussion board and get in touch with our community. <br /> <br />
     [Ask a question ](#){ .md-button }
 
 ::/cards::
@@ -101,10 +84,9 @@ gantt
 
 The Auction platform uses the [SecureRPC.com](https://securerpc.com) relay, in
 which permissioned validator sets use exclusively[^3]. As such, we will know 2
-epochs in advance in which slots we will mint a block. Therefore, we can sell 
-a proportion of blockspace 2 epochs in advance, enabling a forward call market for
-*β-blockspace*.
-
+epochs in advance in which slots we will mint a block. Therefore, we can sell a
+proportion of blockspace 2 epochs in advance, enabling a forward call market for
+_β-blockspace_.
 
 ### **Elastic Supply Schedule**
 
@@ -155,13 +137,23 @@ $S:P→Q$
 Thus we have different offering quantities of options.
 
 The supply function is designed to be initially concave, then constant at
-maximum capacity. This approach, theoretically supported by Licalzi (2005)[^5], aims
-to mitigate dramatic underpricing.
+maximum capacity. This approach, theoretically supported by Licalzi (2005)[^5],
+aims to mitigate dramatic underpricing.
 
 ### Footnotes
 
 [^1]: Previously this was called 'above'
 [^2]: Previously this was called 'below'
 [^3]: Exclusivity is only needed in v1, v2 eliminates this requirement.
-[^4]: Robert Wilson, 1979. "<B><A HREF="https://ideas.repec.org/a/oup/qjecon/v93y1979i4p675-689..html">Auctions of Shares</A></B>," <A HREF="https://ideas.repec.org/s/oup/qjecon.html">The Quarterly Journal of Economics</A>, President and Fellows of Harvard College, vol. 93(4), pages 675-689.
-[^5]: Marco LiCalzi, 2005. <A HREF="https://doi.org/10.1016/S0014-2921(02)00324-0">"Tilting the supply schedule to enhance competition in uniform-price auctions"</A> European Economic Review, Volume 49, Issue 1, 2005, Pages 227-250
+[^4]:
+    Robert Wilson, 1979.
+    "<B><A HREF="https://ideas.repec.org/a/oup/qjecon/v93y1979i4p675-689..html">Auctions
+    of Shares</A></B>," <A HREF="https://ideas.repec.org/s/oup/qjecon.html">The
+    Quarterly Journal of Economics</A>, President and Fellows of Harvard
+    College, vol. 93(4), pages 675-689.
+
+[^5]:
+    Marco LiCalzi, 2005.
+    <A HREF="https://doi.org/10.1016/S0014-2921(02)00324-0">"Tilting the supply
+    schedule to enhance competition in uniform-price auctions"</A> European
+    Economic Review, Volume 49, Issue 1, 2005, Pages 227-250
