@@ -17,10 +17,11 @@ strategies:
 5. Backwards compatible with MEV-Boost
 6. Exclusive Relay endpoint for Validator usage
 
+<!-- 
 ::cards::cols=2
 
--   title: Want to learn more about the platform? content: | <br/> Get started
-    on the test net or jump right into main net! <br/> <br/>
+-   title: Want to learn more about the platform? content: | <br /> Get started
+    on the test net or jump right into main net! <br /> <br />
     [Getting Started ](#){ .md-button }
 
 -   title: Technical specifications and roadmap content: | <br /> See our list
@@ -36,6 +37,7 @@ strategies:
     [Ask a question ](#){ .md-button }
 
 ::/cards::
+-->
 
 ## **Block Structure**
 
